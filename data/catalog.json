@@ -257,7 +257,7 @@
    "file": "vault/raw/Tiktok Interview Prep.docx",
    "filename": "Tiktok Interview Prep.docx",
    "sha256": "a6f743296d926af0aaa016aebfc49d3a25b34e5bd66c8f5ad92463e08151a031",
-   "ingested_at": "2026-09-28T15:25:43",
+   "ingested_at": "2026-09-28T15:47:31",
    "sections": [
     {
      "idx": 0,
@@ -381,28 +381,28 @@
   "Graton Casino Expansion": {
    "folder": "Stories",
    "note_id": "stories/graton-casino-expansion",
-   "description": "This note details the coordination challenges faced during the Graton Casino Expansion, a $2.9M project.",
+   "description": "This note details the Graton Casino Expansion project, a $2.9M undertaking where the owner coordinated between internal teams and external stakeholders.",
    "aliases": [],
    "input_hash": "151fc10376c5d11c"
   },
   "Supply Chain Delays": {
    "folder": "Stories",
    "note_id": "stories/supply-chain-delays",
-   "description": "This note details a situation where supply chain disruptions increased material lead times from 10 to 16 weeks, putting multiple projects at risk.",
+   "description": "This story details how supply chain disruptions increased material lead times from 10 to 16 weeks, putting multiple projects at risk.",
    "aliases": [],
    "input_hash": "260656cc5f31cd8e"
   },
   "Inherited Project Overload": {
    "folder": "Stories",
    "note_id": "stories/inherited-project-overload",
-   "description": "This note details the experience of inheriting an overwhelming project load at Otis after a colleague resigned, leading to an increase from two to fifteen proje",
+   "description": "This note details the experience of inheriting a significant project overload at Otis after a colleague resigned, leading to a sudden increase in projects and a",
    "aliases": [],
    "input_hash": "8ac54458c5c12e36"
   },
   "Client Payment Negotiation": {
    "folder": "Stories",
    "note_id": "stories/client-payment-negotiation",
-   "description": "This note details a situation where a major recurring customer refused to pay a $125,000 debt, creating conflict between Sales and Finance.",
+   "description": "This note details a situation where a major recurring customer refused to pay an outstanding $125,000 owed, creating a conflict between Sales and Finance regard",
    "aliases": [],
    "input_hash": "45e5fcb8936a3efe"
   },
@@ -441,7 +441,7 @@
   "TikTok MSO": {
    "folder": "Companies",
    "note_id": "companies/tiktok-mso",
-   "description": "This note covers TikTok's monetization methods, competitive landscape, and strengths, including its algorithm and TikTok Shop.",
+   "description": "This note covers TikTok's monetization methods, strengths, and the owner's interest in the Monetization Strategy & Ops team.",
    "aliases": [],
    "input_hash": "2a239c6267d76005"
   },

@@ -1,6 +1,6 @@
 {
  "title": "Inherited Project Overload",
- "summary": "This note details the experience of inheriting an overwhelming project load at Otis after a colleague resigned, leading to an increase from two to fifteen projects overnight. The owner managed this situation by proactively seeking help from senior PMs, prioritizing critical deadlines, and renegotiating client timelines to maintain quality and customer satisfaction.",
+ "summary": "This note details the experience of inheriting a significant project overload at Otis after a colleague resigned, leading to a sudden increase in projects and a steep learning curve. The owner proactively sought help from senior PMs through weekly office hours and prioritized critical deadlines to maintain delivery timelines and customer satisfaction.",
  "key_points": [
   {
    "text": "Inherited 15+ additional projects on top of an existing $10M portfolio",
@@ -57,19 +57,13 @@
    ]
   }
  ],
- "differences": [
-  "The excerpt from Note A mentions reaching out to senior PMs for help, while Note B mentions office hours being of great help when the owner was in undergrad."
- ],
+ "differences": [],
  "related": [
   {
    "title": "Otis Project Management",
-   "why": "This note details the owner's role as a project manager at Otis, which is the context for inheriting the projects."
-  },
-  {
-   "title": "Career Story",
-   "why": "This note summarizes the owner's career progression at Otis, providing background context for the project management experience."
+   "why": "This note details the owner's role as a project manager at Otis, which is the context for the project overload described here."
   }
  ],
  "model": "gemma4-e2b-qat",
- "generated_at": "2026-09-28T15:27:21"
+ "generated_at": "2026-09-28T15:48:51"
 }

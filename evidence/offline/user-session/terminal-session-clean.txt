@@ -1,0 +1,244 @@
+# Readable copy of terminal-session.txt (recorded with `script` by the user, Wi-Fi off, 2026-09-28 15:47-15:51).
+# Terminal control codes removed. Zsh line-editor redraws leave a few doubled characters in long typed
+# commands, and the search output interleaves with the ask output because the next command was typed
+# while ask was still running. Raw recording: terminal-session.txt. Structured records:
+# runs/20260928-155028-ingest.json, runs/20260928-155040-ask.json, runs/20260928-1550*-search*.json
+
+amaynirula@Amays-MacBook-Air-2 Personal Wiki % ./wiki status
+Personal Wiki status
+  project:   /Users/amaynirula/Desktop/Haas/2nd Year/Agentic AI/Personal Wiki
+  model:     gemma4-e2b-qat  (google/gemma-4-E2B-it-qat-q4_0-gguf (gemma-4-E2B_q4_0-it.gguf), Q4_0 (quantization-aware trained))
+  runtime:   ollama 0.34.4
+  model ok:  installed
+  index:     46 source passages + 41 wiki sections (data/index.json)
+  wiki:      16 notes in vault/wiki
+  internet:  offline  (execution is local either way)
+amaynirula@Amays-MacBook-Air-2 Personal Wiki % ./wiki ingest "vault/raw/Tiktok Interview Prep.docx" --force
+[ingest · model gemma4-e2b-qat · local via Ollama 0.34.4]
+
+[unchanged] Tiktok Interview Prep.docx: 11 sections, 2436 words
+  = Introduction                                                 -> TikTok MSO (pinned by review)
+  = How does Tiktok monetize?                                    -> TikTok Monetization (unchanged)
+  = Who are Tiktok’s competitors and what are their strengths?   -> TikTok Monetization (unchanged)
+  = What are Tiktok’s strengths?                                 -> TikTok Monetization (unchanged)
+  = What are the different types of ads and what metrics would y -> TikTok Monetization (unchanged)
+  = Tell me about a time you had to overcome challenges when wor -> Graton Casino Expansion (unchanged)
+  = Tell me about a time you used multiple resources to overcome -> Supply Chain Delays (unchanged)
+  = Tell me about a time you adapted to a challenging situation/ -> Inherited Project Overload (unchanged)
+  = Tell me about a time you had disagreement with a colleague/w -> Client Payment Negotiation (unchanged)
+  = Tell me about a time you dug into data/used data to inform/c -> Overdue Receivables Analysis (unchanged)
+  = Why do you want to work for Tiktok and why MSO?              -> TikTok MSO (pinned by review)
+
+Writing 7 note(s) with gemma4-e2b-qat:
+./wiki ask "How quickly can Tanium query all endpoints, and what makes that possible?"
+  ✎ Client Payment Negotiation (36s)
+  ✎ Graton Casino Expansion (22s)
+  ✎ Inherited Project Overload (22s)
+  ✎ Overdue Receivables Analysis (23s)
+  ✎ Supply Chain Delays (22s)
+  ✎ TikTok MSO (23s)
+./wiki search "linear chain architecture"
+  ✎ TikTok Monetization (29s)
+
+Ingest complete in 177.3s
+  sources processed: 1
+  notes written: 7
+  notes kept reviewed: 16
+  passages: 46
+  wiki chunks: 41
+Saved: runs/20260928-155028-ingest.json
+amaynirula@Amays-MacBook-Air-2 Personal Wiki % ../wiki ask "How q uuickly can Tanium query all endpoints, and what makes that possi bble?"
+[ask mode · model gemma4-e2b-qat (Q4_0 (quantization-aware trained)) · local via Ollama 0.34.4]
+Question: How quickly can Tanium query all endpoints, and what makes that possible?
+1. Retrieved 5 source passage(s) in 0.2 ms: [1] Tanium Interview Prep.docx › What does Tanium do? (¶24-26) (9.29); [2] Tanium Interview Prep.docx › Tell me about yourself and how you fit the role? (¶6-8) (4.34); [3] Tanium Interview Prep.docx › Why Cybersecurity & Tanium? (¶20-22) (4.21); [4] Tanium Interview Prep.docx › What did you do at Otis? (¶14-18) (3.91); [5] Tanium Interview Prep.docx › Tell me about yourself and how you fit the role? (¶3-6) (3.55)
+./wiki search "linear chain architecture"
+./wiki search "linear chain architecture"
+2. Gemma extracted 1 quote(s); harness verified 1
+     [1] "First is their ability to query all endpoints in under 15 seconds, thanks to the linear chain architecture, wh..."
+3. Answer from verified quotes:
+
+Tanium can query all endpoints in under 15 seconds [1]. This speed is due to the linear chain architecture, which dramatically reduces server load [1].
+
+Sources cited:
+  [1] Tanium Interview Prep.docx › What does Tanium do? (¶24-26)  vault/raw/Tanium Interview Prep.docx
+
+Citation check: PASS — 1 passage(s) cited: [1]
+Model time 10.55s · extract 7.88s (1497→56 tok) · answer 2.67s (354→34 tok)
+Saved: runs/20260928-155040-ask.json
+amaynirula@Amays-MacBook-Air-2 Personal Wiki % ../wiki search "li nnear chain architecture"
+[search mode · retrieval only, no model call · local BM25 index]
+Query: linear cTanium can query all endpoints in under 15 seconds [1]. This speed is due to the linear chain architecture, which dramatically reduces server load [1].
+
+Sources cited:
+  [1] Tanium Interview Prep.docx › What does Tanium do? (¶24-26)  vault/raw/Tanium Interview Prep.docx
+
+Citation check: PASS — 1 passage(s) cited: [1]
+Model time 10.55s · extract 7.88s (1497→56 tok) · answer 2.67s (354→34 tok)
+Saved: runs/20260928-155040-ask.json
+amaynirula@Amays-MacBook-Air-2 Personal Wiki % ../wiki search "li nnear chain architecture"
+[search mode · retrieval only, no model call · local BM25 index]
+Query: linear chain architecture  ·  scope: sources  ·  5 passage(s) in 0 ms
+
+[1] Tanium Interview Prep.docx › What does Tanium do? (¶24-26)
+    source · vault/raw/Tanium Interview Prep.docx · BM25 7.5 · matched: linear, chain, architecture
+    Tanium is an endpoint management and security platform that gives IT departments real-time visibility and control over all endpoints - laptops, servers, smartphones, and any other devices connected to the company's network.
+    What sets Tanium apart from competitors are two key innovations: First is their ability to query all endpoints in under 15 seconds, thanks to the linear chain architecture, which dramatically reduces server load. (2) Its unified platform of modules that cover the full lifecycle: security, operations, patching, compliance, incident response, asset discovery, automation, and more. Tools like Tanium Guardian provide proactive vulnerability monitoring, while Tanium Automate lets teams execute playbooks and workflows that simplify everything from patching to onboarding new devices.
+    Instead of stitching together multiple solutions for asset management, patching, EDR, compliance, and configuration, Tanium consolidates them into one platform. That’s why many enterprises think of Tanium as the backbone of their IT and security operations — real-time, accurate, and massively scalable.
+
+[2] Tanium Interview Prep.docx › QUESTIONS FOR [interviewer] (¶28-34)
+    source · vault/raw/Tanium Interview Prep.docx · BM25 2.79 · matched: architecture
+    What kind of people tend to thrive at Tanium from a culture perspective?
+    For my summer project, will I be joining the team and supporting them on an ongoing project or will I have my own mini project to work on?
+    A major aspect of any PM role is to gather user feedback to check on how products are performing in the real world? How is user feedback collected at Tanium? Is it through the sales team or do PM’s reach out to customers as well to collect on this feedback?
+    What modules at Tanium do you deal with/work on?
+    What is the strategic direction that Tanium is headed in? is it going more in the AI space or is it going more in the cybersecurity space and competing with the like of crowdstrike or is it a third direction altogether?
+    I’ve read about different distributed architectures like linear-chain and peer-to-peer models. How do these approaches differ from a ring-based deployment system in practice, especially if all of them help distribute load?
+    If the confidence score is high, can patchet partial shipments - getting materials shipped as they became available rather than waiting for complete orders. This allowed our mechanics to start assembly immediately with available parts and install missing components later. Second, I coordinated with our field mechanics to put in significant overtime to make up for any remaining schedule gaps and ensure we hit our deadlines.
+    By strategically using both factory flexibility and mechanic capacity, I kept all projects on track and maintained customer satisfaction despite the supply chain crisis. Customers appreciated the proactive problem-solving, and we didn't lose any projects due to delays.
+
+[4] Amazon Interview.docx › Tell me about a time you used multiple resources to overcome a chalt partial shipments - getting materials shipped as they became available rather than waiting for complete orders. This allowed our mechanics to start assembly immediately with available parts and install missing components later. Second, I coordinated with our field mechanics to put in significant overtime to make up for any remaining schedule gaps and ensure we hit our deadlines.
+    By strategically using both factory flexibility and mechanic capacity, I kept all projects on track and maintained customer satisfaction despite the supply chain crisis. Customers appreciated the proactive problem-solving, and we didn't lose any projects due to delays.
+
+[4] Amazon Interview.docx › Tell me about a time you used multiple resources to overcome a challenge/had to work un... (¶25-28)
+    source · vault/raw/Amazon Interview.docx · BM25 2.47 · matched: chain
+    Last year, supply chain disruptions increased our material lead times from 10 to 16 weeks, putting multiple projects at risk of significant delays. I had to inform customers of this bad news, and understandably, they were not happy.
+    I needed to keep projects on schedule despite the delays and maintain customer satisfaction. This was important to me because I had committed to these timelines, and I knew delays would damage both customer relationships and our reputation for reliable delivery.
+    I took a two-pronged approach leveraging different resources. First, I worked with our factory to implement partial shipments - getting materials shipped as they became available rather than waiting for complete orders. This allowed our mechanics to start assembly immediately with available parts and install missing components later. Second, I coordinated with our field mechanics to put in significant overtime to make up for any remaining schedule gaps and ensure we hit our deadlines.
+    By strategically using both factory flexibility and mechanic capacity, I kept all projects on track and maintained customer satisfaction despite the supply chain crisis. Customers appreciated the proactive problem-solving, and we didn't lose any projects due to delays.
+
+[5] Tiktok Interview Prep.docx › Tell me about a time you used multiple resources to overcome a challenge/had to work un... (¶64-67)
+    source · vault/raw/Tiktok Interview Prep.docx · BM25 2.45 · matched: chain
+    Last year, supply chain disruptions increased our material lead times from 12 to 16 weeks, putting multiple projects at risk of significant delays. I had to inform customers of this bad news, and understandably, they were not happy.
+    I needed to keep projects on schedule despite the delays and maintain customer satisfaction. This was important to me because I had committed to these timelines, and I knew delays would damage both customer relationships and our reputation for reliable delivery.
+    I took a two-pronged approach leveraging different resources. First, I worked with our factory to implement partial shipments - getting materials shipped as they became available rather than waiting for complete orders. This allowed our mechanics to start assembly immediately with available parts and install missing components later. Second, I coordinated with our field mechanics to put in significant overtime to make up for any remaining schedule gaps �� What does Tanium do? (¶24-26)
+    source · vault/raw/Tanium Interview Prep.docx · BM25 7.5 · matched: linear, chain, architecture
+    Tanium is an endpoint management and security platform that gives IT departments real-time visibility and control over all endpoints - laptops, servers, smartphones, and any other devices connected to the company's network.
+    What sets Tanium apart from competitors are two key innovations: First is their ability to query all endpoints in under 15 seconds, thanks to the linear chain architecture, which dramatically reduces server load. (2) Its unified platform of modules that cover the full lifecycle: security, operations, patching, compliance, incident response, asset discovery, automation, and more. Tools�� What does Tanium do? (¶24-26)
+    source · vault/raw/Tanium Interview Prep.docx · BM25 7.5 · matched: linear, chain, architecture
+    Tanium is an endpoint management and security platform that gives IT departments real-time visibility and control over all endpoints - laptops, servers, smartphones, and any other devices connected to the company's network.
+    What sets Tanium apart from competitors are two key innovations: First is their ability to query all endpoints in under 15 seconds, thanks to the linear chain architecture, which dramatically reduces server load. (2) Its unified platform of modules that cover the full lifecycle: security, operations, patching, compliance, incident response, asset discovery, automation, and more. Tools like Tanium Guardian provide proactive vulnerability monitoring, while Tanium Automate lets teams execute playbooks and workflows that simplify everything from patching to onboarding new devices.
+    Instead of stitching together multiple solutions for asset management, patching, EDR, compliance, and configuration, Tanium consolidates them into one platform. That’s why many enterprises think of Tanium as the backbone of their IT and security operations — real-time, accurate, and massively scalable.
+
+[2] Tanium Interview Prep.docx › QUESTIONS FOR [interviewer] (¶28-34)
+    source · vault/raw/Tanium Interview Prep.docx · BM25 2.79 · matched: architecture
+    What kind of people tend to thrive at Tanium from a culture perspective?
+    For my summer project, will I be joining the team and supporting them on an ongoing project or will I have my own mini project to work on?
+    A major aspect of any PM role is to gather user feedback to check on how products are performing in the real world? How is user feedback collected at Tanium? Is it through the sales team or do PM’s reach out to customers as well to collect on this feedback?
+    What modules at Tanium do you deal with/work on?
+    What is the strategic direction that Tanium is headed in? is it going more in the AI space or is it going more in the cybersecurity space and competing with the like of crowdstrike or is it a third direction altogether?
+    I’ve read about different distributed architectures like linear-chain and peer-to-peer models. How do these approaches differ from a ring-based deployment system in practice, especially if all of them help distribute load?
+    If the confidence score is high, can patches be pushed out to all devices?
+
+[3] Tanium Interview Prep.docx › Tell me about a time you used multiple resources to overcome a challenge/had to work un... (¶46-49)
+    source · vault/raw/Tanium Interview Prep.docx · BM25 2.49 · matched: chain
+    Last year, supply chain disruptions increased our material lead times from 12 to 16 weeks, putting multiple projects at risk of significant delays. I had to inform customers of this bad news, and understandably, they were not happy.
+    I knew I needed to keep projects on schedule despite delays in order to maintain customer satisfaction and our reputation for reliable delivery.
+    I took a novel two-pronged approach leveraging different resources. First, I worked with our factory to implement partial shipments - getting materials shipped as they became available rather than waiting for cotched: chain
+    Last year, supply chain disruptions increased our material lead times from 10 to 16 weeks, putting multiple projects at risk of significant delays. I had to inform customers of this bad news, and understandably, they were not happy.
+    I needed to keep projects on schedule despite the delays and maintain customer satisfaction. This was important to me because I had committed to these timelines, and I knew delays would damage both customer relationships and our reputation for reliable delivery.
+    I took a two-pronged approach leveraging different resources. First, I worked with our factory to implement partial shipments - getting materials shipped as they became available rather than waiting for complete orders. This allowed outched: chain
+    Last year, supply chain disruptions increased our material lead times from 10 to 16 weeks, putting multiple projects at risk of significant delays. I had to inform customers of this bad news, and understandably, they were not happy.
+    I needed to keep projects on schedule despite the delays and maintain customer satisfaction. This was important to me because I had committed to these timelines, and I knew delays would damage both customer relationships and our reputation for reliable delivery.
+    I took a two-pronged approach leveraging different resources. First, I worked with our factory to implement partial shipments - getting materials shipped as they became available rather than waiting for complete orders. This allowed our mechanics to start assembly immediately with available parts and install missing components later. Second, I coordinated with our field mechanics to put in significant overtime to make up for any remaining schedule gaps and ensure we hit our deadlines.
+    By strategically using both factory flexibility and mechanic capacity, I kept all projects on track and maintained customer satisfaction despite the supply chain crisis. Customers appreciated the proactive problem-solving, and we didn't lose any projects due to delays.
+
+[5] Tiktok Interview Prep.docx › Tell me about a time you used multiple resources to overcome a challenge/had to work un... (¶64-67)
+    source · vault/raw/Tiktok Interview Prep.docx · BM25 2.45 · matched: chain
+    Last year, supply chain disruptions increased our material lead times from 12 to 16 weeks, putting multiple projects at risk of significant delays. I had to inform customers of this bad news, and understandably, they were not happy.
+    I needed to keep projects on schedule despite the delays and maintain customer satisfaction. This was important to me because I had committed to these timelines, and I knew delays would damage both customer relationships and our reputation for reliable delivery.
+    I took a two-pronged approach leveraging different resources. First, I worked with our factory to implement partial shipments - getting materials shipped as they became available rather than waiting for complete orders. This allowed our mechanics to start assembly immediately with available parts and install missing components later. Second, I coordinated with our field mechanics to put in significant overtime to make up for any remaining schedule gaps and ensure we hit our deadlines.
+    By strategically using both factory flexibility and mechanic capacity, I kept all projects on track and maintained customer satisfaction despite the supply chain crisis. Customers appreciated the proactive problem-solving, and we didn't lose any projects due to delays.
+
+Saved: runs/20260928-155040-search-1.json
+amaynirula@Amays-MacBook-Air-2 Personal Wiki % ./wiki search "linear chain architecture"
+[search mode · retfied platform of modules that cover the full lifecycle: security, operations, patching, compliance, incident response, asset discovery, automation, and more. Tools like Tanium Guardian provide proactive vulnerability monitoring, while Tanium Automate lets teams execute playbooks and workflows that simplify everything from patching to onboarding new devices.
+    Instead of stitching together multiple solutions for asset management, patching, EDR, compliance, and configuration, Tanium consolidates them into one platform. That’s why many enterprises think of Tanium as the backbone of their IT and security operations — real-time, accurate, and massively scalable.
+
+[2] Tanium Interview Prep.docx › QUESTIONS FOR [interviewer] (¶28-34)
+    sourcfied platform of modules that cover the full lifecycle: security, operations, patching, compliance, incident response, asset discovery, automation, and more. Tools like Tanium Guardian provide proactive vulnerability monitoring, while Tanium Automate lets teams execute playbooks and workflows that simplify everything from patching to onboarding new devices.
+    Instead of stitching together multiple solutions for asset management, patching, EDR, compliance, and configuration, Tanium consolidates them into one platform. That’s why many enterprises think of Tanium as the backbone of their IT and security operations — real-time, accurate, and massively scalable.
+
+[2] Tanium Interview Prep.docx › QUESTIONS FOR [interviewer] (¶28-34)
+    source · vault/raw/Tanium Interview Prep.docx · BM25 2.79 · matched: architecture
+    What kind of people tend to thrive at Tanium from a culture perspective?
+    For my summer project, will I be joining the team and supporting them on an ongoing project or will I have my own mini project to work on?
+    A major aspect of any PM role is to gather user feedback to check on how products are performing in the real world? How is user feedback collected at Tanium? Is it through the sales team or do PM’s reach out to customers as well to collect on this feedback?
+    What modules at Tanium do you deal with/work on?
+    What is the strategic direction that Tanium is headed in? is it going more in the AI space or is it going more in the cybersecurity space and competing with the like of crowdstrike or is it a third direction altogether?
+    I’ve read about different distributed architectures like linear-chain and peer-to-peer models. How do these approaches differ from a ring-based deployment system in practice, especially if all of them help distribute load?
+    If the confidence score is high, can patches be pushed out to all devices?
+
+[3] Tanium Interview Prep.docx › Tell me about a time you used multiple resources to overcome a challenge/had to work un... (¶46-49)
+    source · vault/raw/Tanium Interview Prep.docx · BM25 2.49 · matched: chain
+    Last year, supply chain disruptions increased our material lead times from 12 to 16 weeks, putting multiple projects at risk of significant delays. I had to inform customers of this bad news, and understandably, they were not happy.
+    I knew I needed to keep projects on schedule despite delays in order to maintain customer satisfaction and our reputation for reliable delivery.
+    I took a novel two-pronged approach leveraging different resources. First, I worked with our factory to implement partial shipments - getting materials shipped as they became available rather than waiting for complete orders. This allowed our mechanics to start assembly immediately with available parts and install missing components later. Second, I coordinated with our field mechanics to put in significant overtime to make up for any remaining schedule gaps and ensure we hit our deadlines.
+    By strategically using both factory flexibility and mechanic capacity, I kept all projects on track and maintained customer satisfaction despite the supply chain crisis. Customers appreciated the proactive problem-solving, and we didn't lose any projects due to delays.
+
+[4] Amazon Interview.docx › Telorked with our factory to implement partial shipments - getting materials shipped as they became available rather than waiting for complete orders. This allowed our mechanics to start assembly immediately with available parts and install missing components later. Second, I coordinated with our field mechanics to put in significant overtime to make up for any remaining schedule gaps and ensure we hit our deadlines.
+    By strategically using both factory flexibility and mechanic capacity, I kept all projects on track and maintained customer satisfaction despite the supply chain crisis. Customers appreciated the proactive problem-solving, and we didn't lose any projects due to delays.
+
+[5] Tiktok Interview Prep.docx › Tell me about a time you useorked with our factory to implement partial shipments - getting materials shipped as they became available rather than waiting for complete orders. This allowed our mechanics to start assembly immediately with available parts and install missing components later. Second, I coordinated with our field mechanics to put in significant overtime to make up for any remaining schedule gaps and ensure we hit our deadlines.
+    By strategically using both factory flexibility and mechanic capacity, I kept all projects on track and maintained customer satisfaction despite the supply chain crisis. Customers appreciated the proactive problem-solving, and we didn't lose any projects due to delays.
+
+[5] Tiktok Interview Prep.docx › Tell me about a time you used multiple resources to overcome a challenge/had to work un... (¶64-67)
+    source · vault/raw/Tiktok Interview Prep.docx · BM25 2.45 · matched: chain
+    Last year, supply chain disruptions increased our material lead times from 12 to 16 weeks, putting multiple projects at risk of significant delays. I had to inform customers of this bad news, and understandably, they were not happy.
+    I needed to keep projects on schedule despite the delays and maintain customer satisfaction. This was important to me because I had committed to these timelines, and I knew delays would damage both customer relationships and our reputation for reliable delivery.
+    I took a two-pronged approach leveraging different resources. First, I worked with our factory to implement partial shipments - getting materials shipped as they became available rather than waiting for complete orders. This allowed our mechanics to start assembly immediately with available parts and install missing components later. Second, I coordinated with our field mechanics to put in significant overtime to make up for any remaining schedule gaps and ensure we hit our deadlines.
+    By strategically using both factory flexibility and mechanic capacity, I kept all projects on track and maintained customer satisfaction despite the supply chain crisis. Customers appreciated the proactive problem-solving, and we didn't lose any projects due to delays.
+
+Saved: runs/20260928-155050-search.json
+amaynirula@Amays-MacBook-Air-2 Personal Wiki % ./wiki search "linear chain architecture"
+[search mode · retrieval only, no model call · local BM25 index]
+Query: linear chain architecture  ·  scope: sources  ·  5 passage(s) in 0 ms
+
+[1] Tanium Interview Prep.docx › What does Tanium do? (¶24-26)
+    source · vault/raw/Tanium Interview Prep.docx · BM25 7.5 · matched: linear, chain, architecture
+    Tanium is an endpoint management and security platform that gives IT departments real-time visibility and control over all endpoints - laptops, servers, smartphones, and any other devices connected to the company's network.
+    What sets Tanium apart from competitors are two key innovationsT and security operations — real-time, accurate, and massively scalable.
+
+[2] Tanium Interview Prep.docx › QUESTIONS FOR [interviewer] (¶28-34)
+    source · vault/raw/Tanium Interview Prep.docx · BM25 2.79 · matched: architecture
+    What kind of people tend to thrive at Tanium from a culture perspective?
+    For my summer project, will I be joining the team and supporting them on an ongoing project or will I have my own mini project to work on?
+    A major aspect of any PM role is to gather user feedback to check on how products are performing in the real world? How is user feedback collected at Tanium? Is it through the sales team or do PM’s reach out to customers as well to collect on this feedback?
+    What modules at Tanium do T and security operations — real-time, accurate, and massively scalable.
+
+[2] Tanium Interview Prep.docx › QUESTIONS FOR [interviewer] (¶28-34)
+    source · vault/raw/Tanium Interview Prep.docx · BM25 2.79 · matched: architecture
+    What kind of people tend to thrive at Tanium from a culture perspective?
+    For my summer project, will I be joining the team and supporting them on an ongoing project or will I have my own mini project to work on?
+    A major aspect of any PM role is to gather user feedback to check on how products are performing in the real world? How is user feedback collected at Tanium? Is it through the sales team or do PM’s reach out to customers as well to collect on this feedback?
+    What modules at Tanium do you deal with/work on?
+    What is the strategic direction that Tanium is headed in? is it going more in the AI space or is it going more in the cybersecurity space and competing with the like of crowdstrike or is it a third direction altogether?
+    I’ve read about different distributed architectures like linear-chain and peer-to-peer models. How do these approaches differ from a ring-based deployment system in practice, especially if all of them help distribute load?
+    If the confidence score is high, can patches be pushed out to all devices?
+
+[3] Tanium Interview Prep.docx › Tell me about a time you used multiple resources to overcome a challenge/had to work un... (¶46-49)
+    source · vault/raw/Tanium Interview Prep.docx · BM25 2.49 · matched: chain
+    Last year, supply chain disruptions increased our material lead times from 12 to 16 weeks, putting multiple projects at risk of significant delays. I had to inform customers of this bad news, and understandably, they were not happy.
+    I knew I needed to keep projects on schedule despite delays in order to maintain customer satisfaction and our reputation for reliable delivery.
+    I took a novel two-pronged approach leveraging different resources. First, I worked with our factory to implement partial shipments - getting materials shipped as they became available rather than waiting for complete orders. This allowed our mechanics to start assembly immediately with available parts and install missing components later. Second, I coordinated with our field mechanics to put in significant overtime to make up for any remaining schedule gaps and ensure we hit our deadlines.
+    By strategically using both factory flexibility and mechanic capacity, I kept all projects on track and maintained customer satisfaction despite the supply chain crisis. Customers appreciated the proactive problem-solving, and we didn't lose any projects due to delays.
+
+[4] Amazon Interview.docx › Tell me about a time you used multiple resources to overcome a challenge/had to work un... (¶25-28)
+    source · vault/raw/Amazon Interview.docx · BM25 2.47 · matched: chain
+    Last year, supply chain disruptions increased our material lead times from 10 to 16 weeks, putting multiple projects at risk of significant delays. I had to inform customers of this bad news, and understandably, they were not happy.
+    I needed to keep projects on schedule despite the delays and maintain customer satisfaction. This was important to me because I had committed to these timelines, and I knew delaysmers appreciated the proactive problem-solving, and we didn't lose any projects due to delays.
+
+[5] Tiktok Interview Prep.docx › Tell me about a time you used multiple resources to overcome a challenge/had to work un... (¶64-67)
+    source · vault/raw/Tiktok Interview Prep.docx · BM25 2.45 · matched: chain
+    Last year, supply chain disruptions increased our material lead times from 12 to 16 weeks, putting multiple projects at risk of significant delays. I had to inform customers of this bad news, and understandably, they were not happy.
+    I needed to keep projects on schedule despite the delays and maintain customer satisfaction. This was important to me because I had committed to these timelines, and I knew delays would damage both cmers appreciated the proactive problem-solving, and we didn't lose any projects due to delays.
+
+[5] Tiktok Interview Prep.docx › Tell me about a time you used multiple resources to overcome a challenge/had to work un... (¶64-67)
+    source · vault/raw/Tiktok Interview Prep.docx · BM25 2.45 · matched: chain
+    Last year, supply chain disruptions increased our material lead times from 12 to 16 weeks, putting multiple projects at risk of significant delays. I had to inform customers of this bad news, and understandably, they were not happy.
+    I needed to keep projects on schedule despite the delays and maintain customer satisfaction. This was important to me because I had committed to these timelines, and I knew delays would damage both customer relationships and our reputation for reliable delivery.
+    I took a two-pronged approach leveraging different resources. First, I worked with our factory to implement partial shipments - getting materials shipped as they became available rather than waiting for complete orders. This allowed our mechanics to start assembly immediately with available parts and install missing components later. Second, I coordinated with our field mechanics to put in significant overtime to make up for any remaining schedule gaps and ensure we hit our deadlines.
+    By strategically using both factory flexibility and mechanic capacity, I kept all projects on track and maintained customer satisfaction despite the supply chain crisis. Customers appreciated the proactive problem-solving, and we didn't lose any projects due to delays.
+
+Saved: runs/20260928-155054-search.json
+amaynirula@Amays-MacBook-Air-2 Personal Wiki % eexit
+amaynirula@Amays-MacBook-Air-2 Personal Wiki % eexit

@@ -14,7 +14,7 @@ Class 5 · Assignment 4 · Berkeley Haas, Agentic AI.
 | The wiki (open `vault/` in Obsidian) | [`vault/index.md`](vault/index.md) · [`vault/Source Catalog.md`](vault/Source%20Catalog.md) · [`vault/wiki/`](vault/wiki/) |
 | Four ask-mode evidence cards (offline run) | [`evidence/offline/ask-tests/`](evidence/offline/ask-tests/) |
 | Chat / search mode checks (offline) | [`evidence/offline/mode-checks/`](evidence/offline/mode-checks/) (assessment in its README) · development runs in [`evidence/mode-checks/`](evidence/mode-checks/) |
-| Offline demonstration transcripts | [`evidence/offline/terminal-transcript.txt`](evidence/offline/terminal-transcript.txt) · [`…-search-check.txt`](evidence/offline/terminal-transcript-search-check.txt) |
+| Offline demonstration | scripted: [`terminal-transcript.txt`](evidence/offline/terminal-transcript.txt) · [`…-search-check.txt`](evidence/offline/terminal-transcript-search-check.txt) · typed by hand, with screenshots: [`user-session/`](evidence/offline/user-session/) |
 | Obsidian screenshots | [`evidence/screenshots/`](evidence/screenshots/) · shown in [section 6](#6-the-wiki-in-obsidian) |
 | How the wiki was built and cleaned up | [`evidence/ingest/`](evidence/ingest/) |
 | Test questions (written before building retrieval) | [`tests/ask_tests.yaml`](tests/ask_tests.yaml) · [`tests/mode_checks.md`](tests/mode_checks.md) |
@@ -422,6 +422,27 @@ harness detected no internet, then ran everything and wrote a timestamped transc
 | **Four ask-mode tests** | `wiki eval` → cards in [`evidence/offline/ask-tests/`](evidence/offline/ask-tests/); each card records `local` and `internet: offline`. Ask time 5.7–14.1 s |
 | Chat checks + ask-after-chat | [`evidence/offline/mode-checks/`](evidence/offline/mode-checks/) |
 | Search with the model stopped + model-down error | [`terminal-transcript-search-check.txt`](evidence/offline/terminal-transcript-search-check.txt) (second short offline run, 15:33) |
+
+**User session, typed by hand (15:47-15:51, Wi-Fi off).** After the scripted run I ran the CLI myself in a
+terminal with Wi-Fi off, after starting `ollama serve` in a second tab, and recorded it with `script`
+([raw](evidence/offline/user-session/terminal-session.txt) ·
+[readable copy](evidence/offline/user-session/terminal-session-clean.txt) · run records in the same folder):
+
+| Command I typed | Result (every run record says `internet: offline`) |
+|---|---|
+| `./wiki status` | runtime ollama 0.34.4, model installed, **internet: offline** |
+| `./wiki ingest "vault/raw/Tiktok Interview Prep.docx" --force` | Gemma redrafted 7 notes in 177 s; 16 reviewed notes kept; no new notes |
+| `./wiki ask "How quickly can Tanium query all endpoints, and what makes that possible?"` | "Tanium can query all endpoints in under 15 seconds [1] … linear chain architecture … [1]" — citation check PASS |
+| `./wiki search "linear chain architecture"` | original passages with file, section, paragraphs and scores; no answer |
+
+![status offline](evidence/offline/user-session/01-status-internet-offline.webp)
+![ingest running offline](evidence/offline/user-session/02-ingest-running-offline.webp)
+![search offline](evidence/offline/user-session/03-search-original-passages-offline.png)
+
+`wiki --help` and the chat checks (capabilities, draft + "make that shorter", the $5M claim) were run
+offline by the script above, not typed by hand; their output is in
+[`terminal-transcript.txt`](evidence/offline/terminal-transcript.txt) and
+[`mode-checks/`](evidence/offline/mode-checks/).
 
 **What went wrong in the offline run.** My script's helper re-split quoted arguments, so the first
 transcript shows `wiki search linear chain architecture` failing with a usage error (the same for the

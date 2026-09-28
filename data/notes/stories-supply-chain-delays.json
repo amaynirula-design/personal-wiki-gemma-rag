@@ -1,6 +1,6 @@
 {
  "title": "Supply Chain Delays",
- "summary": "This note details a situation where supply chain disruptions increased material lead times from 10 to 16 weeks, putting multiple projects at risk. The owner used a two-pronged approach involving factory partial shipments and field mechanic overtime to keep projects on schedule and maintain customer satisfaction.",
+ "summary": "This story details how supply chain disruptions increased material lead times from 10 to 16 weeks, putting multiple projects at risk. The owner used a two-pronged approach involving factory partial shipments and field mechanic overtime to keep projects on schedule and maintain customer satisfaction.",
  "key_points": [
   {
    "text": "Material lead times increased from 10 to 16 weeks",
@@ -19,7 +19,7 @@
    ]
   },
   {
-   "text": "Owner used a two-pronged approach",
+   "text": "Owner worked with factory to implement partial shipments",
    "sources": [
     "amazon-interview",
     "tanium-interview-prep",
@@ -27,7 +27,7 @@
    ]
   },
   {
-   "text": "Worked with factory to implement partial shipments",
+   "text": "Partial shipments allowed mechanics to start assembly immediately",
    "sources": [
     "amazon-interview",
     "tanium-interview-prep",
@@ -49,27 +49,17 @@
     "tanium-interview-prep",
     "tiktok-interview-prep"
    ]
-  },
-  {
-   "text": "Customers appreciated the proactive problem-solving",
-   "sources": [
-    "amazon-interview",
-    "tanium-interview-prep",
-    "tiktok-interview-prep"
-   ]
   }
  ],
- "differences": [],
+ "differences": [
+  "The initial increase in material lead times was stated as 10 to 16 weeks in the Amazon prep, but as 12 to 16 weeks in the Tanium prep and Tiktok prep."
+ ],
  "related": [
   {
-   "title": "Graton Casino Expansion",
-   "why": "This note details coordination challenges faced during a project, which shares the theme of managing complex project timelines."
-  },
-  {
    "title": "Otis Project Management",
-   "why": "This note details the owner's role as a project manager at Otis, which is the context for the supply chain challenges described."
+   "why": "This note details the owner's role as a project manager at Otis, which is the company where the supply chain issue occurred."
   }
  ],
  "model": "gemma4-e2b-qat",
- "generated_at": "2026-09-28T15:28:14"
+ "generated_at": "2026-09-28T15:49:36"
 }

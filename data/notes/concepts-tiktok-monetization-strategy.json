@@ -9,7 +9,7 @@
    ]
   },
   {
-   "text": "Advertising is primarily through in-feed ads that appear every 2-3 videos in the For You Page, and TopView ads that take over the screen when users first open the app.",
+   "text": "Advertising primarily through in-feed ads that appear every 2 to 3 videos in the For You Page, and TopView ads that take over the screen when users first open the app.",
    "sources": [
     "tiktok-interview-prep"
    ]
@@ -49,9 +49,9 @@
  "related": [
   {
    "title": "TikTok MSO",
-   "why": "This note covers TikTok's monetization methods, competitive landscape, and strengths, including its algorithm and TikTok Shop."
+   "why": "This note covers TikTok's monetization methods, strengths, and the owner's interest in the Monetization Strategy & Ops team."
   }
  ],
  "model": "gemma4-e2b-qat",
- "generated_at": "2026-09-28T15:29:10"
+ "generated_at": "2026-09-28T15:50:28"
 }

@@ -1,13 +1,12 @@
 {
  "title": "Overdue Receivables Analysis",
- "summary": "This note details an instance where the San Jose office faced a serious cash flow issue due to significant overdue invoices. The owner segmented the data, identified the new construction line of business as disproportionately high, and conducted interviews to find root causes. Based on this combined data, the owner presented three approved solutions that resulted in a 15% drop in AR.",
+ "summary": "This note details an instance where the San Jose office faced a serious cash flow issue due to significant overdue invoices. The owner segmented the data, identified the new construction line of business as disproportionately high, and used qualitative interviews to uncover root causes. Based on this combined data, three solutions were presented to leadership, resulting in a 15% drop in AR.",
  "key_points": [
   {
-   "text": "$7 million in invoices that were unpaid & significantly overdue represented 33% of total AR",
+   "text": "$7 million in invoices that were unpaid & significantly overdue, which represented 33% of total AR",
    "sources": [
     "amazon-interview",
-    "tanium-interview-prep",
-    "tiktok-interview-prep"
+    "tanium-interview-prep"
    ]
   },
   {
@@ -59,13 +58,15 @@
    ]
   }
  ],
- "differences": [],
+ "differences": [
+  "The percentage of overdue AR mentioned is 33% in the Amazon prep, 34% in the Tanium prep, and 34% in the Tiktok prep."
+ ],
  "related": [
   {
    "title": "Otis Project Management",
-   "why": "This note details the owner's role as a project manager at Otis, which is the company where the AR issue occurred."
+   "why": "This note details the owner's role as a project manager at Otis, which is the context for the AR issue."
   }
  ],
  "model": "gemma4-e2b-qat",
- "generated_at": "2026-09-28T15:27:47"
+ "generated_at": "2026-09-28T15:49:14"
 }

@@ -1,9 +1,9 @@
 {
  "title": "Graton Casino Expansion",
- "summary": "This note details the coordination challenges faced during the Graton Casino Expansion, a $2.9M project. The owner managed competing priorities between internal teams and external stakeholders, including architects, general contractors, and global supply vendors. The process involved establishing weekly coordination meetings to find compromises and presenting options to the client.",
+ "summary": "This note details the Graton Casino Expansion project, a $2.9M undertaking where the owner coordinated between internal teams and external stakeholders. The challenge involved balancing customer desires for premium customizations against vendor timeline concerns and internal scope creep worries. The process involved establishing weekly coordination meetings to find compromises and presenting options to the client, ultimately delivering the project on schedule with over $400k in customizations.",
  "key_points": [
   {
-   "text": "$2.9M project size",
+   "text": "$2.9M project",
    "sources": [
     "amazon-interview",
     "tanium-interview-prep",
@@ -11,7 +11,7 @@
    ]
   },
   {
-   "text": "Coordinated between internal teams and external stakeholders including architects, general contractors, and global supply vendors",
+   "text": "Coordinating between internal teams and external stakeholders including architects, general contractors, and global supply vendors",
    "sources": [
     "amazon-interview",
     "tanium-interview-prep",
@@ -19,7 +19,7 @@
    ]
   },
   {
-   "text": "Challenge involved competing priorities: customer wanted premium customizations, vendors pushed back on timeline feasibility, and internal team worried about scope creep",
+   "text": "Customer wanted premium customizations",
    "sources": [
     "amazon-interview",
     "tanium-interview-prep",
@@ -27,30 +27,23 @@
    ]
   },
   {
-   "text": "Task was to align all parties and deliver the project without any financial overruns or delays",
+   "text": "Vendors were pushing back on the timeline stating that this was not feasible",
    "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Internal team was worried about scope creep",
+   "sources": [
+    "amazon-interview",
     "tanium-interview-prep",
     "tiktok-interview-prep"
    ]
   },
   {
    "text": "Established weekly coordination meetings",
-   "sources": [
-    "amazon-interview",
-    "tanium-interview-prep",
-    "tiktok-interview-prep"
-   ]
-  },
-  {
-   "text": "Purpose was to understand each team’s constraints and come up with compromises like identifying which customizations could be adopted without impacting deadlines greatly",
-   "sources": [
-    "amazon-interview",
-    "tanium-interview-prep",
-    "tiktok-interview-prep"
-   ]
-  },
-  {
-   "text": "Presented all possible options to the client with cost and time implications",
    "sources": [
     "amazon-interview",
     "tanium-interview-prep",
@@ -70,9 +63,9 @@
  "related": [
   {
    "title": "Otis Project Management",
-   "why": "This note details the owner's role as a project manager at Otis, managing a large portfolio of construction elevator projects, which is the context for the Graton project."
+   "why": "This note details the owner's role as a project manager at Otis, which is the company where the Graton Casino Expansion project took place."
   }
  ],
  "model": "gemma4-e2b-qat",
- "generated_at": "2026-09-28T15:26:50"
+ "generated_at": "2026-09-28T15:48:29"
 }

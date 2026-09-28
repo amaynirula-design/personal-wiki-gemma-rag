@@ -1,9 +1,9 @@
 {
  "title": "Client Payment Negotiation",
- "summary": "This note details a situation where a major recurring customer refused to pay a $125,000 debt, creating conflict between Sales and Finance. The owner analyzed internal systems to find a solution that secured as much payment as possible while preserving the long-term relationship. The proposed compromise involved writing off half the unpaid amount as a courtesy discount and deferring the remaining balance to a future project.",
+ "summary": "This note details a situation where a major recurring customer refused to pay an outstanding $125,000 owed, creating a conflict between Sales and Finance regarding payment collection versus relationship preservation. The owner analyzed the project's financial health, discovered the project would remain net positive overall, and negotiated a compromise to secure a win-win solution.",
  "key_points": [
   {
-   "text": "$125,000 owed by a major recurring customer",
+   "text": "Customer owed $125,000 and refused to pay",
    "sources": [
     "amazon-interview",
     "tanium-interview-prep",
@@ -11,7 +11,7 @@
    ]
   },
   {
-   "text": "Conflict between Sales and Finance regarding write-off versus collection",
+   "text": "Conflict between Sales and Finance",
    "sources": [
     "amazon-interview",
     "tanium-interview-prep",
@@ -19,7 +19,23 @@
    ]
   },
   {
-   "text": "Owner analyzed internal system and found the project would remain net positive overall without the payment",
+   "text": "Sales believed they should write-off the amount to preserve relationship",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Finance wanted to collect every last penny",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Owner analyzed internal system and discovered project would remain net positive overall",
    "sources": [
     "amazon-interview",
     "tanium-interview-prep",
@@ -43,7 +59,7 @@
    ]
   },
   {
-   "text": "Result: Win-win solution prevented potential financial loss and protected long-term relationship",
+   "text": "Solution prevented potential financial loss and protected long-term relationship",
    "sources": [
     "amazon-interview",
     "tanium-interview-prep",
@@ -55,9 +71,9 @@
  "related": [
   {
    "title": "Otis Project Management",
-   "why": "This note details the owner's role as a project manager at Otis, which is the context for the client relationship described."
+   "why": "This note details the owner's role as a project manager at Otis, which is the company where the client relationship issue occurred."
   }
  ],
  "model": "gemma4-e2b-qat",
- "generated_at": "2026-09-28T15:26:20"
+ "generated_at": "2026-09-28T15:48:07"
 }

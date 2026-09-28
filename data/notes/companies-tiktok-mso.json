@@ -1,33 +1,33 @@
 {
  "title": "TikTok MSO",
- "summary": "This note covers TikTok's monetization methods, competitive landscape, and strengths, including its algorithm and TikTok Shop. It also details the owner's interest in the Monetization Strategy & Ops team due to its focus on revenue and data.",
+ "summary": "This note covers TikTok's monetization methods, strengths, and the owner's interest in the Monetization Strategy & Ops team. It details how TikTok monetizes through various streams and aligns with the owner's background in driving revenue and operational efficiency.",
  "key_points": [
   {
-   "text": "TikTok Monetization streams: advertising, TikTok Shop, brand partnerships, and virtual gifts",
+   "text": "TikTok Monetization: TikTok has four main revenue streams: advertising, TikTok Shop, brand partnerships, and virtual gifts.",
    "sources": [
     "tiktok-interview-prep"
    ]
   },
   {
-   "text": "TikTok strengths: Algorithm -> Organic, Natural, Ads feel authentic + Tiktok Shop -> Seamless experience + AI driven content and ad creation and management",
+   "text": "TikTok Strengths: Algorithm -> Organic, Natural, Ads feel authentic + Tiktok Shop -> Seamless experience + AI driven content and ad creation and management",
    "sources": [
     "tiktok-interview-prep"
    ]
   },
   {
-   "text": "TikTok competitors: Meta, YT, Amazon",
+   "text": "Owner's Interest: I want to work in MSO because I love working on monetization, revenue and really increasing bottom line revenue for my products.",
    "sources": [
     "tiktok-interview-prep"
    ]
   },
   {
-   "text": "Owner's interest in MSO: love working on monetization, revenue and really increasing bottom line revenue for my products",
+   "text": "Past Experience: Almost every project that I worked on at Otis was sold at cost, 0% margin, and it was up to me to turn this ship around and hit my profit goals of 5-10%.",
    "sources": [
     "tiktok-interview-prep"
    ]
   },
   {
-   "text": "Owner's background alignment: combining execution skills from project management with an analytical, data-driven mindset",
+   "text": "Team Alignment: The team’s focus on understanding revenue trends, optimizing ad effectiveness, and launching new monetization models aligns perfectly with my background, which is combining execution skills from project management with an analytical, data-driven mindset",
    "sources": [
     "tiktok-interview-prep"
    ]
@@ -36,14 +36,14 @@
  "differences": [],
  "related": [
   {
-   "title": "TikTok Monetization",
-   "why": "This note details the four main revenue streams of TikTok, which is a core topic in the TikTok MSO note."
+   "title": "Otis Project Management",
+   "why": "The owner's interest in monetization stems from past experience at Otis where projects were sold at cost and required turning the business around."
   },
   {
-   "title": "Otis Project Management",
-   "why": "The owner's interest in the Monetization Strategy & Ops team is linked to their past experience at Otis, where they focused on turning operational efficiency into financial results."
+   "title": "Career Story",
+   "why": "This note summarizes the owner's career progression, which provides the background for the interest in working at TikTok."
   }
  ],
  "model": "gemma4-e2b-qat",
- "generated_at": "2026-09-28T15:28:37"
+ "generated_at": "2026-09-28T15:49:59"
 }
