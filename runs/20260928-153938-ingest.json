@@ -1,0 +1,28 @@
+{
+  "mode": "ingest",
+  "env": {
+    "timestamp": "2026-09-28T15:39:38",
+    "execution": "local",
+    "internet": "online",
+    "host": "Amays-MacBook-Air-2.local",
+    "platform": "Darwin 26.5.2 (arm64)",
+    "model": "gemma4-e2b-qat",
+    "model_identifier": "google/gemma-4-E2B-it-qat-q4_0-gguf (gemma-4-E2B_q4_0-it.gguf)",
+    "quantization": "Q4_0 (quantization-aware trained)",
+    "runtime": "ollama unreachable"
+  },
+  "paths": [
+    "vault/raw"
+  ],
+  "force": false,
+  "reassign": false,
+  "stats": {
+    "sources_unchanged": 3,
+    "notes_kept_reviewed": 16,
+    "passages": 46,
+    "wiki_chunks": 41,
+    "seconds": 0.2
+  },
+  "model_calls": [],
+  "ollama_ps": []
+}

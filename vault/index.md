@@ -1,6 +1,6 @@
-# Interview Prep Wiki
+# Index
 
-Personal wiki built from three internship interview-prep documents (Amazon Pathways, Tanium, TikTok MSO). Notes were drafted by local Gemma from the originals in `raw/` and reviewed; every note lists its sources. Start with a company, follow its stories, then open the source.
+**Interview Prep Wiki** — personal wiki built from three internship interview-prep documents (Amazon Pathways, Tanium, TikTok MSO). Notes were drafted by local Gemma from the originals in `raw/` and reviewed; every note lists its sources. Start with a company, follow its stories, then open the source.
 
 Source list and section-to-note mapping: [[Source Catalog]]
 

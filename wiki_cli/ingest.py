@@ -463,8 +463,8 @@ class Ingestor:
         for t, m in self.catalog.notes.items():
             if self._note_path(t).exists():
                 by[m["folder"]].append(t)
-        lines = ["# Interview Prep Wiki", "",
-                 "Personal wiki built from three internship interview-prep documents (Amazon Pathways, Tanium, "
+        lines = ["# Index", "",
+                 "**Interview Prep Wiki** — personal wiki built from three internship interview-prep documents (Amazon Pathways, Tanium, "
                  "TikTok MSO). Notes were drafted by local Gemma from the originals in `raw/` and reviewed; every "
                  "note lists its sources. Start with a company, follow its stories, then open the source.", "",
                  "Source list and section-to-note mapping: [[Source Catalog]]", ""]

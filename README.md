@@ -63,7 +63,7 @@ printf 'FROM ./gemma-4-E2B_q4_0-it.gguf\n' > Modelfile
 ollama create gemma4-e2b-qat -f Modelfile            # Ollama detects the gemma4 renderer/parser
 
 # 2. project
-git clone <this repo> && cd <repo>
+git clone https://github.com/amaynirula-design/personal-wiki-gemma-rag.git && cd personal-wiki-gemma-rag
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 
 # 3. use it (the ./wiki launcher runs the harness with .venv; or add the folder to PATH)
@@ -209,6 +209,19 @@ draft to `drafts/` — outside the vault and never indexed — so generated draf
 
 ## 5. Design choices
 
+### Choices and expected behavior, decided before testing (2026-09-25)
+
+Decided at the start of the project, before any retrieval or model code existed; the four test
+questions with expected answers and passages were written to
+[`tests/ask_tests.yaml`](tests/ask_tests.yaml) at the same time.
+
+| Choice | Decision | Expected behavior | What actually happened |
+|---|---|---|---|
+| Data | Three of my own interview-prep documents; the same STAR stories recur across them | Stories should merge into one note each; cross-document questions (test 3) should surface all versions, including their number conflicts | ✅ after fixing organization (ingest 01 → 02); retrieval returned all three versions for test 3 in every run |
+| Model | Gemma 4 E2B, Q4_0, via Ollama, on an 8 GB M1 | Fits in memory with room for the OS; slow-ish (~10 s answers); weaker at judgment than at copying | Footprint ~4 GB, answers 6-14 s. Judgment was indeed the weak spot (over-refusal, merged numbers), which drove the extract → verify → answer design |
+| Retrieval | Local BM25 keyword search, no embeddings | Good on distinctive terms (Tanium, TikTok Shop, lead times); risk on paraphrase ("cut" vs "commission") | Expected passage ranked #1 for all four tests in every run; the paraphrase risk showed up in the *model* (test 2 refusal), not in retrieval |
+| Test 4 | Internship pay (not in any source) | Retrieval returns on-topic TikTok passages; the answer must still be INSUFFICIENT EVIDENCE | ✅ in every run |
+
 **Passages.** Sections are split on the documents' own interview-question headings (heuristics for
 inconsistent formatting: bold, ALL CAPS, trailing `?`, "Tell me…" prompts) and then into passages of
 ~180 words (max 240) on paragraph boundaries, keeping source path, section and paragraph numbers
@@ -293,9 +306,32 @@ the role they happened in (*Otis Project Management*) and to directly related st
 
 ![Graph view](evidence/screenshots/3-graph-view.png)
 
+**Source catalog** ([`vault/Source Catalog.md`](vault/Source%20Catalog.md)) — one table per original,
+excerpt:
+
+| Section (Tanium Interview Prep.docx, SHA-256 `7431fad0…`) | Paragraphs | Wiki note |
+|---|---|---|
+| Why Cybersecurity & Tanium? | ¶20-22 | [[Tanium Product Management]] |
+| What does Tanium do? | ¶24-26 | [[Tanium Endpoint Management]] |
+| Tell me about a time you used multiple resources to overcome a challenge… | ¶46-49 | [[Supply Chain Delays]] |
+| Tell me a time you failed. | ¶90-97 | [[Elevator Cab Weight Failure]] |
+
 **Trace example.** `index` → **Companies › Tanium Product Management** → *Prepared answers* →
 **Supply Chain Delays** → *Where the sources differ* (10 vs 12 weeks) → *Sources* →
-`raw/Tanium Interview Prep.docx` › "Tell me about a time you used multiple resources…" (¶46-49).
+`raw/Tanium Interview Prep.docx` › "Tell me about a time you used multiple resources…" (¶46-49) — the
+Source Catalog row above maps that section to this note, and opening the `.docx` shows the "12 to 16
+weeks" sentence.
+
+**Links work.** `wiki check` (also run in the offline demo): 16 notes, 388 links, every link resolves to
+exactly one file (231 of them to the original sources), every heading matches its filename, every note
+has sources.
+
+**Re-ingesting does not create duplicates.** Re-ingesting all three unchanged sources:
+0 model calls, 16 notes, no new files ([`04-reingest-idempotency.log`](evidence/ingest/04-reingest-idempotency.log)).
+Forced re-ingest of the TikTok source *offline*: Gemma redrafted the 7 affected notes, still 16 notes,
+no machine-style names, reviewed pages kept ([offline transcript](evidence/offline/terminal-transcript.txt)).
+Old names from the cleanup (e.g. *Design Decision Failure*, *Otis Cash Flow Data Analysis*) are stored as
+aliases, so a re-organization maps back to the reviewed names instead of recreating them.
 
 ---
 
@@ -330,6 +366,32 @@ complete in development run 2; after I added document names to the index, the pa
 Gemma's extraction changed with it — evidence that the small model's selection is order-sensitive
 (see §9). I report these as they are rather than re-running until they pass.
 
+### Offline run in detail: retrieved passages, answers, and whether the citations support them
+
+Model `gemma4-e2b-qat` (Gemma 4 E2B-it QAT Q4_0, Ollama 0.34.4), local, internet **offline**, data = the
+three documents in `vault/raw/` (46 passages). Top 3 of the 5 retrieved passages shown; full passages,
+quotes and timings are in each card.
+
+**Test 1 — direct, one source.** *How quickly can Tanium query all endpoints, and what makes that possible?*
+- Retrieved: [1] `vault/raw/Tanium Interview Prep.docx` › What does Tanium do? (¶24-26) — BM25 9.29 · [2] same file › Tell me about yourself… (¶6-8) — 4.34 · [3] same file › Why Cybersecurity & Tanium? (¶20-22) — 4.21
+- Answer: *"Tanium can query all endpoints in under 15 seconds [1]. This speed is due to the linear chain architecture, which dramatically reduces server load [1]."*
+- Support: both claims appear verbatim in [1] ("query all endpoints in under 15 seconds, thanks to the linear chain architecture, which dramatically reduces server load"). ✅ [Card](evidence/offline/ask-tests/Test%201%20-%20tanium-endpoint-query-speed.md)
+
+**Test 2 — paraphrased.** *What cut does TikTok take when someone buys something through TikTok Shop?*
+- Retrieved: [1] `vault/raw/Tiktok Interview Prep.docx` › How does Tiktok monetize? (¶20-22) — 11.04 · [2] same › How does Tiktok monetize? (¶12-20) — 9.32 · [3] same › Who are Tiktok's competitors… (¶24-30) — 7.89
+- Answer: *"Tiktok shop charges a seller commission on every transaction [2]. Sellers are also required to pay to advertise their products [2]."*
+- Support: both claims are in [2] ("Tiktok shop: Charges seller commission on every transaction & sellers have to pay to advertise their products"). ⚠️ Incomplete: [2] also says "typically 2-8% depending on category", which the answer omits. [Card](evidence/offline/ask-tests/Test%202%20-%20tiktok-shop-take-rate-paraphrased.md)
+
+**Test 3 — three sources, conflicting numbers.** *In my Otis supply chain delay story, how much did material lead times increase, and how did I keep projects on schedule?*
+- Retrieved: [1] `vault/raw/Amazon Interview.docx` › Tell me about a time you used multiple resources… (¶25-28) — 19.26 · [2] `vault/raw/Tanium Interview Prep.docx` › same question (¶46-49) — 19.15 · [3] `vault/raw/Tiktok Interview Prep.docx` › same question (¶64-67) — 19.14
+- Answer: *"…increased material lead times from 10 to 16 weeks [1]. Another source states … from 12 to 16 weeks [2]. The sources disagree on the initial increase in lead times."*
+- Support: "10 to 16" is in [1] (Amazon) only and "12 to 16" in [2] (Tanium) — each cited correctly; the harness flagged the conflict. ⚠️ Incomplete: the "how" (partial shipments + mechanic overtime, present in [1]-[3]) is not answered, and [3] is not quoted. [Card](evidence/offline/ask-tests/Test%203%20-%20supply-chain-lead-times-across-three-preps.md)
+
+**Test 4 — unsupported.** *What is the salary or hourly pay for the TikTok Monetization Strategy & Ops internship?*
+- Retrieved context: [1] `vault/raw/Tiktok Interview Prep.docx` › Why do you want to work for Tiktok and why MSO? (¶95-97) — 10.53 · [2] same › How does Tiktok monetize? (¶12-20) — 8.05 · [3] same › How does Tiktok monetize? (¶20-22) — 8.05 — on topic, but none mentions pay.
+- Answer: *"INSUFFICIENT EVIDENCE: none of the 5 retrieved passages contains a statement that answers this question."* ✅ Nothing cited, nothing invented.
+- Initial failure and fix: this test passed in every run. The related failure was test 2's *over*-refusal in development run 1, fixed by moving the sufficiency decision from the model to the harness (0 verified quotes → insufficient). [Card](evidence/offline/ask-tests/Test%204%20-%20tiktok-internship-pay-unsupported.md)
+
 ### Mode checks ([`tests/mode_checks.md`](tests/mode_checks.md))
 
 | Check | Development runs ([`evidence/mode-checks/`](evidence/mode-checks/)) | **Offline run** ([`evidence/offline/mode-checks/`](evidence/offline/mode-checks/)) |
@@ -343,7 +405,9 @@ Gemma's extraction changed with it — evidence that the small model's selection
 
 ### Offline demonstration
 
-Run on **2026-09-28, 15:25–15:31**, on the MacBook Air described above, with Wi-Fi turned off. This
+Run on **2026-09-28, 15:25–15:31**, on the MacBook Air described above, with Wi-Fi turned off.
+Model and data for the run: `gemma4-e2b-qat` = Gemma 4 E2B-it QAT Q4_0 (`gemma-4-E2B_q4_0-it.gguf`), Ollama
+0.34.4, local; the three documents in `vault/raw/` (SHA-256 in the Source Catalog), 46 passages, 16 notes. This
 Claude Code session cannot work offline, so the demonstration was scripted
 ([`scripts/offline_demo.sh`](scripts/offline_demo.sh)): started while online, it waited until the
 harness detected no internet, then ran everything and wrote a timestamped transcript.

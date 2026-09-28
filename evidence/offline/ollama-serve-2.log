@@ -13,3 +13,4 @@ time=2026-09-28T15:33:11.406-07:00 level=INFO source=routes.go:2115 msg="vram-ba
 [GIN] 2026/09/28 - 15:33:12 | 200 |      36.959µs |       127.0.0.1 | GET      "/api/version"
 [GIN] 2026/09/28 - 15:33:12 | 200 |    1.538375ms |       127.0.0.1 | GET      "/api/tags"
 [GIN] 2026/09/28 - 15:33:12 | 200 |       1.107ms |       127.0.0.1 | GET      "/api/ps"
+time=2026-09-28T15:37:31.885-07:00 level=INFO source=model_recommendations.go:177 msg="model recommendations cache sleep scheduled" wait=3h18m52.642764045s consecutive_failures=0

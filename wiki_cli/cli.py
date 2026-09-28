@@ -135,18 +135,29 @@ def main(argv: list[str] | None = None) -> int:
             from .ingest import Ingestor
             from .runlog import environment, save_run
             llm = LocalGemma(cfg)
-            llm.check()
-            print(dim(f"[ingest · model {cfg.model['name']} · local via Ollama {llm.runtime_version()}]"))
+            try:
+                llm.check()
+                print(dim(f"[ingest · model {cfg.model['name']} · local via Ollama {llm.runtime_version()}]"))
+            except LLMError as e:
+                if args.force or args.reassign:
+                    raise
+                model_error, llm = e, None  # fine if nothing changed; Ingestor asks for the model only when needed
+                print(dim("[ingest · local model not reachable — continuing; it is only needed for new or changed sources]"))
             ing = Ingestor(cfg, llm, force=args.force, reassign=args.reassign)
-            out = ing.run([Path(p) for p in args.paths])
+            try:
+                out = ing.run([Path(p) for p in args.paths])
+            except RuntimeError as e:
+                if llm is None:
+                    raise LLMError(f"{e}\n{model_error}")
+                raise
             st = out["stats"]
             print(bold("\nIngest complete") + f" in {st.get('seconds')}s")
             for k in ("sources_processed", "sources_unchanged", "sections_assigned", "notes_created", "notes_written",
                       "notes_unchanged", "notes_kept_reviewed", "files_written", "files_removed", "passages", "wiki_chunks"):
                 if st.get(k):
                     print(f"  {k.replace('_', ' ')}: {st[k]}")
-            loaded = llm.loaded_models()
-            path = save_run(cfg, "ingest", {"env": environment(cfg, llm), "paths": args.paths, "force": args.force, "reassign": args.reassign,
+            loaded = llm.loaded_models() if llm else []
+            path = save_run(cfg, "ingest", {"env": environment(cfg, llm or LocalGemma(cfg)), "paths": args.paths, "force": args.force, "reassign": args.reassign,
                                             "stats": st, "model_calls": out["calls"], "ollama_ps": loaded})
             print(dim(f"Saved: {cfg.rel(path)}"))
         elif args.command == "eval":
