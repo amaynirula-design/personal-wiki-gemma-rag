@@ -1,0 +1,75 @@
+{
+ "title": "Inherited Project Overload",
+ "summary": "This note details the experience of inheriting an overwhelming project load at Otis after a colleague resigned, leading to an increase from two to fifteen projects overnight. The owner managed this situation by proactively seeking help from senior PMs, prioritizing critical deadlines, and renegotiating client timelines to maintain quality and customer satisfaction.",
+ "key_points": [
+  {
+   "text": "Inherited 15+ additional projects on top of an existing $10M portfolio",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Went from 2 to 15 projects overnight",
+   "sources": [
+    "amazon-interview",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Reached out to senior PMs and scheduled weekly office hours",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Prioritized identifying which projects had the most critical deadlines and which customers needed the most attention",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Renegotiated timelines with some clients, being transparent about the staffing situation",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Successfully delivered on those existing projects and also add new ones to my portfolio",
+   "sources": [
+    "amazon-interview",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Strengthened relationships with senior PMs, who became ongoing mentors",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  }
+ ],
+ "differences": [
+  "The excerpt from Note A mentions reaching out to senior PMs for help, while Note B mentions office hours being of great help when the owner was in undergrad."
+ ],
+ "related": [
+  {
+   "title": "Otis Project Management",
+   "why": "This note details the owner's role as a project manager at Otis, which is the context for inheriting the projects."
+  },
+  {
+   "title": "Career Story",
+   "why": "This note summarizes the owner's career progression at Otis, providing background context for the project management experience."
+  }
+ ],
+ "model": "gemma4-e2b-qat",
+ "generated_at": "2026-09-28T15:27:21"
+}

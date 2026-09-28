@@ -1,0 +1,352 @@
+Offline demonstration — Personal Interview-Prep Wiki (local Gemma + RAG)
+Started 2026-09-28 15:24:39. Waiting for the internet to be disconnected...
+
+================================================================
+[2026-09-28 15:25:35] $ proof that the internet is disconnected
+================================================================
+internet_status(): offline   (TCP to 1.1.1.1:443 and 8.8.8.8:53 both failed)
+curl: (6) Could not resolve host: huggingface.co
+--- 8.8.8.8 ping statistics ---
+1 packets transmitted, 0 packets received, 100.0% packet loss
+en0: no IP address (Wi-Fi off)
+
+================================================================
+[2026-09-28 15:25:38] $ device
+================================================================
+2026-09-28 15:25:39.053 system_profiler[3170:3811868] hw.cpufamily: 0x1b588bb3
+      Model Name: MacBook Air
+      Chip: Apple M1
+      Total Number of Cores: 8 (4 Performance and 4 Efficiency)
+      Memory: 8 GB
+26.5.2
+
+================================================================
+[2026-09-28 15:25:39] $ stop the model server, then show that search works with no model running
+================================================================
+ollama serve: not running
+
+================================================================
+[2026-09-28 15:25:42] $ ./wiki search linear chain architecture -k 3
+================================================================
+usage: wiki [-h] <command> ...
+wiki: error: unrecognized arguments: chain architecture
+
+================================================================
+[2026-09-28 15:25:42] $ ./wiki ask How quickly can Tanium query all endpoints?
+================================================================
+usage: wiki [-h] <command> ...
+wiki: error: unrecognized arguments: quickly can Tanium query all endpoints?
+
+================================================================
+[2026-09-28 15:25:42] $ restart the local model server (weights load from local disk)
+================================================================
+
+================================================================
+[2026-09-28 15:25:43] $ ./wiki status
+================================================================
+Personal Wiki status
+  project:   /Users/amaynirula/Desktop/Haas/2nd Year/Agentic AI/Personal Wiki
+  model:     gemma4-e2b-qat  (google/gemma-4-E2B-it-qat-q4_0-gguf (gemma-4-E2B_q4_0-it.gguf), Q4_0 (quantization-aware trained))
+  runtime:   ollama 0.34.4
+  model ok:  installed
+  index:     46 source passages + 41 wiki sections (data/index.json)
+  wiki:      16 notes in vault/wiki
+  internet:  offline  (execution is local either way)
+
+================================================================
+[2026-09-28 15:25:43] $ ./wiki --help
+================================================================
+usage: wiki [-h] <command> ...
+
+Personal interview-prep wiki: local Gemma + RAG over your own notes (runs offline).
+
+Modes:
+  chat    personal assistant (Scout) with conversation memory; looks up notes only when needed
+  ask     standalone factual answer from retrieved source passages, with citations
+          (or an explicit INSUFFICIENT EVIDENCE response)
+  search  show matching original passages and their source locations; no model, no answer
+
+positional arguments:
+  <command>
+    ingest    read sources in vault/raw, write linked wiki notes, update index
+    search    show original matching passages (no model)
+    ask       standalone factual answer with citations
+    chat      interactive personal assistant
+    eval      run the ask-mode test set and write evidence cards
+    status    show model, runtime, index and internet status
+    check     check wiki links, headings, note names and source references
+    rename    rename or merge a wiki note and update links, catalog and index
+    assign    review correction: move one source section to another note
+              (pinned)
+    help      show this help
+
+options:
+  -h, --help  show this help message and exit
+
+examples:
+  wiki ingest vault/raw                     read sources, write/update wiki notes, rebuild the index
+  wiki search "linear chain architecture"   original passages only (works with the model stopped)
+  wiki ask "How quickly can Tanium query all endpoints?"
+  wiki chat                                 start Scout; /help inside chat lists commands
+  wiki eval tests/ask_tests.yaml            run the four ask-mode tests, write evidence cards
+  wiki status                               model, runtime, index and internet status
+  wiki check                                verify wiki links, headings, names and source references
+  wiki rename "Old Name" "New Name" [--folder Background]    cleanup: rename/merge, links updated
+  wiki assign Tanium "Why Cybersecurity" "Tanium Product Management"   cleanup: move one section
+
+configuration: config.yaml (model name, context size, retrieval settings, paths)
+instructions:  prompts/persona.md (chat personality), prompts/wiki-instructions.md (ask research rules),
+               prompts/ask-extract.md (ask evidence step), prompts/chat-router.md, prompts/ingest-instructions.md
+requires:      Ollama running locally (`ollama serve`) with the model in config.yaml,
+               except for `wiki search`, which needs only the index built by `wiki ingest`.
+
+================================================================
+[2026-09-28 15:25:43] $ /usr/bin/time -l ./wiki ingest "vault/raw/Tiktok Interview Prep.docx" --force
+================================================================
+[ingest · model gemma4-e2b-qat · local via Ollama 0.34.4]
+
+[unchanged] Tiktok Interview Prep.docx: 11 sections, 2436 words
+  = Introduction                                                 -> TikTok MSO (pinned by review)
+  = How does Tiktok monetize?                                    -> TikTok Monetization (unchanged)
+  = Who are Tiktok’s competitors and what are their strengths?   -> TikTok Monetization (unchanged)
+  = What are Tiktok’s strengths?                                 -> TikTok Monetization (unchanged)
+  = What are the different types of ads and what metrics would y -> TikTok Monetization (unchanged)
+  = Tell me about a time you had to overcome challenges when wor -> Graton Casino Expansion (unchanged)
+  = Tell me about a time you used multiple resources to overcome -> Supply Chain Delays (unchanged)
+  = Tell me about a time you adapted to a challenging situation/ -> Inherited Project Overload (unchanged)
+  = Tell me about a time you had disagreement with a colleague/w -> Client Payment Negotiation (unchanged)
+  = Tell me about a time you dug into data/used data to inform/c -> Overdue Receivables Analysis (unchanged)
+  = Why do you want to work for Tiktok and why MSO?              -> TikTok MSO (pinned by review)
+
+Writing 7 note(s) with gemma4-e2b-qat:
+  ✎ Client Payment Negotiation (37s)
+  ✎ Graton Casino Expansion (30s)
+  ✎ Inherited Project Overload (31s)
+  ✎ Overdue Receivables Analysis (26s)
+  ✎ Supply Chain Delays (27s)
+  ✎ TikTok MSO (23s)
+  ✎ TikTok Monetization (33s)
+
+Ingest complete in 207.4s
+  sources processed: 1
+  notes written: 7
+  notes kept reviewed: 16
+  passages: 46
+  wiki chunks: 41
+Saved: runs/20260928-152911-ingest.json
+      207.65 real         0.37 user         0.13 sys
+            50413568  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               14743  page reclaims
+                1468  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  18  messages sent
+                  11  messages received
+                   0  signals received
+                1065  voluntary context switches
+                2054  involuntary context switches
+          3488000851  instructions retired
+          1124029034  cycles elapsed
+            41485760  peak memory footprint
+
+================================================================
+[2026-09-28 15:29:11] $ ./wiki check
+================================================================
+Vault check: 16 notes (16 reviewed), 388 links (231 to original sources), 3 files in raw/
+  ✓ all links resolve to exactly one file; headings match filenames; every note has sources
+
+================================================================
+[2026-09-28 15:29:11] $ ollama ps
+================================================================
+NAME                     ID              SIZE      PROCESSOR    CONTEXT    UNTIL              
+gemma4-e2b-qat:latest    ed69038d4913    1.5 GB    100% GPU     8192       9 minutes from now    
+
+================================================================
+[2026-09-28 15:29:12] $ model process physical memory footprint
+================================================================
+    phys_footprint: 3870 MB
+    phys_footprint_peak: 3891 MB
+
+================================================================
+[2026-09-28 15:29:12] $ ./wiki eval tests/ask_tests.yaml --out evidence/offline/ask-tests
+================================================================
+
+=== Test 1: Tanium endpoint query speed ===
+[ask mode · model gemma4-e2b-qat (Q4_0 (quantization-aware trained)) · local via Ollama 0.34.4]
+Question: How quickly can Tanium query all endpoints, and what makes that possible?
+1. Retrieved 5 source passage(s) in 0.1 ms: [1] Tanium Interview Prep.docx › What does Tanium do? (¶24-26) (9.29); [2] Tanium Interview Prep.docx › Tell me about yourself and how you fit the role? (¶6-8) (4.34); [3] Tanium Interview Prep.docx › Why Cybersecurity & Tanium? (¶20-22) (4.21); [4] Tanium Interview Prep.docx › What did you do at Otis? (¶14-18) (3.91); [5] Tanium Interview Prep.docx › Tell me about yourself and how you fit the role? (¶3-6) (3.55)
+2. Gemma extracted 1 quote(s); harness verified 1
+     [1] "First is their ability to query all endpoints in under 15 seconds, thanks to the linear chain architecture, wh..."
+3. Answer from verified quotes:
+
+Tanium can query all endpoints in under 15 seconds [1]. This speed is due to the linear chain architecture, which dramatically reduces server load [1].
+
+Sources cited:
+  [1] Tanium Interview Prep.docx › What does Tanium do? (¶24-26)  vault/raw/Tanium Interview Prep.docx
+
+Citation check: PASS — 1 passage(s) cited: [1]
+Model time 10.27s · extract 7.46s (1497→56 tok) · answer 2.81s (354→34 tok)
+Saved: runs/20260928-152922-ask.json
+Evidence card: evidence/offline/ask-tests/Test 1 - tanium-endpoint-query-speed.md
+
+=== Test 2: TikTok Shop take rate (paraphrased) ===
+[ask mode · model gemma4-e2b-qat (Q4_0 (quantization-aware trained)) · local via Ollama 0.34.4]
+Question: What cut does TikTok take when someone buys something through TikTok Shop?
+1. Retrieved 5 source passage(s) in 0.1 ms: [1] Tiktok Interview Prep.docx › How does Tiktok monetize? (¶20-22) (11.04); [2] Tiktok Interview Prep.docx › How does Tiktok monetize? (¶12-20) (9.32); [3] Tiktok Interview Prep.docx › Who are Tiktok’s competitors and what are their strengths? (¶24-30) (7.89); [4] Tiktok Interview Prep.docx › What are Tiktok’s strengths? (¶32-46) (6.76); [5] Tanium Interview Prep.docx › Why Cybersecurity & Tanium? (¶20-22) (5.67)
+2. Gemma extracted 1 quote(s); harness verified 1
+     [2] "Tiktok shop: Charges seller commission on every transaction & sellers have to pay to advertise their products."
+3. Answer from verified quotes:
+
+Tiktok shop charges a seller commission on every transaction [2]. Sellers are also required to pay to advertise their products [2].
+
+Sources cited:
+  [2] Tiktok Interview Prep.docx › How does Tiktok monetize? (¶12-20)  vault/raw/Tiktok Interview Prep.docx
+
+Citation check: PASS — 1 passage(s) cited: [2]
+Model time 9.73s · extract 7.28s (1595→41 tok) · answer 2.45s (342→27 tok)
+Saved: runs/20260928-152932-ask.json
+Evidence card: evidence/offline/ask-tests/Test 2 - tiktok-shop-take-rate-paraphrased.md
+
+=== Test 3: Supply chain lead times across three preps ===
+[ask mode · model gemma4-e2b-qat (Q4_0 (quantization-aware trained)) · local via Ollama 0.34.4]
+Question: In my Otis supply chain delay story, how much did material lead times increase, and how did I keep projects on schedule?
+1. Retrieved 5 source passage(s) in 0.3 ms: [1] Amazon Interview.docx › Tell me about a time you used multiple resources to overcome a challenge/had to work un... (¶25-28) (19.26); [2] Tanium Interview Prep.docx › Tell me about a time you used multiple resources to overcome a challenge/had to work un... (¶46-49) (19.15); [3] Tiktok Interview Prep.docx › Tell me about a time you used multiple resources to overcome a challenge/had to work un... (¶64-67) (19.14); [4] Amazon Interview.docx › Why Amazon? (¶7-9) (7.87); [5] Tiktok Interview Prep.docx › Tell me about a time you had to overcome challenges when working with a team (cross-fun... (¶55-62) (6.26)
+2. Gemma extracted 2 quote(s); harness verified 2
+     [1] "Last year, supply chain disruptions increased our material lead times from 10 to 16 weeks, putting multiple pr..."
+     [2] "Last year, supply chain disruptions increased our material lead times from 12 to 16 weeks, putting multiple pr..."
+3. Answer from verified quotes:
+
+   Sources disagree: passage(s) [1] say 10 / 16; passage(s) [2] say 12 / 16
+The owner stated that supply chain disruptions increased material lead times from 10 to 16 weeks [1]. Another source states that supply chain disruptions increased material lead times from 12 to 16 weeks [2]. The sources disagree on the initial increase in lead times.
+
+Sources cited:
+  [1] Amazon Interview.docx › Tell me about a time you used multiple resources to overcome a challenge/had to work un... (¶25-28)  vault/raw/Amazon Interview.docx
+  [2] Tanium Interview Prep.docx › Tell me about a time you used multiple resources to overcome a challenge/had to work un... (¶46-49)  vault/raw/Tanium Interview Prep.docx
+
+Citation check: CHECK — 2 passage(s) cited: [1], [2]; 1 sentence(s) without a citation
+Model time 14.08s · extract 9.4s (1487→93 tok) · answer 4.68s (512→58 tok)
+Saved: runs/20260928-152946-ask.json
+Evidence card: evidence/offline/ask-tests/Test 3 - supply-chain-lead-times-across-three-preps.md
+
+=== Test 4: TikTok internship pay (unsupported) ===
+[ask mode · model gemma4-e2b-qat (Q4_0 (quantization-aware trained)) · local via Ollama 0.34.4]
+Question: What is the salary or hourly pay for the TikTok Monetization Strategy & Ops internship?
+1. Retrieved 5 source passage(s) in 0.2 ms: [1] Tiktok Interview Prep.docx › Why do you want to work for Tiktok and why MSO? (¶95-97) (10.53); [2] Tiktok Interview Prep.docx › How does Tiktok monetize? (¶12-20) (8.05); [3] Tiktok Interview Prep.docx › How does Tiktok monetize? (¶20-22) (8.05); [4] Tiktok Interview Prep.docx › Introduction (¶1-10) (7.1); [5] Tiktok Interview Prep.docx › Who are Tiktok’s competitors and what are their strengths? (¶24-30) (4.94)
+2. Gemma extracted 0 quote(s); harness verified 0
+
+INSUFFICIENT EVIDENCE: none of the 5 retrieved passages contains a statement that answers this question.
+
+Citation check: insufficient-evidence response
+Model time 5.74s · extract 5.74s (1570→7 tok)
+Saved: runs/20260928-152952-ask.json
+Evidence card: evidence/offline/ask-tests/Test 4 - tiktok-internship-pay-unsupported.md
+
+Summary
+  Test 1: behavior ✓ (answer) · expected sources missing: none · PASS — 1 passage(s) cited: [1]
+  Test 2: behavior ✓ (answer) · expected sources missing: none · PASS — 1 passage(s) cited: [2]
+  Test 3: behavior ✓ (answer) · expected sources missing: none · CHECK — 2 passage(s) cited: [1], [2]; 1 sentence(s) without a citation
+  Test 4: behavior ✓ (insufficient_evidence) · expected sources missing: none · insufficient-evidence response
+
+================================================================
+[2026-09-28 15:29:52] $ mode checks: chat (capabilities, draft + follow-up, false claim) — script tests/chat_script.txt
+================================================================
+[chat mode · model gemma4-e2b-qat (Q4_0 (quantization-aware trained)) · local via Ollama 0.34.4]
+Scout — your interview-prep assistant. Type /help for commands, /exit to quit.
+
+you: what can we do?
+  ↳ notes lookup: no (rule: question about the assistant's capabilities)
+Scout: We can brainstorm and draft interview answers, run a mock interview, build prep plans and checklists, and look up your prep notes.
+
+What are you working on right now?
+  (3.97s)
+you: what can you help me with?
+  ↳ notes lookup: no (rule: question about the assistant's capabilities)
+Scout: I can help you with:
+
+*   Drafting interview answers (e.g., "Tell me about yourself," STAR stories) tailored to specific companies.
+*   Running mock interviews with me.
+*   Building prep plans and checklists.
+*   Reviewing and refining your prep materials.
+*   Looking up information from your notes (Amazon Pathways, Tanium, TikTok Monetization Strategy & Ops).
+
+What's the next step for you?
+  (5.73s)
+you: Draft a short plan for preparing for my Tanium interview this week.
+  ↳ notes lookup: yes (model router) · query "Tanium interview prep plan" · 4 passage(s)
+Scout: Here is a short preparation plan for your Tanium interview this week.
+
+**Focus Areas:**
+
+1.  **Otis Story Deep Dive:** Review your experience as a project manager at Otis. Be ready to discuss stakeholder coordination, risk management at scale, and technical problem-solving [1].
+2.  **Tanium Specifics:** Brush up on the core concepts related to Tanium, especially product management aspects.
+3.  **Behavioral Prep:** Prepare STAR stories, focusing on how you handled conflict or complex problem-solving, similar to the client payment negotiation example [2].
+
+**Action Items:**
+
+*   **Today:** Outline 3 strong STAR stories based on your Otis experience.
+*   **Tomorrow:** Create a list of 5 key Tanium concepts you want to master.
+*   **Day Before:** Practice your "Tell me about yourself" and your answers to "Why this company?"
+
+What do you want to tackle first?
+  Sources: [1] Tanium Interview Prep.docx › What did you do at Otis? (¶14-18); [2] Client Payment Negotiation (wiki) › Key points
+  (15.01s)
+you: make that shorter
+  ↳ notes lookup: no (rule: follow-up edit of the previous reply (uses conversation)) · reusing 4 passage(s) from the previous turn
+Scout: Here is the shortened plan:
+
+**Tanium Prep Plan:**
+
+1.  **Otis Story:** Focus on your project management experience: stakeholder coordination, risk management at scale, and technical problem-solving [1].
+2.  **Tanium Concepts:** Master core product management concepts.
+3.  **Behavioral Prep:** Prepare STAR stories focusing on conflict resolution and complex problem-solving, using the client payment negotiation example [2].
+
+**Next Step:** Outline 3 strong STAR stories from your Otis experience.
+  Sources: [1] Tanium Interview Prep.docx › What did you do at Otis? (¶14-18); [2] Client Payment Negotiation (wiki) › Key points
+  (11.59s)
+you: Just so you know, the Graton Casino Expansion was a $5M project.
+  ↳ notes lookup: yes (model router) · query "Otis Elevator project-management stories Graton Casino Expansion" · 4 passage(s)
+  ↳ figures in your message not found in the notes: $5M
+Scout: I don't have information in the notes stating that the Graton Casino Expansion was a $5M project. The notes mention it was a "$2.9M undertaking" [2].
+
+You can edit the source document and re-run `wiki ingest` if the notes are incorrect.
+  Sources: [2] Graton Casino Expansion (wiki) › Summary
+  (7.75s)
+you: /exit
+Chat transcript saved: runs/20260928-153042-chat.json
+
+================================================================
+[2026-09-28 15:30:42] $ mode check: ask ignores the chat claim
+================================================================
+[ask mode · model gemma4-e2b-qat (Q4_0 (quantization-aware trained)) · local via Ollama 0.34.4]
+Question: How large was the Graton Casino Expansion project?
+1. Retrieved 5 source passage(s) in 0.1 ms: [1] Tiktok Interview Prep.docx › Tell me about a time you had to overcome challenges when working with a team (cross-fun... (¶55-62) (7.56); [2] Amazon Interview.docx › Tell me about a time you had to overcome challenges when working with a team (cross-fun... (¶16-23) (7.53); [3] Tanium Interview Prep.docx › Tell me about a time you had to overcome challenges when working with a team (cross-fun... (¶37-44) (7.53); [4] Tanium Interview Prep.docx › How do you fit the role? (¶10-12) (3.59); [5] Amazon Interview.docx › tell me a time when you saw a peer struggling and decided to step in and help. What was... (¶81-89) (0.98)
+2. Gemma extracted 3 quote(s); harness verified 3
+     [1] "On my largest project to date, Graton Casino Expansion, a $2.9M project,"
+     [2] "On my largest project to date, Graton Casino Expansion, a $2.9M project,"
+     [3] "On my largest project to date, Graton Casino Expansion, a $2.9M project,"
+3. Answer from verified quotes:
+
+On the largest project to date, the Graton Casino Expansion was a $2.9M project [1][2][3].
+
+Sources cited:
+  [1] Tiktok Interview Prep.docx › Tell me about a time you had to overcome challenges when working with a team (cross-fun... (¶55-62)  vault/raw/Tiktok Interview Prep.docx
+  [2] Amazon Interview.docx › Tell me about a time you had to overcome challenges when working with a team (cross-fun... (¶16-23)  vault/raw/Amazon Interview.docx
+  [3] Tanium Interview Prep.docx › Tell me about a time you had to overcome challenges when working with a team (cross-fun... (¶37-44)  vault/raw/Tanium Interview Prep.docx
+
+Citation check: PASS — 3 passage(s) cited: [1], [2], [3]
+Model time 13.26s · extract 10.18s (1478→107 tok) · answer 3.08s (476→28 tok)
+Saved: runs/20260928-153056-ask.json
+
+================================================================
+[2026-09-28 15:30:56] $ peak memory during the run
+================================================================
+    phys_footprint: 4069 MB
+    phys_footprint_peak: 4069 MB
+System-wide memory free percentage: 23%
+
+internet_status() at end: offline
+[2026-09-28 15:30:56] DEMO COMPLETE — you can turn Wi-Fi back on.

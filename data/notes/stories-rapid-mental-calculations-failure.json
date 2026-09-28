@@ -1,0 +1,49 @@
+{
+ "title": "Rapid Mental Calculations Failure",
+ "summary": "This note details an instance where the owner bypassed the standard operating procedure for verifying elevator weight due to rapid mental calculations when a demanding client requested heavy wood panels and Italian marble flooring. This action led to switching the marble flooring for thin set tiles, resulting in financial losses for Otis and project delays.",
+ "key_points": [
+  {
+   "text": "Release elevator into fabrication after rapid mental calculations",
+   "sources": [
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Did not follow the SOP of verifying the weight first",
+   "sources": [
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Had to switch out marble flooring for thin set tiles",
+   "sources": [
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Otis incurred financial losses, and project delays",
+   "sources": [
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Created a pre-fabrication checklist that lists the most common pitfalls",
+   "sources": [
+    "tanium-interview-prep"
+   ]
+  }
+ ],
+ "differences": [],
+ "related": [
+  {
+   "title": "Elevator Cab Weight Failure",
+   "why": "This note details a time at Otis where a design decision bypassed standard operating procedures under schedule pressure, which is related to the context of this story."
+  },
+  {
+   "title": "Otis Project Management",
+   "why": "This note describes the owner's role as a project manager at Otis, providing context for the project where this failure occurred."
+  }
+ ],
+ "model": "gemma4-e2b-qat",
+ "generated_at": "2026-09-25T22:37:04"
+}

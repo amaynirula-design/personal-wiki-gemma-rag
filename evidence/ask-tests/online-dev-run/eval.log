@@ -1,0 +1,62 @@
+
+=== Test 1: Tanium endpoint query speed ===
+[ask mode · model gemma4-e2b-qat (Q4_0 (quantization-aware trained)) · local via Ollama 0.34.4]
+Question: How quickly can Tanium query all endpoints, and what makes that possible?
+Retrieved 5 source passage(s) in 0.1 ms: [1] Tanium Interview Prep.docx › What does Tanium do? (¶24-26) (10.08); [2] Tanium Interview Prep.docx › Why Cybersecurity & Tanium? (¶20-22) (4.91); [3] Tanium Interview Prep.docx › Tell me about yourself and how you fit the role? (¶6-8) (4.84); [4] Amazon Interview.docx › tell me a time when you saw a peer struggling and decided to step in and help. What was... (¶81-89) (3.05); [5] Tanium Interview Prep.docx › What did you do at Otis? (¶14-18) (2.91)
+
+Tanium can query all endpoints in under 15 seconds [1]. This speed is made possible by the linear chain architecture, which reduces server load [1].
+
+Sources cited:
+  [1] Tanium Interview Prep.docx › What does Tanium do? (¶24-26)  vault/raw/Tanium Interview Prep.docx
+
+Citation check: PASS — 1 passage(s) cited: [1]
+Model time 19.27s · prompt 1656 tok · output 34 tok · 19.4 tok/s
+Saved: runs/20260928-103950-ask.json
+Evidence card: evidence/ask-tests/online-dev-run/Test 1 - tanium-endpoint-query-speed.md
+
+=== Test 2: TikTok Shop take rate (paraphrased) ===
+[ask mode · model gemma4-e2b-qat (Q4_0 (quantization-aware trained)) · local via Ollama 0.34.4]
+Question: What cut does TikTok take when someone buys something through TikTok Shop?
+Retrieved 5 source passage(s) in 0.3 ms: [1] Tiktok Interview Prep.docx › How does Tiktok monetize? (¶20-22) (11.66); [2] Tiktok Interview Prep.docx › How does Tiktok monetize? (¶12-20) (9.85); [3] Tiktok Interview Prep.docx › Who are Tiktok’s competitors and what are their strengths? (¶24-30) (8.41); [4] Tiktok Interview Prep.docx › What are Tiktok’s strengths? (¶32-46) (7.15); [5] Tanium Interview Prep.docx › Why Cybersecurity & Tanium? (¶20-22) (5.73)
+
+INSUFFICIENT EVIDENCE: The provided passages state that TikTok takes a commission on every transaction through TikTok Shop, typically 2-8% depending on the category, but they do not specify the exact cut taken.
+
+Citation check: insufficient-evidence response
+Model time 8.79s · prompt 1719 tok · output 44 tok · 19.7 tok/s
+Saved: runs/20260928-103959-ask.json
+Evidence card: evidence/ask-tests/online-dev-run/Test 2 - tiktok-shop-take-rate-paraphrased.md
+
+=== Test 3: Supply chain lead times across three preps ===
+[ask mode · model gemma4-e2b-qat (Q4_0 (quantization-aware trained)) · local via Ollama 0.34.4]
+Question: In my Otis supply chain delay story, how much did material lead times increase, and how did I keep projects on schedule?
+Retrieved 5 source passage(s) in 0.1 ms: [1] Tanium Interview Prep.docx › Tell me about a time you used multiple resources to overcome a challenge/had to work un... (¶46-49) (19.28); [2] Amazon Interview.docx › Tell me about a time you used multiple resources to overcome a challenge/had to work un... (¶25-28) (19.26); [3] Tiktok Interview Prep.docx › Tell me about a time you used multiple resources to overcome a challenge/had to work un... (¶64-67) (19.26); [4] Amazon Interview.docx › Why Amazon? (¶7-9) (7.91); [5] Tiktok Interview Prep.docx › Tell me about a time you had to overcome challenges when working with a team (cross-fun... (¶55-62) (6.34)
+
+The material lead times increased from 12 to 16 weeks [1][2][3]. The owner kept projects on schedule by taking a two-pronged approach: first, working with the factory to implement partial shipments so mechanics could start assembly immediately with available parts [1][2][3]. Second, the owner coordinated with field mechanics to put in significant overtime to make up for remaining schedule gaps [1][2][3].
+
+Sources cited:
+  [1] Tanium Interview Prep.docx › Tell me about a time you used multiple resources to overcome a challenge/had to work un... (¶46-49)  vault/raw/Tanium Interview Prep.docx
+  [2] Amazon Interview.docx › Tell me about a time you used multiple resources to overcome a challenge/had to work un... (¶25-28)  vault/raw/Amazon Interview.docx
+  [3] Tiktok Interview Prep.docx › Tell me about a time you used multiple resources to overcome a challenge/had to work un... (¶64-67)  vault/raw/Tiktok Interview Prep.docx
+
+Citation check: PASS — 3 passage(s) cited: [1], [2], [3]
+Model time 10.92s · prompt 1611 tok · output 89 tok · 19.2 tok/s
+Saved: runs/20260928-104010-ask.json
+Evidence card: evidence/ask-tests/online-dev-run/Test 3 - supply-chain-lead-times-across-three-preps.md
+
+=== Test 4: TikTok internship pay (unsupported) ===
+[ask mode · model gemma4-e2b-qat (Q4_0 (quantization-aware trained)) · local via Ollama 0.34.4]
+Question: What is the salary or hourly pay for the TikTok Monetization Strategy & Ops internship?
+Retrieved 5 source passage(s) in 0.4 ms: [1] Tiktok Interview Prep.docx › Why do you want to work for Tiktok and why MSO? (¶95-97) (10.72); [2] Tiktok Interview Prep.docx › How does Tiktok monetize? (¶20-22) (8.58); [3] Tiktok Interview Prep.docx › How does Tiktok monetize? (¶12-20) (8.57); [4] Tiktok Interview Prep.docx › Introduction (¶1-10) (7.68); [5] Tiktok Interview Prep.docx › Who are Tiktok’s competitors and what are their strengths? (¶24-30) (5.43)
+
+INSUFFICIENT EVIDENCE: The provided passages do not contain information about the salary or hourly pay for the TikTok Monetization Strategy & Ops internship.
+
+Citation check: insufficient-evidence response
+Model time 8.03s · prompt 1694 tok · output 30 tok · 19.5 tok/s
+Saved: runs/20260928-104018-ask.json
+Evidence card: evidence/ask-tests/online-dev-run/Test 4 - tiktok-internship-pay-unsupported.md
+
+Summary
+  Test 1: behavior ✓ (answer) · expected sources missing: none · PASS — 1 passage(s) cited: [1]
+  Test 2: behavior ✗ (insufficient_evidence) · expected sources missing: none · insufficient-evidence response
+  Test 3: behavior ✓ (answer) · expected sources missing: none · PASS — 3 passage(s) cited: [1], [2], [3]
+  Test 4: behavior ✓ (insufficient_evidence) · expected sources missing: none · insufficient-evidence response

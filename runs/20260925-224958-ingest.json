@@ -1,0 +1,48 @@
+{
+  "mode": "ingest",
+  "env": {
+    "timestamp": "2026-09-25T22:49:58",
+    "execution": "local",
+    "internet": "online",
+    "host": "Amays-MacBook-Air-2.local",
+    "platform": "Darwin 26.5.2 (arm64)",
+    "model": "gemma4-e2b-qat",
+    "model_identifier": "google/gemma-4-E2B-it-qat-q4_0-gguf (gemma-4-E2B_q4_0-it.gguf)",
+    "quantization": "Q4_0 (quantization-aware trained)",
+    "runtime": "ollama 0.34.4"
+  },
+  "paths": [
+    "vault/raw"
+  ],
+  "force": false,
+  "stats": {
+    "sources_unchanged": 3,
+    "notes_kept_reviewed": 6,
+    "attributions_corrected": 1,
+    "passages": 46,
+    "wiki_chunks": 40,
+    "seconds": 0.2
+  },
+  "model_calls": [],
+  "ollama_ps": [
+    {
+      "name": "gemma4-e2b-qat:latest",
+      "model": "gemma4-e2b-qat:latest",
+      "size": 1539770939,
+      "digest": "ed69038d491363f4b43e172edffee145dddecfec691b406e88ec2fc65bf0bd9f",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "gemma4",
+        "families": [
+          "gemma4"
+        ],
+        "parameter_size": "4.6B",
+        "quantization_level": "Q4_0"
+      },
+      "expires_at": "2026-09-25T22:58:44.076365-07:00",
+      "size_vram": 1539770939,
+      "context_length": 8192
+    }
+  ]
+}

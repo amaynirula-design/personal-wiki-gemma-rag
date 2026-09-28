@@ -1,0 +1,78 @@
+{
+ "title": "Graton Casino Expansion",
+ "summary": "This note details the coordination challenges faced during the Graton Casino Expansion, a $2.9M project. The owner managed competing priorities between internal teams and external stakeholders, including architects, general contractors, and global supply vendors. The process involved establishing weekly coordination meetings to find compromises and presenting options to the client.",
+ "key_points": [
+  {
+   "text": "$2.9M project size",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Coordinated between internal teams and external stakeholders including architects, general contractors, and global supply vendors",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Challenge involved competing priorities: customer wanted premium customizations, vendors pushed back on timeline feasibility, and internal team worried about scope creep",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Task was to align all parties and deliver the project without any financial overruns or delays",
+   "sources": [
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Established weekly coordination meetings",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Purpose was to understand each team’s constraints and come up with compromises like identifying which customizations could be adopted without impacting deadlines greatly",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Presented all possible options to the client with cost and time implications",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Delivered the $2.9M project with over $400k in customizations on schedule",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  }
+ ],
+ "differences": [],
+ "related": [
+  {
+   "title": "Otis Project Management",
+   "why": "This note details the owner's role as a project manager at Otis, managing a large portfolio of construction elevator projects, which is the context for the Graton project."
+  }
+ ],
+ "model": "gemma4-e2b-qat",
+ "generated_at": "2026-09-28T15:26:50"
+}

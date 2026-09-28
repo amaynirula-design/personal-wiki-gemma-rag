@@ -1,0 +1,81 @@
+[ingest · model gemma4-e2b-qat · local via Ollama 0.34.4]
+
+[new] Amazon Interview.docx: 12 sections, 2367 words
+  + Tell me about yourself                                       -> Amazon Pathways (new)
+  + Why Amazon?                                                  -> Amazon Pathways
+  + Why Pathways?                                                -> Amazon Pathways
+  + Tell me about a time you had to overcome challenges when wor -> Graton Casino Expansion (new)
+  + Tell me about a time you used multiple resources to overcome -> Amazon Pathways
+  + Tell me about a time you adapted to a challenging situation/ -> Otis Project Management (new)
+  + Tell me about a time you had disagreement with a colleague/w -> Graton Casino Expansion
+  + Tell me about a time you dug into data/used data to inform/c -> Otis Project Management
+  + Tell me about ways that you personally have tried to mature  -> Amazon Pathways
+  + Tell me a time you failed/ received negative feedback.       -> Otis Project Management
+  + tell me a time when you saw a peer struggling and decided to -> Otis Project Management
+  + Questions                                                    -> Amazon Pathways
+
+[new] Tanium Interview Prep.docx: 14 sections, 2697 words
+  + Tell me about yourself and how you fit the role?             -> Otis Project Management
+  + How do you fit the role?                                     -> Otis Project Management
+  + What did you do at Otis?                                     -> Otis Project Management
+  + Why Cybersecurity & Tanium?                                  -> Why Cybersecurity and Tanium (new)
+  + What does Tanium do?                                         -> Why Cybersecurity and Tanium
+  + QUESTIONS FOR [interviewer]                                  -> Tanium Interview Prep (new)
+  + Tell me about a time you had to overcome challenges when wor -> Graton Casino Expansion
+  + Tell me about a time you used multiple resources to overcome -> Tanium Interview Prep
+  + Tell me about a time you adapted to a challenging situation/ -> Otis Project Management
+  + Tell me about a time you had disagreement with a colleague/w -> Unpaid Client Invoice (new)
+  + Tell me about a time you dug into data/used data to inform/c -> Unpaid Client Invoice
+  + Tell me about how you have stayed current on industry develo -> Tanium Interview Prep
+  + Tell me about ways that you personally have tried to mature  -> Tanium Interview Prep
+  + Tell me a time you failed.                                   -> Unpaid Client Invoice
+
+[new] Tiktok Interview Prep.docx: 11 sections, 2436 words
+  + Introduction                                                 -> TikTok Monetization Strategy (new)
+  + How does Tiktok monetize?                                    -> TikTok Monetization Strategy
+  + Who are Tiktok’s competitors and what are their strengths?   -> TikTok Monetization Strategy
+  + What are Tiktok’s strengths?                                 -> TikTok Monetization Strategy
+  + What are the different types of ads and what metrics would y -> TikTok Monetization Strategy
+  + Tell me about a time you had to overcome challenges when wor -> Graton Casino Expansion
+  + Tell me about a time you used multiple resources to overcome -> Unpaid Client Invoice
+  + Tell me about a time you adapted to a challenging situation/ -> Otis Project Management
+  + Tell me about a time you had disagreement with a colleague/w -> Unpaid Client Invoice
+  + Tell me about a time you dug into data/used data to inform/c -> TikTok Monetization Strategy
+  + Why do you want to work for Tiktok and why MSO?              -> TikTok Monetization Strategy
+
+Writing 7 note(s) with gemma4-e2b-qat:
+  ✎ Amazon Pathways (29s)
+  ✎ Graton Casino Expansion (22s)
+  ✎ Otis Project Management (33s)
+  ✎ Tanium Interview Prep (23s)
+  ✎ TikTok Monetization Strategy (36s)
+  ✎ Unpaid Client Invoice (24s)
+  ✎ Why Cybersecurity and Tanium (22s)
+
+Ingest complete in 320.1s
+  sources processed: 3
+  sections assigned: 37
+  notes created: 7
+  notes written: 7
+  files written: 7
+  passages: 46
+  wiki chunks: 16
+Saved: runs/20260925-222351-ingest.json
+      320.39 real         0.25 user         0.22 sys
+            49954816  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               38044  page reclaims
+                1845  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  92  messages sent
+                  48  messages received
+                   0  signals received
+                1082  voluntary context switches
+                2538  involuntary context switches
+          2857697396  instructions retired
+          1207612550  cycles elapsed
+            35865984  peak memory footprint

@@ -1,0 +1,57 @@
+{
+ "title": "TikTok Monetization",
+ "summary": "TikTok has four main revenue streams: advertising, TikTok Shop, brand partnerships, and virtual gifts. Advertising is the largest stream, primarily through in-feed and TopView ads. TikTok Shop has seen the highest growth, monetizing through seller commissions and advertising fees. Brand partnerships involve high-value deals like hashtag challenges and takeovers, while virtual gifts involve TikTok taking a cut of transactions from user gifts.",
+ "key_points": [
+  {
+   "text": "TikTok has four main revenue streams, with advertising being the largest.",
+   "sources": [
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Advertising is primarily through in-feed ads that appear every 2-3 videos in the For You Page, and TopView ads that take over the screen when users first open the app.",
+   "sources": [
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "TikTok Shop has seen the highest growth over the past two years.",
+   "sources": [
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "TikTok Shop monetizes in two ways: taking a commission on every transaction, typically 2-8% depending on category, and charging sellers to advertise their products on the platform.",
+   "sources": [
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Brand partnerships are premium, high-value deals like branded hashtag challenges where brands pay $150K-500K+, brand takeover days for exclusive daily placement, and large-scale brand awareness campaigns.",
+   "sources": [
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "When users send gifts like roses or galaxies to creators during LIVE streams to show appreciation, TikTok takes a cut of those transactions before paying out creators.",
+   "sources": [
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "TikTok Shop's growth shows they're successfully diversifying beyond pure advertising into commerce.",
+   "sources": [
+    "tiktok-interview-prep"
+   ]
+  }
+ ],
+ "differences": [],
+ "related": [
+  {
+   "title": "TikTok MSO",
+   "why": "This note covers TikTok's monetization methods, competitive landscape, and strengths, including its algorithm and TikTok Shop."
+  }
+ ],
+ "model": "gemma4-e2b-qat",
+ "generated_at": "2026-09-28T15:29:10"
+}

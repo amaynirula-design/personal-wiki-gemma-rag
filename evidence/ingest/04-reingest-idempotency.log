@@ -1,0 +1,14 @@
+[ingest · model gemma4-e2b-qat · local via Ollama 0.34.4]
+
+[unchanged] Amazon Interview.docx: 12 sections, 2367 words
+
+[unchanged] Tanium Interview Prep.docx: 14 sections, 2697 words
+
+[unchanged] Tiktok Interview Prep.docx: 11 sections, 2436 words
+
+Ingest complete in 0.2s
+  sources unchanged: 3
+  files written: 1
+  passages: 46
+  wiki chunks: 39
+Saved: runs/20260925-224929-ingest.json

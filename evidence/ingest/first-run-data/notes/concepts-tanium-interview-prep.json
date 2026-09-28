@@ -1,0 +1,67 @@
+{
+ "title": "Tanium Interview Prep",
+ "summary": "This note covers various aspects of Tanium, including cultural fit, product direction, and technical architecture. It also details methods for staying current with industry developments and improving engineering efforts through centralized documentation.",
+ "key_points": [
+  {
+   "text": "Gather user feedback collection method",
+   "sources": [
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Tanium strategic direction focus",
+   "sources": [
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Distributed architectures mentioned",
+   "sources": [
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Confidence score patch push capability",
+   "sources": [
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Staying current via conferences and workshops",
+   "sources": [
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Learning from CrowdStrike outage",
+   "sources": [
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Building MVP with Claude for credit card categorization",
+   "sources": [
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Creating centralized reference folder for technical questions",
+   "sources": [
+    "tanium-interview-prep"
+   ]
+  }
+ ],
+ "differences": [],
+ "related": [
+  {
+   "title": "Why Cybersecurity and Tanium",
+   "why": "This note discusses the strategic direction of Tanium, which is related to the candidate's interest in cybersecurity."
+  },
+  {
+   "title": "Otis Project Management",
+   "why": "The note on Otis details project management experience, which relates to the candidate's discussion on project management roles at Tanium."
+  }
+ ],
+ "model": "gemma4-e2b-qat",
+ "generated_at": "2026-09-25T22:22:28"
+}

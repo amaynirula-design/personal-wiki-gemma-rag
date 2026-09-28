@@ -1,0 +1,61 @@
+{
+ "title": "Amazon Pathways",
+ "summary": "This note covers the candidate's interest in the Amazon Pathways program, focusing on the desire to be actively involved in operational excellence. The candidate connects their past experience managing complex projects at Otis to the desire to work on the floor of a fulfillment center and improve delivery processes.",
+ "key_points": [
+  {
+   "text": "Drawn to Pathways because I don't want to observe operational excellence from a distance - I want to be an active part of it",
+   "sources": [
+    "amazon-interview"
+   ]
+  },
+  {
+   "text": "Want to be on the floor of a fulfillment center, speaking with associates, and finding creative ways to improve delivery processes",
+   "sources": [
+    "amazon-interview"
+   ]
+  },
+  {
+   "text": "Know how to lead through influence and how to adapt my communication style depending on who I'm speaking to",
+   "sources": [
+    "amazon-interview"
+   ]
+  },
+  {
+   "text": "Learned that great leadership means meeting people where they are and motivating them to deliver results",
+   "sources": [
+    "amazon-interview"
+   ]
+  },
+  {
+   "text": "Last year, supply chain disruptions increased our material lead times from 10 to 16 weeks",
+   "sources": [
+    "amazon-interview"
+   ]
+  },
+  {
+   "text": "Worked with our factory to implement partial shipments - getting materials shipped as they became available rather than waiting for complete orders",
+   "sources": [
+    "amazon-interview"
+   ]
+  },
+  {
+   "text": "Coordinated with our field mechanics to put in significant overtime to make up for any remaining schedule gaps and ensure we hit our deadlines",
+   "sources": [
+    "amazon-interview"
+   ]
+  }
+ ],
+ "differences": [],
+ "related": [
+  {
+   "title": "Otis Project Management",
+   "why": "This note details the candidate's past experience managing complex projects at Otis, which informs their interest in the Pathways program."
+  },
+  {
+   "title": "Unpaid Client Invoice",
+   "why": "This story demonstrates the candidate's ability to manage a large, complex project with competing priorities, relevant to operational challenges."
+  }
+ ],
+ "model": "gemma4-e2b-qat",
+ "generated_at": "2026-09-25T22:21:09"
+}

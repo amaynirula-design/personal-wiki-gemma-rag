@@ -1,0 +1,74 @@
+{
+ "title": "Otis Project Management",
+ "summary": "This note details the owner's experience in project management at Otis Elevator Company, including managing a significant portfolio and adapting to sudden staffing challenges. It covers responsibilities such as stakeholder coordination, risk management at scale, and technical problem-solving.",
+ "key_points": [
+  {
+   "text": "Managed a $47M portfolio of 50+ new construction elevator projects simultaneously",
+   "sources": [
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Managed a $10M portfolio",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Inherited 15+ additional projects on top of the existing portfolio",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Reached out to senior PMs and scheduled weekly office hours",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Prioritized the most critical deadlines and which customers needed the most attention",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Received the 2024 PM Excellence Award",
+   "sources": [
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Coordinated installations and aligned multiple stakeholders on every project",
+   "sources": [
+    "tanium-interview-prep"
+   ]
+  }
+ ],
+ "differences": [
+  "The size of the portfolio mentioned is $47M in one excerpt and $10M in others."
+ ],
+ "related": [
+  {
+   "title": "Unpaid Client Invoice",
+   "why": "This experience relates to managing a large, complex project with competing priorities."
+  },
+  {
+   "title": "Graton Casino Expansion",
+   "why": "This note details the management of a $2.9M project, showing coordination skills."
+  },
+  {
+   "title": "Tanium Interview Prep",
+   "why": "This note provides context on the core PM skills demonstrated at Otis."
+  }
+ ],
+ "model": "gemma4-e2b-qat",
+ "generated_at": "2026-09-25T22:22:05"
+}

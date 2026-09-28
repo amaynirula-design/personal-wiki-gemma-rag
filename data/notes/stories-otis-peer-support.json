@@ -1,0 +1,67 @@
+{
+ "title": "Supporting a Struggling Peer",
+ "summary": "This note details an experience where the owner observed a peer struggling with a technically demanding construction project at Otis. The owner stepped in to offer support by walking through technical constraints and acting as a bridge with stakeholders, which helped the peer gain confidence and the project succeed.",
+ "key_points": [
+  {
+   "text": "Peer assigned highly complex, technically demanding construction project despite not having the technical background typically required for that type of work",
+   "sources": [
+    "amazon-interview"
+   ]
+  },
+  {
+   "text": "Peer was set up to struggle due to manpower constraints rather than fit",
+   "sources": [
+    "amazon-interview"
+   ]
+  },
+  {
+   "text": "Goal became to help stabilize the project and support my peer without undermining her credibility",
+   "sources": [
+    "amazon-interview"
+   ]
+  },
+  {
+   "text": "Proactively reached out to her and offered support, positioning myself as a potential resource rather than stepping in as a “fixer”",
+   "sources": [
+    "amazon-interview"
+   ]
+  },
+  {
+   "text": "Helped her ramp up on the technical aspects of the project by walking through system constraints, installation sequencing, and common risk areas based on my prior experience",
+   "sources": [
+    "amazon-interview"
+   ]
+  },
+  {
+   "text": "Acted as a bridge by framing technical limitations in clear language so stakeholders had realistic expectations",
+   "sources": [
+    "amazon-interview"
+   ]
+  },
+  {
+   "text": "Peer gained confidence, credibility with stakeholders, and was able to lead the project successfully rather than being overwhelmed by it",
+   "sources": [
+    "amazon-interview"
+   ]
+  },
+  {
+   "text": "Team avoided a potential failure that would have been incorrectly attributed to an individual rather than a resourcing mismatch",
+   "sources": [
+    "amazon-interview"
+   ]
+  }
+ ],
+ "differences": [],
+ "related": [
+  {
+   "title": "Otis Project Management",
+   "why": "This note details the owner's role as a project manager at Otis, which is the context for the peer struggle described in this story."
+  },
+  {
+   "title": "Career Story",
+   "why": "This note summarizes the owner's career progression, providing context for the experience described in the story."
+  }
+ ],
+ "model": "gemma4-e2b-qat",
+ "generated_at": "2026-09-25T22:48:18"
+}

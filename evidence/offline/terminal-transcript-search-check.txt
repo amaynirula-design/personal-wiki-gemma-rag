@@ -1,0 +1,66 @@
+Offline re-run of search / model-down checks. Started 2026-09-28 15:32:21; waiting for the internet to be disconnected...
+
+================================================================
+[2026-09-28 15:33:07] $ proof that the internet is disconnected
+================================================================
+internet_status(): offline
+curl: (6) Could not resolve host: huggingface.co
+en0: no IP address (Wi-Fi off)
+
+================================================================
+[2026-09-28 15:33:07] $ stop the local model server
+================================================================
+ollama serve: not running
+127.0.0.1:11434: connection refused
+
+================================================================
+[2026-09-28 15:33:10] $ ./wiki search "linear chain architecture" -k 3
+================================================================
+[search mode · retrieval only, no model call · local BM25 index]
+Query: linear chain architecture  ·  scope: sources  ·  3 passage(s) in 0 ms
+
+[1] Tanium Interview Prep.docx › What does Tanium do? (¶24-26)
+    source · vault/raw/Tanium Interview Prep.docx · BM25 7.5 · matched: linear, chain, architecture
+    Tanium is an endpoint management and security platform that gives IT departments real-time visibility and control over all endpoints - laptops, servers, smartphones, and any other devices connected to the company's network.
+    What sets Tanium apart from competitors are two key innovations: First is their ability to query all endpoints in under 15 seconds, thanks to the linear chain architecture, which dramatically reduces server load. (2) Its unified platform of modules that cover the full lifecycle: security, operations, patching, compliance, incident response, asset discovery, automation, and more. Tools like Tanium Guardian provide proactive vulnerability monitoring, while Tanium Automate lets teams execute playbooks and workflows that simplify everything from patching to onboarding new devices.
+    Instead of stitching together multiple solutions for asset management, patching, EDR, compliance, and configuration, Tanium consolidates them into one platform. That’s why many enterprises think of Tanium as the backbone of their IT and security operations — real-time, accurate, and massively scalable.
+
+[2] Tanium Interview Prep.docx › QUESTIONS FOR [interviewer] (¶28-34)
+    source · vault/raw/Tanium Interview Prep.docx · BM25 2.79 · matched: architecture
+    What kind of people tend to thrive at Tanium from a culture perspective?
+    For my summer project, will I be joining the team and supporting them on an ongoing project or will I have my own mini project to work on?
+    A major aspect of any PM role is to gather user feedback to check on how products are performing in the real world? How is user feedback collected at Tanium? Is it through the sales team or do PM’s reach out to customers as well to collect on this feedback?
+    What modules at Tanium do you deal with/work on?
+    What is the strategic direction that Tanium is headed in? is it going more in the AI space or is it going more in the cybersecurity space and competing with the like of crowdstrike or is it a third direction altogether?
+    I’ve read about different distributed architectures like linear-chain and peer-to-peer models. How do these approaches differ from a ring-based deployment system in practice, especially if all of them help distribute load?
+    If the confidence score is high, can patches be pushed out to all devices?
+
+[3] Tanium Interview Prep.docx › Tell me about a time you used multiple resources to overcome a challenge/had to work un... (¶46-49)
+    source · vault/raw/Tanium Interview Prep.docx · BM25 2.49 · matched: chain
+    Last year, supply chain disruptions increased our material lead times from 12 to 16 weeks, putting multiple projects at risk of significant delays. I had to inform customers of this bad news, and understandably, they were not happy.
+    I knew I needed to keep projects on schedule despite delays in order to maintain customer satisfaction and our reputation for reliable delivery.
+    I took a novel two-pronged approach leveraging different resources. First, I worked with our factory to implement partial shipments - getting materials shipped as they became available rather than waiting for complete orders. This allowed our mechanics to start assembly immediately with available parts and install missing components later. Second, I coordinated with our field mechanics to put in significant overtime to make up for any remaining schedule gaps and ensure we hit our deadlines.
+    By strategically using both factory flexibility and mechanic capacity, I kept all projects on track and maintained customer satisfaction despite the supply chain crisis. Customers appreciated the proactive problem-solving, and we didn't lose any projects due to delays.
+
+Saved: runs/20260928-153310-search.json
+
+================================================================
+[2026-09-28 15:33:10] $ ./wiki ask "How quickly can Tanium query all endpoints?"   (model server stopped: expect a clear error)
+================================================================
+error: Cannot reach the local Ollama server at http://127.0.0.1:11434.
+  Start it in another terminal with:  ollama serve
+  (search mode works without the model: wiki search "...")
+exit code: 1
+
+================================================================
+[2026-09-28 15:33:10] $ restart the local model server
+================================================================
+Personal Wiki status
+  project:   /Users/amaynirula/Desktop/Haas/2nd Year/Agentic AI/Personal Wiki
+  model:     gemma4-e2b-qat  (google/gemma-4-E2B-it-qat-q4_0-gguf (gemma-4-E2B_q4_0-it.gguf), Q4_0 (quantization-aware trained))
+  runtime:   ollama 0.34.4
+  model ok:  installed
+  index:     46 source passages + 41 wiki sections (data/index.json)
+  wiki:      16 notes in vault/wiki
+  internet:  offline  (execution is local either way)
+[2026-09-28 15:33:12] CHECK COMPLETE — you can turn Wi-Fi back on.

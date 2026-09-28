@@ -1,0 +1,344 @@
+{
+  "mode": "chat",
+  "env": {
+    "timestamp": "2026-09-28T15:30:42",
+    "execution": "local",
+    "internet": "offline",
+    "host": "Amays-MacBook-Air-2.local",
+    "platform": "Darwin 26.5.2 (arm64)",
+    "model": "gemma4-e2b-qat",
+    "model_identifier": "google/gemma-4-E2B-it-qat-q4_0-gguf (gemma-4-E2B_q4_0-it.gguf)",
+    "quantization": "Q4_0 (quantization-aware trained)",
+    "runtime": "ollama 0.34.4"
+  },
+  "persona": "prompts/persona.md",
+  "turns": [
+    {
+      "user": "what can we do?",
+      "retrieve": false,
+      "route_reason": "rule: question about the assistant's capabilities",
+      "reused_previous_passages": false,
+      "query": "",
+      "passages": [],
+      "reply": "We can brainstorm and draft interview answers, run a mock interview, build prep plans and checklists, and look up your prep notes.\n\nWhat are you working on right now?",
+      "stats": {
+        "wall_s": 3.97,
+        "load_s": 0.0,
+        "prompt_tokens": 608,
+        "prompt_s": 1.99,
+        "output_tokens": 36,
+        "output_s": 1.94,
+        "tokens_per_s": 18.6
+      },
+      "citation_check": null
+    },
+    {
+      "user": "what can you help me with?",
+      "retrieve": false,
+      "route_reason": "rule: question about the assistant's capabilities",
+      "reused_previous_passages": false,
+      "query": "",
+      "passages": [],
+      "reply": "I can help you with:\n\n*   Drafting interview answers (e.g., \"Tell me about yourself,\" STAR stories) tailored to specific companies.\n*   Running mock interviews with me.\n*   Building prep plans and checklists.\n*   Reviewing and refining your prep materials.\n*   Looking up information from your notes (Amazon Pathways, Tanium, TikTok Monetization Strategy & Ops).\n\nWhat's the next step for you?",
+      "stats": {
+        "wall_s": 5.73,
+        "load_s": 0.0,
+        "prompt_tokens": 660,
+        "prompt_s": 0.37,
+        "output_tokens": 95,
+        "output_s": 5.29,
+        "tokens_per_s": 18.0
+      },
+      "citation_check": null
+    },
+    {
+      "user": "Draft a short plan for preparing for my Tanium interview this week.",
+      "retrieve": true,
+      "route_reason": "model router",
+      "reused_previous_passages": false,
+      "query": "Tanium interview prep plan",
+      "passages": [
+        {
+          "n": 1,
+          "id": "tanium-interview-prep:s02p1",
+          "kind": "source",
+          "path": "vault/raw/Tanium Interview Prep.docx",
+          "location": "Tanium Interview Prep.docx › What did you do at Otis? (¶14-18)",
+          "score": 7.04,
+          "matched_terms": [
+            "tanium",
+            "interview",
+            "prep",
+            "plan"
+          ],
+          "text": "At Otis, I was a project manager managing a $47M portfolio of 50+ new construction elevator projects simultaneously. My role had three main focus areas:\nFirst, stakeholder coordination: I had to align multiple internal and external parties - contractors, architects, city officials, building owners - who all had different priorities and timelines. I had no direct authority over most of them, so I had to rely on leadership without formal power and bridge organizational silos to keep everyone aligned.\nSecond, risk management at scale: With 50+ projects running concurrently, issues emerged constantly. I had to monitor for early warning signs, flag problems before they escalated, and coordinate rapid responses to prevent them from cascading into larger project failures. This meant developing a sense of pattern recognition for common failure and building relationships so stakeholders would escalate issues early rather than trying to solve them independently.\nThird, technical problem-solving: I was responsible for handling any technical challenges - design modifications, code compliance issues, construction conflicts - which meant quickly understanding complex problems, coming up with a game plan, and then getting team buy off in order to execute this game plan.\nFinally, beyond the three main focus areas, I had full P&L responsibility for the portfolio and was accountable for hitting financial metrics across all projects."
+        },
+        {
+          "n": 2,
+          "id": "wiki:Client Payment Negotiation#Key points",
+          "kind": "wiki",
+          "path": "vault/wiki/Stories/Client Payment Negotiation.md",
+          "location": "Client Payment Negotiation (wiki) › Key points",
+          "score": 3.61,
+          "matched_terms": [
+            "tanium",
+            "interview",
+            "prep"
+          ],
+          "text": "- Customer refused to pay $125,000 owed ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]], [[raw/Tiktok Interview Prep.docx|Tiktok prep]])\n- Conflict created between Sales and Finance ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]], [[raw/Tiktok Interview Prep.docx|Tiktok prep]])\n- Sales believed they should write-off the amount to preserve relationship ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]], [[raw/Tiktok Interview Prep.docx|Tiktok prep]])\n- Finance wanted to collect every last penny ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]], [[raw/Tiktok Interview Prep.docx|Tiktok prep]])\n- Analyzed internal system and discovered net positive overall ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]], [[raw/Tiktok Interview Prep.docx|Tiktok prep]])\n- Proposed compromise: write off half of the unpaid amount as a one time courtesy discount ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]], [[raw/Tiktok Interview Prep.docx|Tiktok prep]])\n- Remaining balance would be deferred into a future project ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]], [[raw/Tiktok Interview Prep.docx|Tiktok prep]])\n- Result: Win-win solution prevented potential financial loss and protected long-term relationship ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]], [[raw/Tiktok Interview Prep.docx|Tiktok prep]])"
+        },
+        {
+          "n": 3,
+          "id": "wiki:Overdue Receivables Analysis#Key points",
+          "kind": "wiki",
+          "path": "vault/wiki/Stories/Overdue Receivables Analysis.md",
+          "location": "Overdue Receivables Analysis (wiki) › Key points",
+          "score": 3.6,
+          "matched_terms": [
+            "tanium",
+            "interview",
+            "prep"
+          ],
+          "text": "- $7 million in invoices that were unpaid & significantly overdue represented 33% of total AR ([[raw/Amazon Interview.docx|Amazon prep]])\n- One line of business accounted for 55% of the overdue AR: 'new construction' in the Amazon and Tanium preps, 'my line of business' in the TikTok prep ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]], [[raw/Tiktok Interview Prep.docx|Tiktok prep]])\n- PM’s were not getting notified when invoices were sent out ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]], [[raw/Tiktok Interview Prep.docx|Tiktok prep]])\n- Regional collectors were spread too thin ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]], [[raw/Tiktok Interview Prep.docx|Tiktok prep]])\n- Liens were not being filed strategically ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]], [[raw/Tiktok Interview Prep.docx|Tiktok prep]])\n- Presented three solutions to leadership ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]], [[raw/Tiktok Interview Prep.docx|Tiktok prep]])\n- Saw a 15% drop in AR ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]], [[raw/Tiktok Interview Prep.docx|Tiktok prep]])"
+        },
+        {
+          "n": 4,
+          "id": "wiki:Customer Reference Library#Key points",
+          "kind": "wiki",
+          "path": "vault/wiki/Stories/Customer Reference Library.md",
+          "location": "Customer Reference Library (wiki) › Key points",
+          "score": 3.59,
+          "matched_terms": [
+            "tanium",
+            "interview",
+            "prep"
+          ],
+          "text": "- Created a centralized reference folder ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]])\n- Included most common customer questions ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]])\n- Included exact code or compliance sections supporting answers ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]])\n- Included pre-approved sample responses PMs could copy/paste ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]])\n- Became a single source of truth for the team ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]])\n- Significantly reduced time spent responding to customers ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]])\n- Improved customer satisfaction by shortening response times and reducing escalations ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]])"
+        }
+      ],
+      "reply": "Here is a short preparation plan for your Tanium interview this week.\n\n**Focus Areas:**\n\n1.  **Otis Story Deep Dive:** Review your experience as a project manager at Otis. Be ready to discuss stakeholder coordination, risk management at scale, and technical problem-solving [1].\n2.  **Tanium Specifics:** Brush up on the core concepts related to Tanium, especially product management aspects.\n3.  **Behavioral Prep:** Prepare STAR stories, focusing on how you handled conflict or complex problem-solving, similar to the client payment negotiation example [2].\n\n**Action Items:**\n\n*   **Today:** Outline 3 strong STAR stories based on your Otis experience.\n*   **Tomorrow:** Create a list of 5 key Tanium concepts you want to master.\n*   **Day Before:** Practice your \"Tell me about yourself\" and your answers to \"Why this company?\"\n\nWhat do you want to tackle first?",
+      "stats": {
+        "wall_s": 15.01,
+        "load_s": 0.0,
+        "prompt_tokens": 2174,
+        "prompt_s": 5.43,
+        "output_tokens": 199,
+        "output_s": 9.51,
+        "tokens_per_s": 20.9
+      },
+      "citation_check": {
+        "ok": false,
+        "insufficient": false,
+        "cited": [
+          1,
+          2
+        ],
+        "invalid": [],
+        "uncited_sentences": [
+          "Here is a short preparation plan for your Tanium interview this week.",
+          "1.  **Otis Story Deep Dive:** Review your experience as a project manager at Otis.",
+          "2.  **Tanium Specifics:** Brush up on the core concepts related to Tanium, especially product management aspects.",
+          "Today:** Outline 3 strong STAR stories based on your Otis experience.",
+          "Tomorrow:** Create a list of 5 key Tanium concepts you want to master.",
+          "Day Before:** Practice your \"Tell me about yourself\" and your answers to \"Why this company?\"",
+          "What do you want to tackle first?"
+        ],
+        "unsupported_numbers": [
+          "3"
+        ],
+        "unsupported_citations": [],
+        "summary": "CHECK — 2 passage(s) cited: [1], [2]; 7 sentence(s) without a citation; numbers not found in any cited passage: 3"
+      }
+    },
+    {
+      "user": "make that shorter",
+      "retrieve": false,
+      "route_reason": "rule: follow-up edit of the previous reply (uses conversation)",
+      "reused_previous_passages": true,
+      "query": "",
+      "passages": [
+        {
+          "n": 1,
+          "id": "tanium-interview-prep:s02p1",
+          "kind": "source",
+          "path": "vault/raw/Tanium Interview Prep.docx",
+          "location": "Tanium Interview Prep.docx › What did you do at Otis? (¶14-18)",
+          "score": 7.04,
+          "matched_terms": [
+            "tanium",
+            "interview",
+            "prep",
+            "plan"
+          ],
+          "text": "At Otis, I was a project manager managing a $47M portfolio of 50+ new construction elevator projects simultaneously. My role had three main focus areas:\nFirst, stakeholder coordination: I had to align multiple internal and external parties - contractors, architects, city officials, building owners - who all had different priorities and timelines. I had no direct authority over most of them, so I had to rely on leadership without formal power and bridge organizational silos to keep everyone aligned.\nSecond, risk management at scale: With 50+ projects running concurrently, issues emerged constantly. I had to monitor for early warning signs, flag problems before they escalated, and coordinate rapid responses to prevent them from cascading into larger project failures. This meant developing a sense of pattern recognition for common failure and building relationships so stakeholders would escalate issues early rather than trying to solve them independently.\nThird, technical problem-solving: I was responsible for handling any technical challenges - design modifications, code compliance issues, construction conflicts - which meant quickly understanding complex problems, coming up with a game plan, and then getting team buy off in order to execute this game plan.\nFinally, beyond the three main focus areas, I had full P&L responsibility for the portfolio and was accountable for hitting financial metrics across all projects."
+        },
+        {
+          "n": 2,
+          "id": "wiki:Client Payment Negotiation#Key points",
+          "kind": "wiki",
+          "path": "vault/wiki/Stories/Client Payment Negotiation.md",
+          "location": "Client Payment Negotiation (wiki) › Key points",
+          "score": 3.61,
+          "matched_terms": [
+            "tanium",
+            "interview",
+            "prep"
+          ],
+          "text": "- Customer refused to pay $125,000 owed ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]], [[raw/Tiktok Interview Prep.docx|Tiktok prep]])\n- Conflict created between Sales and Finance ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]], [[raw/Tiktok Interview Prep.docx|Tiktok prep]])\n- Sales believed they should write-off the amount to preserve relationship ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]], [[raw/Tiktok Interview Prep.docx|Tiktok prep]])\n- Finance wanted to collect every last penny ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]], [[raw/Tiktok Interview Prep.docx|Tiktok prep]])\n- Analyzed internal system and discovered net positive overall ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]], [[raw/Tiktok Interview Prep.docx|Tiktok prep]])\n- Proposed compromise: write off half of the unpaid amount as a one time courtesy discount ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]], [[raw/Tiktok Interview Prep.docx|Tiktok prep]])\n- Remaining balance would be deferred into a future project ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]], [[raw/Tiktok Interview Prep.docx|Tiktok prep]])\n- Result: Win-win solution prevented potential financial loss and protected long-term relationship ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]], [[raw/Tiktok Interview Prep.docx|Tiktok prep]])"
+        },
+        {
+          "n": 3,
+          "id": "wiki:Overdue Receivables Analysis#Key points",
+          "kind": "wiki",
+          "path": "vault/wiki/Stories/Overdue Receivables Analysis.md",
+          "location": "Overdue Receivables Analysis (wiki) › Key points",
+          "score": 3.6,
+          "matched_terms": [
+            "tanium",
+            "interview",
+            "prep"
+          ],
+          "text": "- $7 million in invoices that were unpaid & significantly overdue represented 33% of total AR ([[raw/Amazon Interview.docx|Amazon prep]])\n- One line of business accounted for 55% of the overdue AR: 'new construction' in the Amazon and Tanium preps, 'my line of business' in the TikTok prep ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]], [[raw/Tiktok Interview Prep.docx|Tiktok prep]])\n- PM’s were not getting notified when invoices were sent out ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]], [[raw/Tiktok Interview Prep.docx|Tiktok prep]])\n- Regional collectors were spread too thin ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]], [[raw/Tiktok Interview Prep.docx|Tiktok prep]])\n- Liens were not being filed strategically ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]], [[raw/Tiktok Interview Prep.docx|Tiktok prep]])\n- Presented three solutions to leadership ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]], [[raw/Tiktok Interview Prep.docx|Tiktok prep]])\n- Saw a 15% drop in AR ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]], [[raw/Tiktok Interview Prep.docx|Tiktok prep]])"
+        },
+        {
+          "n": 4,
+          "id": "wiki:Customer Reference Library#Key points",
+          "kind": "wiki",
+          "path": "vault/wiki/Stories/Customer Reference Library.md",
+          "location": "Customer Reference Library (wiki) › Key points",
+          "score": 3.59,
+          "matched_terms": [
+            "tanium",
+            "interview",
+            "prep"
+          ],
+          "text": "- Created a centralized reference folder ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]])\n- Included most common customer questions ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]])\n- Included exact code or compliance sections supporting answers ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]])\n- Included pre-approved sample responses PMs could copy/paste ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]])\n- Became a single source of truth for the team ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]])\n- Significantly reduced time spent responding to customers ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]])\n- Improved customer satisfaction by shortening response times and reducing escalations ([[raw/Amazon Interview.docx|Amazon prep]], [[raw/Tanium Interview Prep.docx|Tanium prep]])"
+        }
+      ],
+      "reply": "Here is the shortened plan:\n\n**Tanium Prep Plan:**\n\n1.  **Otis Story:** Focus on your project management experience: stakeholder coordination, risk management at scale, and technical problem-solving [1].\n2.  **Tanium Concepts:** Master core product management concepts.\n3.  **Behavioral Prep:** Prepare STAR stories focusing on conflict resolution and complex problem-solving, using the client payment negotiation example [2].\n\n**Next Step:** Outline 3 strong STAR stories from your Otis experience.",
+      "stats": {
+        "wall_s": 11.59,
+        "load_s": 0.02,
+        "prompt_tokens": 2385,
+        "prompt_s": 6.26,
+        "output_tokens": 108,
+        "output_s": 5.18,
+        "tokens_per_s": 20.8
+      },
+      "citation_check": {
+        "ok": false,
+        "insufficient": false,
+        "cited": [
+          1,
+          2
+        ],
+        "invalid": [],
+        "uncited_sentences": [
+          "2.  **Tanium Concepts:** Master core product management concepts.",
+          "Next Step:** Outline 3 strong STAR stories from your Otis experience."
+        ],
+        "unsupported_numbers": [
+          "1",
+          "3"
+        ],
+        "unsupported_citations": [],
+        "summary": "CHECK — 2 passage(s) cited: [1], [2]; 2 sentence(s) without a citation; numbers not found in any cited passage: 1, 3"
+      }
+    },
+    {
+      "user": "Just so you know, the Graton Casino Expansion was a $5M project.",
+      "retrieve": true,
+      "route_reason": "model router",
+      "reused_previous_passages": false,
+      "query": "Otis Elevator project-management stories Graton Casino Expansion",
+      "passages": [
+        {
+          "n": 1,
+          "id": "wiki:Tanium Product Management#Prepared answers",
+          "kind": "wiki",
+          "path": "vault/wiki/Companies/Tanium Product Management.md",
+          "location": "Tanium Product Management (wiki) › Prepared answers",
+          "score": 14.24,
+          "matched_terms": [
+            "otis",
+            "elevator",
+            "story",
+            "graton",
+            "casino",
+            "expansion"
+          ],
+          "text": "- [[Career Story]] — for \"Tell me about yourself and how you fit the role?\"\n- [[Otis Project Management]] — for \"What did you do at Otis?\"\n- [[Tanium Endpoint Management]] — for \"What does Tanium do?\"\n- [[Graton Casino Expansion]] — for \"Tell me about a time you had to overcome challenges when working with a team...\"\n- [[Supply Chain Delays]] — for \"Tell me about a time you used multiple resources to overcome a challenge...\"\n- [[Inherited Project Overload]] — for \"Tell me about a time you adapted to a challenging situation...\"\n- [[Client Payment Negotiation]] — for \"Tell me about a time you had disagreement with a colleague...\"\n- [[Overdue Receivables Analysis]] — for \"Tell me about a time you dug into data...\"\n- [[Staying Current in Tech]] — for \"Tell me about how you have stayed current on industry developments over the course of y......\"\n- [[Customer Reference Library]] — for \"Tell me about ways that you personally have tried to mature the engineering efforts on......\"\n- [[Elevator Cab Weight Failure]] — for \"Tell me a time you failed.\""
+        },
+        {
+          "n": 2,
+          "id": "wiki:Graton Casino Expansion#summary",
+          "kind": "wiki",
+          "path": "vault/wiki/Stories/Graton Casino Expansion.md",
+          "location": "Graton Casino Expansion (wiki) › Summary",
+          "score": 14.09,
+          "matched_terms": [
+            "graton",
+            "casino",
+            "expansion"
+          ],
+          "text": "# Graton Casino Expansion\n\nThis note details the Graton Casino Expansion project, a $2.9M undertaking where the owner coordinated between internal teams and external stakeholders. The challenge involved balancing customer desires for premium customizations against vendor timeline concerns and internal scope creep worries. The process involved establishing weekly coordination meetings and presenting options to the client to ensure delivery on schedule and with financial discipline."
+        },
+        {
+          "n": 3,
+          "id": "wiki:Amazon Pathways#Prepared answers",
+          "kind": "wiki",
+          "path": "vault/wiki/Companies/Amazon Pathways.md",
+          "location": "Amazon Pathways (wiki) › Prepared answers",
+          "score": 13.18,
+          "matched_terms": [
+            "elevator",
+            "story",
+            "graton",
+            "casino",
+            "expansion"
+          ],
+          "text": "- [[Career Story]] — for \"Tell me about yourself\"\n- [[Graton Casino Expansion]] — for \"Tell me about a time you had to overcome challenges when working with a team...\"\n- [[Supply Chain Delays]] — for \"Tell me about a time you used multiple resources to overcome a challenge...\"\n- [[Inherited Project Overload]] — for \"Tell me about a time you adapted to a challenging situation...\"\n- [[Client Payment Negotiation]] — for \"Tell me about a time you had disagreement with a colleague...\"\n- [[Overdue Receivables Analysis]] — for \"Tell me about a time you dug into data...\"\n- [[Customer Reference Library]] — for \"Tell me about ways that you personally have tried to mature the engineering efforts on......\"\n- [[Elevator Cab Weight Failure]] — for \"Tell me a time you failed...\"\n- [[Supporting a Struggling Peer]] — for \"tell me a time when you saw a peer struggling and decided to step in and help. What was......\""
+        },
+        {
+          "n": 4,
+          "id": "wiki:TikTok MSO#Prepared answers",
+          "kind": "wiki",
+          "path": "vault/wiki/Companies/TikTok MSO.md",
+          "location": "TikTok MSO (wiki) › Prepared answers",
+          "score": 9.31,
+          "matched_terms": [
+            "graton",
+            "casino",
+            "expansion"
+          ],
+          "text": "- [[TikTok Monetization]] — for \"How does Tiktok monetize?\"\n- [[Graton Casino Expansion]] — for \"Tell me about a time you had to overcome challenges when working with a team...\"\n- [[Supply Chain Delays]] — for \"Tell me about a time you used multiple resources to overcome a challenge...\"\n- [[Inherited Project Overload]] — for \"Tell me about a time you adapted to a challenging situation...\"\n- [[Client Payment Negotiation]] — for \"Tell me about a time you had disagreement with a colleague...\"\n- [[Overdue Receivables Analysis]] — for \"Tell me about a time you dug into data...\""
+        }
+      ],
+      "reply": "I don't have information in the notes stating that the Graton Casino Expansion was a $5M project. The notes mention it was a \"$2.9M undertaking\" [2].\n\nYou can edit the source document and re-run `wiki ingest` if the notes are incorrect.",
+      "stats": {
+        "wall_s": 7.75,
+        "load_s": 0.01,
+        "prompt_tokens": 1989,
+        "prompt_s": 4.72,
+        "output_tokens": 61,
+        "output_s": 2.94,
+        "tokens_per_s": 20.8
+      },
+      "citation_check": {
+        "ok": false,
+        "insufficient": false,
+        "cited": [
+          2
+        ],
+        "invalid": [],
+        "uncited_sentences": [
+          "I don't have information in the notes stating that the Graton Casino Expansion was a $5M project.",
+          "You can edit the source document and re-run `wiki ingest` if the notes are incorrect."
+        ],
+        "unsupported_numbers": [],
+        "unsupported_citations": [],
+        "summary": "CHECK — 1 passage(s) cited: [2]; 2 sentence(s) without a citation"
+      }
+    }
+  ]
+}

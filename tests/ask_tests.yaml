@@ -1,0 +1,56 @@
+# Ask-mode evaluation set. Written BEFORE retrieval was implemented (2026-09-25).
+# This file is the answer key: it lives outside vault/ so the retriever never indexes it.
+# Run with:  wiki eval tests/ask_tests.yaml
+
+- id: 1
+  name: Tanium endpoint query speed
+  kind: direct question, one source
+  question: "How quickly can Tanium query all endpoints, and what makes that possible?"
+  expected_behavior: answer
+  expected_sources:
+    - "Tanium Interview Prep.docx › What does Tanium do?"
+  expected_passage: >-
+    "What sets Tanium apart from competitors are two key innovations: First is their ability to
+    query all endpoints in under 15 seconds, thanks to the linear chain architecture, which
+    dramatically reduces server load."
+  expected_answer: "Under 15 seconds, made possible by Tanium's linear chain architecture, which reduces server load."
+
+- id: 2
+  name: TikTok Shop take rate (paraphrased)
+  kind: answerable, worded differently from the source
+  question: "What cut does TikTok take when someone buys something through TikTok Shop?"
+  expected_behavior: answer
+  expected_sources:
+    - "Tiktok Interview Prep.docx › How does Tiktok monetize?"
+  expected_passage: >-
+    "taking a commission on every transaction, typically 2-8% depending on category, and
+    charging sellers to advertise their products on the platform."
+  expected_answer: "A seller commission of typically 2-8% per transaction depending on category; TikTok also charges sellers to advertise their products."
+  retrieval_note: "The question says 'cut' and 'buys'; the source says 'commission' and 'transaction'. Only 'TikTok Shop' overlaps lexically."
+
+- id: 3
+  name: Supply chain lead times across three preps
+  kind: known evidence connecting several sources (with a discrepancy)
+  question: "In my Otis supply chain delay story, how much did material lead times increase, and how did I keep projects on schedule?"
+  expected_behavior: answer
+  expected_sources:
+    - "Amazon Interview.docx › 2. Tell me about a time you used multiple resources..."
+    - "Tanium Interview Prep.docx › Tell me about a time you used multiple resources..."
+    - "Tiktok Interview Prep.docx › Tell me about a time you used multiple resources..."
+  expected_passage: >-
+    Amazon: "increased our material lead times from 10 to 16 weeks". Tanium and TikTok:
+    "increased our material lead times from 12 to 16 weeks". All three: partial shipments from
+    the factory plus field-mechanic overtime.
+  expected_answer: >-
+    Lead times rose to 16 weeks — from 10 weeks in the Amazon prep, but from 12 weeks in the Tanium
+    and TikTok preps (the sources disagree). Projects stayed on schedule through partial shipments
+    from the factory and overtime from field mechanics.
+
+- id: 4
+  name: TikTok internship pay (unsupported)
+  kind: plausible question the wiki cannot answer
+  question: "What is the salary or hourly pay for the TikTok Monetization Strategy & Ops internship?"
+  expected_behavior: insufficient_evidence
+  expected_sources: []
+  expected_passage: "None. The TikTok prep discusses why MSO and TikTok's monetization, but never compensation."
+  expected_answer: "INSUFFICIENT EVIDENCE — the sources do not mention internship pay."

@@ -1,0 +1,64 @@
+{
+ "title": "Customer Reference Library",
+ "summary": "This note details the creation of a centralized reference folder to address repeated technical questions about elevator codes and design requirements. The folder included common questions, code sections, and pre-approved sample responses, which served as a single source of truth for the team. This initiative resulted in more accurate and consistent communication, reduced response times, and improved customer satisfaction.",
+ "key_points": [
+  {
+   "text": "Created a centralized reference folder",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Included most common customer questions",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Included exact code or compliance sections supporting answers",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Included pre-approved sample responses PMs could copy/paste",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Became a single source of truth for the team",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Significantly reduced time spent responding to customers",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Improved customer satisfaction by shortening response times and reducing escalations",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep"
+   ]
+  }
+ ],
+ "differences": [],
+ "related": [
+  {
+   "title": "Otis Project Management",
+   "why": "This note details the role where the reference folder was created."
+  }
+ ],
+ "model": "gemma4-e2b-qat",
+ "generated_at": "2026-09-25T22:48:44"
+}

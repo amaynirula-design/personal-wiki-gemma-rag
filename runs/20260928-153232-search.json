@@ -1,0 +1,43 @@
+{
+  "mode": "search",
+  "env": {
+    "timestamp": "2026-09-28T15:32:32",
+    "execution": "local",
+    "internet": "online",
+    "host": "Amays-MacBook-Air-2.local",
+    "platform": "Darwin 26.5.2 (arm64)",
+    "model": "gemma4-e2b-qat",
+    "model_identifier": "google/gemma-4-E2B-it-qat-q4_0-gguf (gemma-4-E2B_q4_0-it.gguf)",
+    "quantization": "Q4_0 (quantization-aware trained)"
+  },
+  "query": "linear chain architecture",
+  "scope": "sources",
+  "passages": [
+    {
+      "n": 1,
+      "id": "tanium-interview-prep:s04p1",
+      "kind": "source",
+      "path": "vault/raw/Tanium Interview Prep.docx",
+      "location": "Tanium Interview Prep.docx › What does Tanium do? (¶24-26)",
+      "score": 7.5,
+      "matched_terms": [
+        "linear",
+        "chain",
+        "architecture"
+      ],
+      "text": "Tanium is an endpoint management and security platform that gives IT departments real-time visibility and control over all endpoints - laptops, servers, smartphones, and any other devices connected to the company's network.\nWhat sets Tanium apart from competitors are two key innovations: First is their ability to query all endpoints in under 15 seconds, thanks to the linear chain architecture, which dramatically reduces server load. (2) Its unified platform of modules that cover the full lifecycle: security, operations, patching, compliance, incident response, asset discovery, automation, and more. Tools like Tanium Guardian provide proactive vulnerability monitoring, while Tanium Automate lets teams execute playbooks and workflows that simplify everything from patching to onboarding new devices.\nInstead of stitching together multiple solutions for asset management, patching, EDR, compliance, and configuration, Tanium consolidates them into one platform. That’s why many enterprises think of Tanium as the backbone of their IT and security operations — real-time, accurate, and massively scalable."
+    },
+    {
+      "n": 2,
+      "id": "tanium-interview-prep:s05p1",
+      "kind": "source",
+      "path": "vault/raw/Tanium Interview Prep.docx",
+      "location": "Tanium Interview Prep.docx › QUESTIONS FOR [interviewer] (¶28-34)",
+      "score": 2.79,
+      "matched_terms": [
+        "architecture"
+      ],
+      "text": "What kind of people tend to thrive at Tanium from a culture perspective?\nFor my summer project, will I be joining the team and supporting them on an ongoing project or will I have my own mini project to work on?\nA major aspect of any PM role is to gather user feedback to check on how products are performing in the real world? How is user feedback collected at Tanium? Is it through the sales team or do PM’s reach out to customers as well to collect on this feedback?\nWhat modules at Tanium do you deal with/work on?\nWhat is the strategic direction that Tanium is headed in? is it going more in the AI space or is it going more in the cybersecurity space and competing with the like of crowdstrike or is it a third direction altogether?\nI’ve read about different distributed architectures like linear-chain and peer-to-peer models. How do these approaches differ from a ring-based deployment system in practice, especially if all of them help distribute load?\nIf the confidence score is high, can patches be pushed out to all devices?"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+ "title": "Overdue Receivables Analysis",
+ "summary": "This note details an instance where the San Jose office faced a serious cash flow issue due to significant overdue invoices. The owner segmented the data, identified the new construction line of business as disproportionately high, and conducted interviews to find root causes. Based on this combined data, the owner presented three approved solutions that resulted in a 15% drop in AR.",
+ "key_points": [
+  {
+   "text": "$7 million in invoices that were unpaid & significantly overdue represented 33% of total AR",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "New construction line of business accounted for 55% of the overdue AR",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "PM’s were not getting notified when invoices were sent out",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Regional collectors were spread too thin",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Liens were not being filed strategically",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Presented three solutions to leadership",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Saw a 15% drop in AR",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  }
+ ],
+ "differences": [],
+ "related": [
+  {
+   "title": "Otis Project Management",
+   "why": "This note details the owner's role as a project manager at Otis, which is the company where the AR issue occurred."
+  }
+ ],
+ "model": "gemma4-e2b-qat",
+ "generated_at": "2026-09-28T15:27:47"
+}

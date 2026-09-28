@@ -1,0 +1,19 @@
+[ask mode · model gemma4-e2b-qat (Q4_0 (quantization-aware trained)) · local via Ollama 0.34.4]
+Question: How large was the Graton Casino Expansion project?
+1. Retrieved 5 source passage(s) in 0.1 ms: [1] Tiktok Interview Prep.docx › Tell me about a time you had to overcome challenges when working with a team (cross-fun... (¶55-62) (7.56); [2] Amazon Interview.docx › Tell me about a time you had to overcome challenges when working with a team (cross-fun... (¶16-23) (7.53); [3] Tanium Interview Prep.docx › Tell me about a time you had to overcome challenges when working with a team (cross-fun... (¶37-44) (7.53); [4] Tanium Interview Prep.docx › How do you fit the role? (¶10-12) (3.59); [5] Amazon Interview.docx › tell me a time when you saw a peer struggling and decided to step in and help. What was... (¶81-89) (0.98)
+2. Gemma extracted 3 quote(s); harness verified 3
+     [1] "On my largest project to date, Graton Casino Expansion, a $2.9M project,"
+     [2] "On my largest project to date, Graton Casino Expansion, a $2.9M project,"
+     [3] "On my largest project to date, Graton Casino Expansion, a $2.9M project,"
+3. Answer from verified quotes:
+
+On the largest project to date, the Graton Casino Expansion was a $2.9M project [1][2][3].
+
+Sources cited:
+  [1] Tiktok Interview Prep.docx › Tell me about a time you had to overcome challenges when working with a team (cross-fun... (¶55-62)  vault/raw/Tiktok Interview Prep.docx
+  [2] Amazon Interview.docx › Tell me about a time you had to overcome challenges when working with a team (cross-fun... (¶16-23)  vault/raw/Amazon Interview.docx
+  [3] Tanium Interview Prep.docx › Tell me about a time you had to overcome challenges when working with a team (cross-fun... (¶37-44)  vault/raw/Tanium Interview Prep.docx
+
+Citation check: PASS — 3 passage(s) cited: [1], [2], [3]
+Model time 13.26s · extract 10.18s (1478→107 tok) · answer 3.08s (476→28 tok)
+Saved: runs/20260928-153056-ask.json

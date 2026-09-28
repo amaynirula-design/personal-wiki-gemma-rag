@@ -1,0 +1,63 @@
+{
+ "title": "Career Story",
+ "summary": "This note summarizes the owner's career progression from Materials Engineering studies to project management at Otis Elevator Company, highlighting experience managing large portfolios and receiving an award. It also details the motivation for pursuing an MBA to transition into a strategic product management role in the tech space.",
+ "key_points": [
+  {
+   "text": "Studied Materials Engineering at University of Illinois",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Spent four years at Otis Elevator Company progressing through three roles in project management",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Managed a $47 million portfolio across 50+ construction projects",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Won the PM Excellence Award in 2024",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Realized desire to transition from construction into tech operations at scale",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Pursuing MBA at Haas with intention to transition into the product management field in the tech space",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep"
+   ]
+  }
+ ],
+ "differences": [
+  "The description of the portfolio management at Otis mentions managing a '$47 million portfolio across 50+ construction projects' in both excerpts."
+ ],
+ "related": [
+  {
+   "title": "Otis Project Management",
+   "why": "This note details the specific project management experience that forms the foundation of the career story."
+  },
+  {
+   "title": "Overdue Receivables Analysis",
+   "why": "This note relates to the operational experience gained at Otis, which informs the transition to product management."
+  }
+ ],
+ "model": "gemma4-e2b-qat",
+ "generated_at": "2026-09-25T22:32:51"
+}

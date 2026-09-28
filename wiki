@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Launcher for the Personal Wiki CLI: runs the harness with the project's virtualenv.
+# Usage: ./wiki <command> [args]   (or add this folder to PATH and run `wiki ...`)
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PY="$DIR/.venv/bin/python"
+[ -x "$PY" ] || PY="$(command -v python3)"
+export WIKI_HOME="${WIKI_HOME:-$DIR}"
+PYTHONPATH="$DIR${PYTHONPATH:+:$PYTHONPATH}" exec "$PY" -m wiki_cli "$@"

@@ -1,0 +1,452 @@
+{
+  "mode": "ingest",
+  "env": {
+    "timestamp": "2026-09-25T22:38:59",
+    "execution": "local",
+    "internet": "online",
+    "host": "Amays-MacBook-Air-2.local",
+    "platform": "Darwin 26.5.2 (arm64)",
+    "model": "gemma4-e2b-qat",
+    "model_identifier": "google/gemma-4-E2B-it-qat-q4_0-gguf (gemma-4-E2B_q4_0-it.gguf)",
+    "quantization": "Q4_0 (quantization-aware trained)",
+    "runtime": "ollama 0.34.4"
+  },
+  "paths": [
+    "vault/raw"
+  ],
+  "force": false,
+  "stats": {
+    "notes_created": 15,
+    "sections_assigned_by_model": 25,
+    "sources_processed": 3,
+    "sections_matched_by_text": 12,
+    "notes_written": 15,
+    "files_written": 15,
+    "passages": 46,
+    "wiki_chunks": 34,
+    "seconds": 495.4
+  },
+  "model_calls": [
+    {
+      "step": "assign amazon-interview s0",
+      "wall_s": 4.27,
+      "load_s": 0.02,
+      "prompt_tokens": 668,
+      "prompt_s": 2.44,
+      "output_tokens": 35,
+      "output_s": 1.65,
+      "tokens_per_s": 21.2
+    },
+    {
+      "step": "assign amazon-interview s1",
+      "wall_s": 3.29,
+      "load_s": 0.0,
+      "prompt_tokens": 708,
+      "prompt_s": 1.77,
+      "output_tokens": 32,
+      "output_s": 1.49,
+      "tokens_per_s": 21.5
+    },
+    {
+      "step": "assign amazon-interview s2",
+      "wall_s": 3.49,
+      "load_s": 0.0,
+      "prompt_tokens": 723,
+      "prompt_s": 1.79,
+      "output_tokens": 35,
+      "output_s": 1.68,
+      "tokens_per_s": 20.8
+    },
+    {
+      "step": "assign amazon-interview s3",
+      "wall_s": 3.62,
+      "load_s": 0.0,
+      "prompt_tokens": 745,
+      "prompt_s": 1.74,
+      "output_tokens": 42,
+      "output_s": 1.86,
+      "tokens_per_s": 22.5
+    },
+    {
+      "step": "assign amazon-interview s4",
+      "wall_s": 3.28,
+      "load_s": 0.0,
+      "prompt_tokens": 769,
+      "prompt_s": 1.7,
+      "output_tokens": 41,
+      "output_s": 1.54,
+      "tokens_per_s": 26.6
+    },
+    {
+      "step": "assign amazon-interview s5",
+      "wall_s": 3.3,
+      "load_s": 0.0,
+      "prompt_tokens": 826,
+      "prompt_s": 1.79,
+      "output_tokens": 40,
+      "output_s": 1.49,
+      "tokens_per_s": 26.9
+    },
+    {
+      "step": "assign amazon-interview s6",
+      "wall_s": 2.99,
+      "load_s": 0.0,
+      "prompt_tokens": 770,
+      "prompt_s": 1.68,
+      "output_tokens": 35,
+      "output_s": 1.3,
+      "tokens_per_s": 26.9
+    },
+    {
+      "step": "assign amazon-interview s7",
+      "wall_s": 3.19,
+      "load_s": 0.0,
+      "prompt_tokens": 772,
+      "prompt_s": 1.67,
+      "output_tokens": 40,
+      "output_s": 1.51,
+      "tokens_per_s": 26.6
+    },
+    {
+      "step": "assign amazon-interview s8",
+      "wall_s": 3.31,
+      "load_s": 0.0,
+      "prompt_tokens": 729,
+      "prompt_s": 1.5,
+      "output_tokens": 38,
+      "output_s": 1.8,
+      "tokens_per_s": 21.1
+    },
+    {
+      "step": "assign amazon-interview s9",
+      "wall_s": 3.19,
+      "load_s": 0.0,
+      "prompt_tokens": 802,
+      "prompt_s": 1.67,
+      "output_tokens": 41,
+      "output_s": 1.48,
+      "tokens_per_s": 27.7
+    },
+    {
+      "step": "assign amazon-interview s10",
+      "wall_s": 3.29,
+      "load_s": 0.0,
+      "prompt_tokens": 819,
+      "prompt_s": 1.8,
+      "output_tokens": 41,
+      "output_s": 1.48,
+      "tokens_per_s": 27.7
+    },
+    {
+      "step": "assign amazon-interview s11",
+      "wall_s": 2.81,
+      "load_s": 0.0,
+      "prompt_tokens": 676,
+      "prompt_s": 1.23,
+      "output_tokens": 33,
+      "output_s": 1.57,
+      "tokens_per_s": 21.1
+    },
+    {
+      "step": "assign tanium-interview-prep s1",
+      "wall_s": 3.06,
+      "load_s": 0.0,
+      "prompt_tokens": 686,
+      "prompt_s": 1.24,
+      "output_tokens": 37,
+      "output_s": 1.8,
+      "tokens_per_s": 20.6
+    },
+    {
+      "step": "assign tanium-interview-prep s2",
+      "wall_s": 2.94,
+      "load_s": 0.0,
+      "prompt_tokens": 780,
+      "prompt_s": 1.51,
+      "output_tokens": 37,
+      "output_s": 1.4,
+      "tokens_per_s": 26.3
+    },
+    {
+      "step": "assign tanium-interview-prep s3",
+      "wall_s": 2.86,
+      "load_s": 0.0,
+      "prompt_tokens": 777,
+      "prompt_s": 1.48,
+      "output_tokens": 36,
+      "output_s": 1.35,
+      "tokens_per_s": 26.7
+    },
+    {
+      "step": "assign tanium-interview-prep s4",
+      "wall_s": 3.19,
+      "load_s": 0.0,
+      "prompt_tokens": 725,
+      "prompt_s": 1.4,
+      "output_tokens": 36,
+      "output_s": 1.76,
+      "tokens_per_s": 20.4
+    },
+    {
+      "step": "assign tanium-interview-prep s5",
+      "wall_s": 3.03,
+      "load_s": 0.0,
+      "prompt_tokens": 756,
+      "prompt_s": 1.51,
+      "output_tokens": 36,
+      "output_s": 1.48,
+      "tokens_per_s": 24.4
+    },
+    {
+      "step": "assign tanium-interview-prep s11",
+      "wall_s": 3.27,
+      "load_s": 0.0,
+      "prompt_tokens": 859,
+      "prompt_s": 1.79,
+      "output_tokens": 39,
+      "output_s": 1.47,
+      "tokens_per_s": 26.6
+    },
+    {
+      "step": "assign tanium-interview-prep s13",
+      "wall_s": 2.95,
+      "load_s": 0.0,
+      "prompt_tokens": 679,
+      "prompt_s": 1.14,
+      "output_tokens": 38,
+      "output_s": 1.8,
+      "tokens_per_s": 21.1
+    },
+    {
+      "step": "assign tiktok-interview-prep s0",
+      "wall_s": 2.78,
+      "load_s": 0.0,
+      "prompt_tokens": 766,
+      "prompt_s": 1.42,
+      "output_tokens": 36,
+      "output_s": 1.32,
+      "tokens_per_s": 27.3
+    },
+    {
+      "step": "assign tiktok-interview-prep s1",
+      "wall_s": 3.01,
+      "load_s": 0.0,
+      "prompt_tokens": 863,
+      "prompt_s": 1.73,
+      "output_tokens": 35,
+      "output_s": 1.26,
+      "tokens_per_s": 27.9
+    },
+    {
+      "step": "assign tiktok-interview-prep s2",
+      "wall_s": 2.74,
+      "load_s": 0.0,
+      "prompt_tokens": 794,
+      "prompt_s": 1.37,
+      "output_tokens": 36,
+      "output_s": 1.35,
+      "tokens_per_s": 26.7
+    },
+    {
+      "step": "assign tiktok-interview-prep s3",
+      "wall_s": 2.99,
+      "load_s": 0.0,
+      "prompt_tokens": 846,
+      "prompt_s": 1.58,
+      "output_tokens": 36,
+      "output_s": 1.37,
+      "tokens_per_s": 26.3
+    },
+    {
+      "step": "assign tiktok-interview-prep s4",
+      "wall_s": 3.01,
+      "load_s": 0.0,
+      "prompt_tokens": 785,
+      "prompt_s": 1.41,
+      "output_tokens": 41,
+      "output_s": 1.58,
+      "tokens_per_s": 26.0
+    },
+    {
+      "step": "assign tiktok-interview-prep s10",
+      "wall_s": 3.18,
+      "load_s": 0.0,
+      "prompt_tokens": 847,
+      "prompt_s": 1.6,
+      "output_tokens": 40,
+      "output_s": 1.55,
+      "tokens_per_s": 25.9
+    },
+    {
+      "step": "write Amazon Pathways",
+      "wall_s": 23.93,
+      "load_s": 0.0,
+      "prompt_tokens": 1712,
+      "prompt_s": 4.49,
+      "output_tokens": 444,
+      "output_s": 19.39,
+      "tokens_per_s": 22.9
+    },
+    {
+      "step": "write Career Story",
+      "wall_s": 23.67,
+      "load_s": 0.02,
+      "prompt_tokens": 1216,
+      "prompt_s": 2.94,
+      "output_tokens": 483,
+      "output_s": 20.59,
+      "tokens_per_s": 23.5
+    },
+    {
+      "step": "write Centralized Reference Folder",
+      "wall_s": 26.46,
+      "load_s": 0.03,
+      "prompt_tokens": 1122,
+      "prompt_s": 2.69,
+      "output_tokens": 538,
+      "output_s": 23.62,
+      "tokens_per_s": 22.8
+    },
+    {
+      "step": "write Client Payment Negotiation",
+      "wall_s": 29.74,
+      "load_s": 0.02,
+      "prompt_tokens": 1509,
+      "prompt_s": 4.11,
+      "output_tokens": 564,
+      "output_s": 25.44,
+      "tokens_per_s": 22.2
+    },
+    {
+      "step": "write Design Decision Failure",
+      "wall_s": 30.34,
+      "load_s": 0.03,
+      "prompt_tokens": 1030,
+      "prompt_s": 2.51,
+      "output_tokens": 586,
+      "output_s": 27.66,
+      "tokens_per_s": 21.2
+    },
+    {
+      "step": "write Graton Casino Expansion",
+      "wall_s": 31.43,
+      "load_s": 0.03,
+      "prompt_tokens": 1471,
+      "prompt_s": 4.45,
+      "output_tokens": 573,
+      "output_s": 26.75,
+      "tokens_per_s": 21.4
+    },
+    {
+      "step": "write Inherited Project Overload",
+      "wall_s": 30.18,
+      "load_s": 0.03,
+      "prompt_tokens": 1875,
+      "prompt_s": 5.37,
+      "output_tokens": 534,
+      "output_s": 24.6,
+      "tokens_per_s": 21.7
+    },
+    {
+      "step": "write Otis Cash Flow Data Analysis",
+      "wall_s": 32.63,
+      "load_s": 0.03,
+      "prompt_tokens": 1570,
+      "prompt_s": 4.29,
+      "output_tokens": 639,
+      "output_s": 28.22,
+      "tokens_per_s": 22.6
+    },
+    {
+      "step": "write Otis Peer Support",
+      "wall_s": 28.26,
+      "load_s": 0.0,
+      "prompt_tokens": 1133,
+      "prompt_s": 2.87,
+      "output_tokens": 557,
+      "output_s": 25.28,
+      "tokens_per_s": 22.0
+    },
+    {
+      "step": "write Otis Project Management",
+      "wall_s": 24.44,
+      "load_s": 0.01,
+      "prompt_tokens": 1086,
+      "prompt_s": 2.7,
+      "output_tokens": 478,
+      "output_s": 21.61,
+      "tokens_per_s": 22.1
+    },
+    {
+      "step": "write Rapid Mental Calculations Failure",
+      "wall_s": 19.56,
+      "load_s": 0.01,
+      "prompt_tokens": 977,
+      "prompt_s": 2.34,
+      "output_tokens": 384,
+      "output_s": 17.12,
+      "tokens_per_s": 22.4
+    },
+    {
+      "step": "write Supply Chain Delays",
+      "wall_s": 30.4,
+      "load_s": 0.01,
+      "prompt_tokens": 1631,
+      "prompt_s": 4.77,
+      "output_tokens": 561,
+      "output_s": 25.52,
+      "tokens_per_s": 22.0
+    },
+    {
+      "step": "write Tanium Endpoint Management",
+      "wall_s": 24.09,
+      "load_s": 0.01,
+      "prompt_tokens": 1083,
+      "prompt_s": 2.87,
+      "output_tokens": 475,
+      "output_s": 21.11,
+      "tokens_per_s": 22.5
+    },
+    {
+      "step": "write Tanium Interview Prep",
+      "wall_s": 22.58,
+      "load_s": 0.01,
+      "prompt_tokens": 1470,
+      "prompt_s": 4.99,
+      "output_tokens": 400,
+      "output_s": 17.41,
+      "tokens_per_s": 23.0
+    },
+    {
+      "step": "write TikTok Monetization Strategy",
+      "wall_s": 38.17,
+      "load_s": 0.01,
+      "prompt_tokens": 2785,
+      "prompt_s": 10.16,
+      "output_tokens": 563,
+      "output_s": 27.84,
+      "tokens_per_s": 20.2
+    }
+  ],
+  "ollama_ps": [
+    {
+      "name": "gemma4-e2b-qat:latest",
+      "model": "gemma4-e2b-qat:latest",
+      "size": 1539770939,
+      "digest": "ed69038d491363f4b43e172edffee145dddecfec691b406e88ec2fc65bf0bd9f",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "gemma4",
+        "families": [
+          "gemma4"
+        ],
+        "parameter_size": "4.6B",
+        "quantization_level": "Q4_0"
+      },
+      "expires_at": "2026-09-25T22:48:59.767359-07:00",
+      "size_vram": 1539770939,
+      "context_length": 8192
+    }
+  ]
+}

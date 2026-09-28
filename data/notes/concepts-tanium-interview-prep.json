@@ -1,0 +1,61 @@
+{
+ "title": "Tanium Product Management",
+ "summary": "This note covers the owner's interest in cybersecurity and Tanium, stemming from a personal experience with a canceled flight and subsequent curiosity about system failures. It also outlines questions the owner has about Tanium's culture, product modules, strategic direction, and technical architectures.",
+ "key_points": [
+  {
+   "text": "Managed a $47M portfolio across 50+ large projects",
+   "sources": [
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Core PM skills: defining the problem, validating the solution, making trade-offs, and ensure delivery to your customers in a timely manner",
+   "sources": [
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Interest in cybersecurity started with a canceled flight due to a CrowdStrike outage",
+   "sources": [
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Tanium kept appearing in comparisons after comparing different companies in the space",
+   "sources": [
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Interested in understanding technical and operational failures that led to the catastrophe",
+   "sources": [
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Questions about user feedback collection at Tanium",
+   "sources": [
+    "tanium-interview-prep"
+   ]
+  },
+  {
+   "text": "Questions about strategic direction: AI space, cybersecurity space competing with CrowdStrike, or a third direction",
+   "sources": [
+    "tanium-interview-prep"
+   ]
+  }
+ ],
+ "differences": [],
+ "related": [
+  {
+   "title": "Tanium Endpoint Management",
+   "why": "This note defines Tanium as an endpoint management and security platform, which is central to the subject."
+  },
+  {
+   "title": "Career Story",
+   "why": "This note summarizes the owner's career progression, providing context for the PM skills mentioned."
+  }
+ ],
+ "model": "gemma4-e2b-qat",
+ "generated_at": "2026-09-25T22:43:27"
+}

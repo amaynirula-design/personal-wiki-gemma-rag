@@ -1,0 +1,116 @@
+{
+  "env": {
+    "timestamp": "2026-09-28T15:29:12",
+    "execution": "local",
+    "internet": "offline",
+    "host": "Amays-MacBook-Air-2.local",
+    "platform": "Darwin 26.5.2 (arm64)",
+    "model": "gemma4-e2b-qat",
+    "model_identifier": "google/gemma-4-E2B-it-qat-q4_0-gguf (gemma-4-E2B_q4_0-it.gguf)",
+    "quantization": "Q4_0 (quantization-aware trained)",
+    "runtime": "ollama 0.34.4"
+  },
+  "results": [
+    {
+      "id": 1,
+      "name": "Tanium endpoint query speed",
+      "question": "How quickly can Tanium query all endpoints, and what makes that possible?",
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "expected_sources_retrieved": [
+        "Tanium Interview Prep.docx"
+      ],
+      "expected_sources_missing": [],
+      "citation_check": {
+        "ok": true,
+        "insufficient": false,
+        "cited": [
+          1
+        ],
+        "invalid": [],
+        "uncited_sentences": [],
+        "unsupported_numbers": [],
+        "unsupported_citations": [],
+        "summary": "PASS \u2014 1 passage(s) cited: [1]"
+      },
+      "answer": "Tanium can query all endpoints in under 15 seconds [1]. This speed is due to the linear chain architecture, which dramatically reduces server load [1].",
+      "run": "runs/20260928-152922-ask.json"
+    },
+    {
+      "id": 2,
+      "name": "TikTok Shop take rate (paraphrased)",
+      "question": "What cut does TikTok take when someone buys something through TikTok Shop?",
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "expected_sources_retrieved": [
+        "Tiktok Interview Prep.docx"
+      ],
+      "expected_sources_missing": [],
+      "citation_check": {
+        "ok": true,
+        "insufficient": false,
+        "cited": [
+          2
+        ],
+        "invalid": [],
+        "uncited_sentences": [],
+        "unsupported_numbers": [],
+        "unsupported_citations": [],
+        "summary": "PASS \u2014 1 passage(s) cited: [2]"
+      },
+      "answer": "Tiktok shop charges a seller commission on every transaction [2]. Sellers are also required to pay to advertise their products [2].",
+      "run": "runs/20260928-152932-ask.json"
+    },
+    {
+      "id": 3,
+      "name": "Supply chain lead times across three preps",
+      "question": "In my Otis supply chain delay story, how much did material lead times increase, and how did I keep projects on schedule?",
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "expected_sources_retrieved": [
+        "Amazon Interview.docx",
+        "Tanium Interview Prep.docx",
+        "Tiktok Interview Prep.docx"
+      ],
+      "expected_sources_missing": [],
+      "citation_check": {
+        "ok": false,
+        "insufficient": false,
+        "cited": [
+          1,
+          2
+        ],
+        "invalid": [],
+        "uncited_sentences": [
+          "The sources disagree on the initial increase in lead times."
+        ],
+        "unsupported_numbers": [],
+        "unsupported_citations": [],
+        "summary": "CHECK \u2014 2 passage(s) cited: [1], [2]; 1 sentence(s) without a citation"
+      },
+      "answer": "The owner stated that supply chain disruptions increased material lead times from 10 to 16 weeks [1]. Another source states that supply chain disruptions increased material lead times from 12 to 16 weeks [2]. The sources disagree on the initial increase in lead times.",
+      "run": "runs/20260928-152946-ask.json"
+    },
+    {
+      "id": 4,
+      "name": "TikTok internship pay (unsupported)",
+      "question": "What is the salary or hourly pay for the TikTok Monetization Strategy & Ops internship?",
+      "expected_behavior": "insufficient_evidence",
+      "actual_behavior": "insufficient_evidence",
+      "expected_sources_retrieved": [],
+      "expected_sources_missing": [],
+      "citation_check": {
+        "ok": true,
+        "insufficient": true,
+        "cited": [],
+        "invalid": [],
+        "uncited_sentences": [],
+        "unsupported_numbers": [],
+        "unsupported_citations": [],
+        "summary": "insufficient-evidence response"
+      },
+      "answer": "INSUFFICIENT EVIDENCE: none of the 5 retrieved passages contains a statement that answers this question.",
+      "run": "runs/20260928-152952-ask.json"
+    }
+  ]
+}

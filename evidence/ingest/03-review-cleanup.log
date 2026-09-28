@@ -1,0 +1,77 @@
+# Review cleanup after ingest 02 (Fri Sep 25 22:40:30 PDT 2026)
+
+$ wiki rename "Tanium Interview Prep" "Tanium Product Management" --folder Companies
+Renamed 'Tanium Interview Prep' -> 'Tanium Product Management' (folder Companies, note_id concepts/tanium-interview-prep kept).
+Writing 1 note(s) with gemma4-e2b-qat:
+  ✎ Tanium Product Management (23s)
+Updated links, index.md, Source Catalog and retrieval index.
+
+$ wiki assign Tanium "How do you fit the role" "Tanium Product Management"
+Section 'How do you fit the role?' (tanium-interview-prep) : Amazon Pathways -> Tanium Product Management (pinned)
+Writing 2 note(s) with gemma4-e2b-qat:
+  ✎ Amazon Pathways (25s)
+  ✎ Tanium Product Management (26s)
+
+$ wiki assign Tanium "Why Cybersecurity" "Tanium Product Management"
+Section 'Why Cybersecurity & Tanium?' (tanium-interview-prep) : Amazon Pathways -> Tanium Product Management (pinned)
+Writing 2 note(s) with gemma4-e2b-qat:
+  ✎ Amazon Pathways (26s)
+  ✎ Tanium Product Management (24s)
+
+$ wiki assign Tanium "Tell me about how you have stayed current" "Staying Current in Tech" --folder Background
+Section 'Tell me about how you have stayed current on industry developments over the course of y......' (tanium-interview-prep) : Tanium Product Management -> Staying Current in Tech (pinned)
+Writing 2 note(s) with gemma4-e2b-qat:
+  ✎ Staying Current in Tech (25s)
+  ✎ Tanium Product Management (26s)
+
+$ wiki rename "TikTok Monetization Strategy" "TikTok Monetization"
+Renamed 'TikTok Monetization Strategy' -> 'TikTok Monetization' (folder Concepts, note_id concepts/tiktok-monetization-strategy kept).
+Writing 1 note(s) with gemma4-e2b-qat:
+  ✎ TikTok Monetization (37s)
+Updated links, index.md, Source Catalog and retrieval index.
+
+$ wiki assign Tiktok "Why do you want to work for Tiktok" "TikTok MSO" --folder Companies
+Section 'Why do you want to work for Tiktok and why MSO?' (tiktok-interview-prep) : TikTok Monetization -> TikTok MSO (pinned)
+Writing 2 note(s) with gemma4-e2b-qat:
+  ✎ TikTok MSO (26s)
+  ✎ TikTok Monetization (40s)
+
+$ wiki assign Tiktok "Introduction" "TikTok MSO"
+Section 'Introduction' (tiktok-interview-prep) : TikTok Monetization -> TikTok MSO (pinned)
+Writing 2 note(s) with gemma4-e2b-qat:
+  ✎ TikTok MSO (24s)
+  ✎ TikTok Monetization (32s)
+
+$ wiki rename "Rapid Mental Calculations Failure" "Design Decision Failure"
+Merged 'Rapid Mental Calculations Failure' into 'Design Decision Failure'.
+Writing 1 note(s) with gemma4-e2b-qat:
+  ✎ Design Decision Failure (25s)
+Updated links, index.md, Source Catalog and retrieval index.
+
+$ wiki rename "Design Decision Failure" "Elevator Cab Weight Failure"
+Renamed 'Design Decision Failure' -> 'Elevator Cab Weight Failure' (folder Stories, note_id stories/design-decision-failure kept).
+Writing 1 note(s) with gemma4-e2b-qat:
+  ✎ Elevator Cab Weight Failure (40s)
+Updated links, index.md, Source Catalog and retrieval index.
+
+$ wiki rename "Otis Project Management" "Otis Project Management" --folder Background
+Renamed 'Otis Project Management' -> 'Otis Project Management' (folder Background, note_id stories/otis-project-management kept).
+Updated links, index.md, Source Catalog and retrieval index.
+
+$ wiki rename "Otis Cash Flow Data Analysis" "Overdue Receivables Analysis"
+Renamed 'Otis Cash Flow Data Analysis' -> 'Overdue Receivables Analysis' (folder Stories, note_id stories/otis-cash-flow-data-analysis kept).
+Writing 1 note(s) with gemma4-e2b-qat:
+  ✎ Overdue Receivables Analysis (33s)
+Updated links, index.md, Source Catalog and retrieval index.
+
+$ wiki rename "Otis Peer Support" "Supporting a Struggling Peer"
+Renamed 'Otis Peer Support' -> 'Supporting a Struggling Peer' (folder Stories, note_id stories/otis-peer-support kept).
+Writing 1 note(s) with gemma4-e2b-qat:
+  ✎ Supporting a Struggling Peer (30s)
+Updated links, index.md, Source Catalog and retrieval index.
+
+$ wiki rename "Centralized Reference Folder" "Customer Reference Library"
+Renamed 'Centralized Reference Folder' -> 'Customer Reference Library' (folder Stories, note_id stories/centralized-reference-folder kept).
+Writing 1 note(s) with gemma4-e2b-qat:
+  ✎ Customer Reference Library (25s)
+Updated links, index.md, Source Catalog and retrieval index.

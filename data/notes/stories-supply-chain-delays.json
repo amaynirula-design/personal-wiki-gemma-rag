@@ -1,0 +1,75 @@
+{
+ "title": "Supply Chain Delays",
+ "summary": "This note details a situation where supply chain disruptions increased material lead times from 10 to 16 weeks, putting multiple projects at risk. The owner used a two-pronged approach involving factory partial shipments and field mechanic overtime to keep projects on schedule and maintain customer satisfaction.",
+ "key_points": [
+  {
+   "text": "Material lead times increased from 10 to 16 weeks",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Owner informed customers of bad news",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Owner used a two-pronged approach",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Worked with factory to implement partial shipments",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Coordinated with field mechanics to put in significant overtime",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Kept all projects on track and maintained customer satisfaction",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Customers appreciated the proactive problem-solving",
+   "sources": [
+    "amazon-interview",
+    "tanium-interview-prep",
+    "tiktok-interview-prep"
+   ]
+  }
+ ],
+ "differences": [],
+ "related": [
+  {
+   "title": "Graton Casino Expansion",
+   "why": "This note details coordination challenges faced during a project, which shares the theme of managing complex project timelines."
+  },
+  {
+   "title": "Otis Project Management",
+   "why": "This note details the owner's role as a project manager at Otis, which is the context for the supply chain challenges described."
+  }
+ ],
+ "model": "gemma4-e2b-qat",
+ "generated_at": "2026-09-28T15:28:14"
+}

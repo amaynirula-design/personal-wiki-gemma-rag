@@ -1,0 +1,502 @@
+{
+ "sources": {
+  "amazon-interview": {
+   "file": "vault/raw/Amazon Interview.docx",
+   "filename": "Amazon Interview.docx",
+   "sha256": "ad75aaa1fe2d85420e26f9dc40a1ab21302cc680842641161f9a49e6028dba13",
+   "ingested_at": "2026-09-25T22:31:24",
+   "sections": [
+    {
+     "idx": 0,
+     "heading": "Tell me about yourself",
+     "group": "AMAZON INTERVIEW PREP- PATHWAYS",
+     "text_sha": "e1ca2df7599249e0",
+     "paragraphs": "¶3-5",
+     "words": 137,
+     "note": "Career Story"
+    },
+    {
+     "idx": 1,
+     "heading": "Why Amazon?",
+     "group": "AMAZON INTERVIEW PREP- PATHWAYS",
+     "text_sha": "b3a09d1dd7dcccbf",
+     "paragraphs": "¶7-9",
+     "words": 167,
+     "note": "Amazon Pathways"
+    },
+    {
+     "idx": 2,
+     "heading": "Why Pathways?",
+     "group": "AMAZON INTERVIEW PREP- PATHWAYS",
+     "text_sha": "f2a93512ba48df7e",
+     "paragraphs": "¶11-13",
+     "words": 170,
+     "note": "Amazon Pathways"
+    },
+    {
+     "idx": 3,
+     "heading": "Tell me about a time you had to overcome challenges when working with a team (cross-functional team, manage multiple stakeholders)?",
+     "group": "BEHAVIORAL QUESTIONS",
+     "text_sha": "25250202ccc4bb20",
+     "paragraphs": "¶16-23",
+     "words": 171,
+     "note": "Graton Casino Expansion"
+    },
+    {
+     "idx": 4,
+     "heading": "Tell me about a time you used multiple resources to overcome a challenge/had to work under pressure/dealt with a last-minute change/deal with a problem with no data?",
+     "group": "BEHAVIORAL QUESTIONS",
+     "text_sha": "d52851b30bd05dbb",
+     "paragraphs": "¶25-28",
+     "words": 191,
+     "note": "Supply Chain Delays"
+    },
+    {
+     "idx": 5,
+     "heading": "Tell me about a time you adapted to a challenging situation/asked for help/showed initiative?",
+     "group": "BEHAVIORAL QUESTIONS",
+     "text_sha": "57974d1c864b9afc",
+     "paragraphs": "¶30-38",
+     "words": 300,
+     "note": "Inherited Project Overload"
+    },
+    {
+     "idx": 6,
+     "heading": "Tell me about a time you had disagreement with a colleague/worked with a teammate who was different?",
+     "group": "BEHAVIORAL QUESTIONS",
+     "text_sha": "6ad42fa6b6ac012f",
+     "paragraphs": "¶40-47",
+     "words": 198,
+     "note": "Client Payment Negotiation"
+    },
+    {
+     "idx": 7,
+     "heading": "Tell me about a time you dug into data/used data to inform/change your decision?",
+     "group": "BEHAVIORAL QUESTIONS",
+     "text_sha": "e1dc1cf24cacf8eb",
+     "paragraphs": "¶49-54",
+     "words": 206,
+     "note": "Overdue Receivables Analysis"
+    },
+    {
+     "idx": 8,
+     "heading": "Tell me about ways that you personally have tried to mature the engineering efforts on your projects/make things simpler for customers.",
+     "group": "BEHAVIORAL QUESTIONS",
+     "text_sha": "ebf38f5dd5339406",
+     "paragraphs": "¶56-66",
+     "words": 154,
+     "note": "Customer Reference Library"
+    },
+    {
+     "idx": 9,
+     "heading": "Tell me a time you failed/ received negative feedback.",
+     "group": "BEHAVIORAL QUESTIONS",
+     "text_sha": "ac09e7a65bd4f1a6",
+     "paragraphs": "¶68-79",
+     "words": 258,
+     "note": "Elevator Cab Weight Failure"
+    },
+    {
+     "idx": 10,
+     "heading": "tell me a time when you saw a peer struggling and decided to step in and help. What was the situation? Why did you decide to step in?",
+     "group": "BEHAVIORAL QUESTIONS",
+     "text_sha": "d25d8c9f872392e2",
+     "paragraphs": "¶81-91",
+     "words": 269,
+     "note": "Supporting a Struggling Peer"
+    },
+    {
+     "idx": 11,
+     "heading": "Questions",
+     "group": "BEHAVIORAL QUESTIONS",
+     "text_sha": "388ca374455808d1",
+     "paragraphs": "¶93-98",
+     "words": 146,
+     "note": "Amazon Pathways"
+    }
+   ]
+  },
+  "tanium-interview-prep": {
+   "file": "vault/raw/Tanium Interview Prep.docx",
+   "filename": "Tanium Interview Prep.docx",
+   "sha256": "7431fad0e505948c439ee879e9a251d9fe9a5b0324fa5c88baddda67ed50ea27",
+   "ingested_at": "2026-09-25T22:31:46",
+   "sections": [
+    {
+     "idx": 0,
+     "heading": "Tell me about yourself and how you fit the role?",
+     "group": "TANIUM INTERVIEW PREP",
+     "text_sha": "bbd2760e346ee27d",
+     "paragraphs": "¶3-8",
+     "words": 292,
+     "note": "Career Story"
+    },
+    {
+     "idx": 1,
+     "heading": "How do you fit the role?",
+     "group": "TANIUM INTERVIEW PREP",
+     "text_sha": "eae217a4e7350346",
+     "paragraphs": "¶10-12",
+     "words": 125,
+     "note": "Tanium Product Management",
+     "pinned": true
+    },
+    {
+     "idx": 2,
+     "heading": "What did you do at Otis?",
+     "group": "TANIUM INTERVIEW PREP",
+     "text_sha": "4618ae0205699720",
+     "paragraphs": "¶14-18",
+     "words": 215,
+     "note": "Otis Project Management"
+    },
+    {
+     "idx": 3,
+     "heading": "Why Cybersecurity & Tanium?",
+     "group": "TANIUM INTERVIEW PREP",
+     "text_sha": "5c643a60b200a9d6",
+     "paragraphs": "¶20-22",
+     "words": 217,
+     "note": "Tanium Product Management",
+     "pinned": true
+    },
+    {
+     "idx": 4,
+     "heading": "What does Tanium do?",
+     "group": "TANIUM INTERVIEW PREP",
+     "text_sha": "1d19d3e5a85d7a93",
+     "paragraphs": "¶24-26",
+     "words": 155,
+     "note": "Tanium Endpoint Management"
+    },
+    {
+     "idx": 5,
+     "heading": "QUESTIONS FOR [interviewer]",
+     "group": "TANIUM INTERVIEW PREP",
+     "text_sha": "91d90fa92965968d",
+     "paragraphs": "¶28-34",
+     "words": 186,
+     "note": "Tanium Product Management"
+    },
+    {
+     "idx": 6,
+     "heading": "Tell me about a time you had to overcome challenges when working with a team (cross-functional team, manage multiple stakeholders)/how did you work together?",
+     "group": "BEHAVIORAL QUESTIONS",
+     "text_sha": "b98f0dd6d70c1c66",
+     "paragraphs": "¶37-44",
+     "words": 171,
+     "note": "Graton Casino Expansion"
+    },
+    {
+     "idx": 7,
+     "heading": "Tell me about a time you used multiple resources to overcome a challenge/had to work under pressure/dealt with a last-minute change/tell me a time you came up with a novel solution to a problem?",
+     "group": "BEHAVIORAL QUESTIONS",
+     "text_sha": "0b12eccc77b5ec95",
+     "paragraphs": "¶46-49",
+     "words": 174,
+     "note": "Supply Chain Delays"
+    },
+    {
+     "idx": 8,
+     "heading": "Tell me about a time you adapted to a challenging situation/asked for help/showed initiative/had to pivot?",
+     "group": "BEHAVIORAL QUESTIONS",
+     "text_sha": "abd9102381f912e5",
+     "paragraphs": "¶51-54",
+     "words": 244,
+     "note": "Inherited Project Overload"
+    },
+    {
+     "idx": 9,
+     "heading": "Tell me about a time you had disagreement with a colleague/worked with a teammate who was different/influence without authority/negotiation?",
+     "group": "BEHAVIORAL QUESTIONS",
+     "text_sha": "ea39d54455c48dff",
+     "paragraphs": "¶56-63",
+     "words": 198,
+     "note": "Client Payment Negotiation"
+    },
+    {
+     "idx": 10,
+     "heading": "Tell me about a time you dug into data/used data to inform/change your decision/took on an intitiative not asked of you by your manager?",
+     "group": "BEHAVIORAL QUESTIONS",
+     "text_sha": "64ef3ba1161c923b",
+     "paragraphs": "¶65-70",
+     "words": 201,
+     "note": "Overdue Receivables Analysis"
+    },
+    {
+     "idx": 11,
+     "heading": "Tell me about how you have stayed current on industry developments over the course of your career.",
+     "group": "BEHAVIORAL QUESTIONS",
+     "text_sha": "4cef7c49fe98203d",
+     "paragraphs": "¶72-76",
+     "words": 260,
+     "note": "Staying Current in Tech",
+     "pinned": true
+    },
+    {
+     "idx": 12,
+     "heading": "Tell me about ways that you personally have tried to mature the engineering efforts on your projects.",
+     "group": "BEHAVIORAL QUESTIONS",
+     "text_sha": "b56848e513dab20d",
+     "paragraphs": "¶78-88",
+     "words": 151,
+     "note": "Customer Reference Library"
+    },
+    {
+     "idx": 13,
+     "heading": "Tell me a time you failed.",
+     "group": "BEHAVIORAL QUESTIONS",
+     "text_sha": "7573bf3e746d801e",
+     "paragraphs": "¶90-97",
+     "words": 108,
+     "note": "Elevator Cab Weight Failure"
+    }
+   ]
+  },
+  "tiktok-interview-prep": {
+   "file": "vault/raw/Tiktok Interview Prep.docx",
+   "filename": "Tiktok Interview Prep.docx",
+   "sha256": "a6f743296d926af0aaa016aebfc49d3a25b34e5bd66c8f5ad92463e08151a031",
+   "ingested_at": "2026-09-28T15:25:43",
+   "sections": [
+    {
+     "idx": 0,
+     "heading": "Introduction",
+     "group": "",
+     "text_sha": "046c6b9d16735512",
+     "paragraphs": "¶1-10",
+     "words": 170,
+     "note": "TikTok MSO",
+     "pinned": true
+    },
+    {
+     "idx": 1,
+     "heading": "How does Tiktok monetize?",
+     "group": "",
+     "text_sha": "1bdf8316a7839d81",
+     "paragraphs": "¶12-22",
+     "words": 287,
+     "note": "TikTok Monetization"
+    },
+    {
+     "idx": 2,
+     "heading": "Who are Tiktok’s competitors and what are their strengths?",
+     "group": "",
+     "text_sha": "279dfdc6db9708ad",
+     "paragraphs": "¶24-30",
+     "words": 196,
+     "note": "TikTok Monetization"
+    },
+    {
+     "idx": 3,
+     "heading": "What are Tiktok’s strengths?",
+     "group": "",
+     "text_sha": "d80f24f4ac58fd53",
+     "paragraphs": "¶32-48",
+     "words": 331,
+     "note": "TikTok Monetization"
+    },
+    {
+     "idx": 4,
+     "heading": "What are the different types of ads and what metrics would you use?",
+     "group": "",
+     "text_sha": "96f51fbe4c1ec5e4",
+     "paragraphs": "¶50-52",
+     "words": 170,
+     "note": "TikTok Monetization"
+    },
+    {
+     "idx": 5,
+     "heading": "Tell me about a time you had to overcome challenges when working with a team (cross-functional team, manage multiple stakeholders)?",
+     "group": "BEHAVIORAL QUESTIONS",
+     "text_sha": "7ecb0229e2c73035",
+     "paragraphs": "¶55-62",
+     "words": 170,
+     "note": "Graton Casino Expansion"
+    },
+    {
+     "idx": 6,
+     "heading": "Tell me about a time you used multiple resources to overcome a challenge/had to work under pressure/dealt with a last minute change?",
+     "group": "BEHAVIORAL QUESTIONS",
+     "text_sha": "3c19969090c81bd2",
+     "paragraphs": "¶64-67",
+     "words": 191,
+     "note": "Supply Chain Delays"
+    },
+    {
+     "idx": 7,
+     "heading": "Tell me about a time you adapted to a challenging situation/asked for help/showed initiative?",
+     "group": "BEHAVIORAL QUESTIONS",
+     "text_sha": "133c36f34e7d0408",
+     "paragraphs": "¶69-77",
+     "words": 311,
+     "note": "Inherited Project Overload"
+    },
+    {
+     "idx": 8,
+     "heading": "Tell me about a time you had disagreement with a colleague/worked with a teammate who was different?",
+     "group": "BEHAVIORAL QUESTIONS",
+     "text_sha": "6ad42fa6b6ac012f",
+     "paragraphs": "¶79-86",
+     "words": 198,
+     "note": "Client Payment Negotiation"
+    },
+    {
+     "idx": 9,
+     "heading": "Tell me about a time you dug into data/used data to inform/change your decision?",
+     "group": "BEHAVIORAL QUESTIONS",
+     "text_sha": "1a0c615c7ef49d71",
+     "paragraphs": "¶88-92",
+     "words": 174,
+     "note": "Overdue Receivables Analysis"
+    },
+    {
+     "idx": 10,
+     "heading": "Why do you want to work for Tiktok and why MSO?",
+     "group": "WHY MBA????",
+     "text_sha": "c5d072eface2f206",
+     "paragraphs": "¶95-97",
+     "words": 238,
+     "note": "TikTok MSO",
+     "pinned": true
+    }
+   ]
+  }
+ },
+ "notes": {
+  "Career Story": {
+   "folder": "Background",
+   "note_id": "background/career-story",
+   "description": "This note summarizes the owner's career progression from Materials Engineering studies to project management at Otis Elevator Company, highlighting experience m",
+   "aliases": [],
+   "input_hash": "a3191c8290a3073c"
+  },
+  "Amazon Pathways": {
+   "folder": "Companies",
+   "note_id": "companies/amazon-pathways",
+   "description": "This note covers the motivation for working at Amazon and the appeal of the Pathways program.",
+   "aliases": [],
+   "input_hash": "42730bd0440b6760"
+  },
+  "Graton Casino Expansion": {
+   "folder": "Stories",
+   "note_id": "stories/graton-casino-expansion",
+   "description": "This note details the coordination challenges faced during the Graton Casino Expansion, a $2.9M project.",
+   "aliases": [],
+   "input_hash": "151fc10376c5d11c"
+  },
+  "Supply Chain Delays": {
+   "folder": "Stories",
+   "note_id": "stories/supply-chain-delays",
+   "description": "This note details a situation where supply chain disruptions increased material lead times from 10 to 16 weeks, putting multiple projects at risk.",
+   "aliases": [],
+   "input_hash": "260656cc5f31cd8e"
+  },
+  "Inherited Project Overload": {
+   "folder": "Stories",
+   "note_id": "stories/inherited-project-overload",
+   "description": "This note details the experience of inheriting an overwhelming project load at Otis after a colleague resigned, leading to an increase from two to fifteen proje",
+   "aliases": [],
+   "input_hash": "8ac54458c5c12e36"
+  },
+  "Client Payment Negotiation": {
+   "folder": "Stories",
+   "note_id": "stories/client-payment-negotiation",
+   "description": "This note details a situation where a major recurring customer refused to pay a $125,000 debt, creating conflict between Sales and Finance.",
+   "aliases": [],
+   "input_hash": "45e5fcb8936a3efe"
+  },
+  "Tanium Endpoint Management": {
+   "folder": "Concepts",
+   "note_id": "concepts/tanium-endpoint-management",
+   "description": "Tanium is an endpoint management and security platform offering real-time visibility and control over all devices connected to a network.",
+   "aliases": [],
+   "input_hash": "606a4b6a6b133eb5"
+  },
+  "Tanium Product Management": {
+   "folder": "Companies",
+   "note_id": "concepts/tanium-interview-prep",
+   "description": "This note covers the owner's interest in cybersecurity and Tanium, stemming from a personal experience with a canceled flight and subsequent curiosity about sys",
+   "aliases": [
+    "Tanium Interview Prep"
+   ],
+   "input_hash": "84551365422edad7"
+  },
+  "Staying Current in Tech": {
+   "folder": "Background",
+   "note_id": "background/staying-current-in-tech",
+   "description": "This note details the owner's deliberate efforts to stay current in tech, which involves engaging with the community, analyzing real incidents, building persona",
+   "aliases": [],
+   "input_hash": "7d079326bc9e807b"
+  },
+  "TikTok Monetization": {
+   "folder": "Concepts",
+   "note_id": "concepts/tiktok-monetization-strategy",
+   "description": "TikTok has four main revenue streams: advertising, TikTok Shop, brand partnerships, and virtual gifts.",
+   "aliases": [
+    "TikTok Monetization Strategy"
+   ],
+   "input_hash": "b522b40f027d03f3"
+  },
+  "TikTok MSO": {
+   "folder": "Companies",
+   "note_id": "companies/tiktok-mso",
+   "description": "This note covers TikTok's monetization methods, competitive landscape, and strengths, including its algorithm and TikTok Shop.",
+   "aliases": [],
+   "input_hash": "2a239c6267d76005"
+  },
+  "Elevator Cab Weight Failure": {
+   "folder": "Stories",
+   "note_id": "stories/design-decision-failure",
+   "description": "This note details an instance where a design decision at Otis Elevator Company led to an elevator cab exceeding its maximum weight limit due to failing to follo",
+   "aliases": [
+    "Rapid Mental Calculations Failure",
+    "Design Decision Failure"
+   ],
+   "input_hash": "8f3f8edce0325813"
+  },
+  "Otis Project Management": {
+   "folder": "Background",
+   "note_id": "stories/otis-project-management",
+   "description": "This note details the owner's role as a project manager at Otis, managing a large portfolio of construction elevator projects.",
+   "aliases": [],
+   "input_hash": "d3a7052f76a76d53"
+  },
+  "Overdue Receivables Analysis": {
+   "folder": "Stories",
+   "note_id": "stories/otis-cash-flow-data-analysis",
+   "description": "This note details an instance where the San Jose office faced a serious cash flow issue due to significant overdue invoices.",
+   "aliases": [
+    "Otis Cash Flow Data Analysis"
+   ],
+   "input_hash": "d9204fe225a935e2"
+  },
+  "Supporting a Struggling Peer": {
+   "folder": "Stories",
+   "note_id": "stories/otis-peer-support",
+   "description": "This note details an experience where the owner observed a peer struggling with a technically demanding construction project at Otis.",
+   "aliases": [
+    "Otis Peer Support"
+   ],
+   "input_hash": "485cb6420813dda7"
+  },
+  "Customer Reference Library": {
+   "folder": "Stories",
+   "note_id": "stories/centralized-reference-folder",
+   "description": "This note details the creation of a centralized reference folder to address repeated technical questions about elevator codes and design requirements.",
+   "aliases": [
+    "Centralized Reference Folder"
+   ],
+   "input_hash": "3924df566a1bc426"
+  }
+ },
+ "aliases": {
+  "tanium-interview-prep": "Tanium Product Management",
+  "tiktok-monetization-strategy": "TikTok Monetization",
+  "rapid-mental-calculations-failure": "Elevator Cab Weight Failure",
+  "design-decision-failure": "Elevator Cab Weight Failure",
+  "otis-cash-flow-data-analysis": "Overdue Receivables Analysis",
+  "otis-peer-support": "Supporting a Struggling Peer",
+  "centralized-reference-folder": "Customer Reference Library"
+ }
+}

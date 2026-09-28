@@ -1,0 +1,55 @@
+[chat mode · model gemma4-e2b-qat (Q4_0 (quantization-aware trained)) · local via Ollama 0.34.4]
+Scout — your interview-prep assistant. Type /help for commands, /exit to quit.
+
+you: what can we do?
+  ↳ notes lookup: no (rule: question about the assistant's capabilities)
+Scout: We can brainstorm and draft interview answers. I can also run a mock interview for you, build prep plans, and help you refine your materials.
+
+What are you working on right now?
+  (3.13s)
+you: what can you help me with?
+  ↳ notes lookup: no (rule: question about the assistant's capabilities)
+Scout: I can:
+
+*   **Draft answers:** Help you write responses for common questions like "Tell me about yourself" or STAR stories, tailored to a specific company or role.
+*   **Run mock interviews:** I can ask you interview questions one by one and give you feedback on your answers.
+*   **Build prep materials:** I can help you create checklists, specific questions to ask interviewers, or refine your existing preparation plans.
+
+What company or role are you focusing on right now?
+  (7.7s)
+you: Draft a short plan for preparing for my Tanium interview this week.
+  ↳ notes lookup: yes (model router) · query "Tanium interview prep plan" · 4 passage(s)
+Scout: Here is a suggested prep plan for your Tanium interview this week.
+
+**This Week's Tanium Prep Plan**
+
+*   **Review Core Concepts:** Focus on the key areas you need to demonstrate knowledge in, likely related to product management or operational challenges.
+*   **Deep Dive on Otis Experience:** Prepare detailed STAR stories using the Otis project management experience. Focus on demonstrating your ability to handle complex stakeholder coordination and risk management at scale [1].
+*   **Brush Up on Product/Process:** Review any specific product management frameworks or case studies relevant to Tanium.
+*   **Prepare Questions:** Draft thoughtful questions for the interviewer about the team's challenges and priorities.
+
+What is the most urgent area you want to focus on first?
+  Sources: [1] Tanium Interview Prep.docx › What did you do at Otis? (¶14-18)
+  (16.75s)
+you: make that shorter
+  ↳ notes lookup: no (rule: follow-up edit of the previous reply (uses conversation))
+Scout: **Tanium Interview Prep: Week Overview**
+
+*   Review core product/PM concepts.
+*   Prep detailed STAR stories using your Otis project management examples [1].
+*   Brush up on Tanium-specific product frameworks.
+*   Draft insightful questions for the interviewers.
+
+What do you want to tackle first?
+  ⚠ citation check: reply shows [n] markers but no notes were retrieved this turn
+  (5.6s)
+you: Just so you know, the Graton Casino Expansion was a $5M project.
+  ↳ notes lookup: yes (model router) · query "Otis Elevator project management stories Graton Casino Expansion" · 4 passage(s)
+  ↳ figures in your message not found in the notes: $5M
+Scout: I do not have information in the retrieved notes stating that the Graton Casino Expansion was a $5M project. The notes mention it was a "$2.9M undertaking" [2].
+
+You can edit the source document and re-run `wiki ingest` if the notes are wrong.
+  Sources: [2] Graton Casino Expansion (wiki) › Summary
+  (7.91s)
+you: /exit
+Chat transcript saved: runs/20260928-105009-chat.json

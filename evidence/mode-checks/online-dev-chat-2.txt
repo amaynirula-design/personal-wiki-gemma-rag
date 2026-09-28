@@ -1,0 +1,55 @@
+[chat mode · model gemma4-e2b-qat (Q4_0 (quantization-aware trained)) · local via Ollama 0.34.4]
+Scout — your interview-prep assistant. Type /help for commands, /exit to quit.
+
+you: what can we do?
+  ↳ notes lookup: no (rule: question about the assistant's capabilities)
+Scout: I can help you prepare for your interviews. I can brainstorm and draft answers, run a mock interview, build prep plans and checklists, and look up information from your notes.
+
+What are you working on right now?
+  (5.14s)
+you: what can you help me with?
+  ↳ notes lookup: no (rule: question about the assistant's capabilities)
+Scout: I can help you with several things:
+
+*   **Drafting Answers:** I can help you write responses for common interview questions like "Tell me about yourself" or STAR method stories, tailored to specific roles or companies.
+*   **Mock Interviews:** I can run a mock interview with you, asking questions and providing feedback on your answers.
+*   **Prep Materials:** I can build prep plans, checklists, and practice questions.
+*   **Note Retrieval:** I can look up specific details from your prep notes on Amazon Pathways, Tanium, or TikTok Monetization Strategy & Ops.
+
+What's the first thing you want to tackle?
+  (8.82s)
+you: Draft a short plan for preparing for my Tanium interview this week.
+  ↳ notes lookup: yes (model router) · query "Tanium interview preparation plan" · 4 passage(s)
+Scout: Here is a suggested plan for your Tanium interview prep this week:
+
+*   **Day 1: Review Core Concepts.** Focus on the "What does Tanium do?" aspect [1]. Review the notes on Tanium Endpoint Management [1].
+*   **Day 2: Prepare Behavioral Stories.** Draft STAR method responses for behavioral questions. Use your existing stories, especially those related to managing technical challenges or coordinating with stakeholders [1].
+*   **Day 3: Deep Dive on Specific Topics.** Review any specific areas of Tanium you feel weak on, like customer reference library or specific features [1].
+*   **Day 4: Mock Interview.** Run a mock interview focusing specifically on Tanium questions.
+
+Let's start with Day 1. Do you want to focus on reviewing the core function of Tanium, or should we try drafting an answer for a specific question first?
+  Sources: [1] Tanium Product Management (wiki) › Prepared answers
+  ⚠ citation check: 1; 3 — verify against the notes (wiki search)
+  (14.66s)
+you: make that shorter
+  ↳ notes lookup: no (rule: follow-up edit of the previous reply (uses conversation))
+Scout: Okay, here is a condensed plan:
+
+*   **Today:** Review Tanium core functions and endpoint management [1].
+*   **Tomorrow:** Draft 2-3 STAR stories for behavioral questions.
+*   **Day After:** Targeted review of weak areas.
+*   **Day 3:** Mock interview session focusing on Tanium.
+
+Let's start with the core function review. Ready?
+  ⚠ citation check: reply shows [n] markers but no notes were retrieved this turn
+  (6.21s)
+you: Just so you know, the Graton Casino Expansion was a $5M project.
+  ↳ notes lookup: yes (model router) · query "Graton Casino Expansion project management" · 4 passage(s)
+Scout: Thanks for the correction. I'll make sure to note that the Graton Casino Expansion was a $5M project.
+
+I'll update my understanding. For reference, I have noted the project cost as $5M.
+
+What do you want to do next?
+  (7.92s)
+you: /exit
+Chat transcript saved: runs/20260928-104857-chat.json

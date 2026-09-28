@@ -1,0 +1,31 @@
+{
+  "mode": "search",
+  "env": {
+    "timestamp": "2026-09-28T15:32:20",
+    "execution": "local",
+    "internet": "online",
+    "host": "Amays-MacBook-Air-2.local",
+    "platform": "Darwin 26.5.2 (arm64)",
+    "model": "gemma4-e2b-qat",
+    "model_identifier": "google/gemma-4-E2B-it-qat-q4_0-gguf (gemma-4-E2B_q4_0-it.gguf)",
+    "quantization": "Q4_0 (quantization-aware trained)"
+  },
+  "query": "linear chain architecture",
+  "scope": "all",
+  "passages": [
+    {
+      "n": 1,
+      "id": "wiki:Tanium Endpoint Management#summary",
+      "kind": "wiki",
+      "path": "vault/wiki/Concepts/Tanium Endpoint Management.md",
+      "location": "Tanium Endpoint Management (wiki) › Summary",
+      "score": 10.97,
+      "matched_terms": [
+        "linear",
+        "chain",
+        "architecture"
+      ],
+      "text": "# Tanium Endpoint Management\n\nTanium is an endpoint management and security platform offering real-time visibility and control over all devices connected to a network. It distinguishes itself through a linear chain architecture that allows querying all endpoints in under 15 seconds, and a unified platform covering security, operations, patching, compliance, and more."
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "mode": "ingest",
+  "env": {
+    "timestamp": "2026-09-28T10:59:05",
+    "execution": "local",
+    "internet": "online",
+    "host": "Amays-MacBook-Air-2.local",
+    "platform": "Darwin 26.5.2 (arm64)",
+    "model": "gemma4-e2b-qat",
+    "model_identifier": "google/gemma-4-E2B-it-qat-q4_0-gguf (gemma-4-E2B_q4_0-it.gguf)",
+    "quantization": "Q4_0 (quantization-aware trained)",
+    "runtime": "ollama 0.34.4"
+  },
+  "paths": [
+    "vault/raw/Tiktok Interview Prep.docx"
+  ],
+  "force": true,
+  "reassign": false,
+  "stats": {
+    "sources_processed": 1,
+    "notes_written": 7,
+    "notes_kept_reviewed": 16,
+    "passages": 46,
+    "wiki_chunks": 41,
+    "seconds": 329.7
+  },
+  "model_calls": [
+    {
+      "step": "write Client Payment Negotiation",
+      "wall_s": 37.43,
+      "load_s": 0.01,
+      "prompt_tokens": 1769,
+      "prompt_s": 7.34,
+      "output_tokens": 482,
+      "output_s": 29.98,
+      "tokens_per_s": 16.1
+    },
+    {
+      "step": "write Graton Casino Expansion",
+      "wall_s": 41.32,
+      "load_s": 0.03,
+      "prompt_tokens": 1696,
+      "prompt_s": 7.22,
+      "output_tokens": 500,
+      "output_s": 33.9,
+      "tokens_per_s": 14.7
+    },
+    {
+      "step": "write Inherited Project Overload",
+      "wall_s": 48.36,
+      "load_s": 0.03,
+      "prompt_tokens": 2078,
+      "prompt_s": 9.56,
+      "output_tokens": 522,
+      "output_s": 38.48,
+      "tokens_per_s": 13.6
+    },
+    {
+      "step": "write Overdue Receivables Analysis",
+      "wall_s": 49.76,
+      "load_s": 0.04,
+      "prompt_tokens": 1757,
+      "prompt_s": 7.81,
+      "output_tokens": 554,
+      "output_s": 41.52,
+      "tokens_per_s": 13.3
+    },
+    {
+      "step": "write Supply Chain Delays",
+      "wall_s": 43.98,
+      "load_s": 0.04,
+      "prompt_tokens": 1747,
+      "prompt_s": 8.66,
+      "output_tokens": 472,
+      "output_s": 35.01,
+      "tokens_per_s": 13.5
+    },
+    {
+      "step": "write TikTok MSO",
+      "wall_s": 48.36,
+      "load_s": 0.05,
+      "prompt_tokens": 1521,
+      "prompt_s": 9.01,
+      "output_tokens": 468,
+      "output_s": 39.04,
+      "tokens_per_s": 12.0
+    },
+    {
+      "step": "write TikTok Monetization",
+      "wall_s": 59.99,
+      "load_s": 0.03,
+      "prompt_tokens": 2292,
+      "prompt_s": 19.08,
+      "output_tokens": 544,
+      "output_s": 40.68,
+      "tokens_per_s": 13.4
+    }
+  ],
+  "ollama_ps": [
+    {
+      "name": "gemma4-e2b-qat:latest",
+      "model": "gemma4-e2b-qat:latest",
+      "size": 1539770939,
+      "digest": "ed69038d491363f4b43e172edffee145dddecfec691b406e88ec2fc65bf0bd9f",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "gemma4",
+        "families": [
+          "gemma4"
+        ],
+        "parameter_size": "4.6B",
+        "quantization_level": "Q4_0"
+      },
+      "expires_at": "2026-09-28T11:09:04.841452-07:00",
+      "size_vram": 1539770939,
+      "context_length": 8192
+    }
+  ]
+}

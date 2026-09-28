@@ -1,0 +1,116 @@
+{
+  "mode": "ask",
+  "env": {
+    "timestamp": "2026-09-28T15:29:52",
+    "execution": "local",
+    "internet": "offline",
+    "host": "Amays-MacBook-Air-2.local",
+    "platform": "Darwin 26.5.2 (arm64)",
+    "model": "gemma4-e2b-qat",
+    "model_identifier": "google/gemma-4-E2B-it-qat-q4_0-gguf (gemma-4-E2B_q4_0-it.gguf)",
+    "quantization": "Q4_0 (quantization-aware trained)",
+    "runtime": "ollama 0.34.4"
+  },
+  "question": "What is the salary or hourly pay for the TikTok Monetization Strategy & Ops internship?",
+  "chat_history_used": false,
+  "persona_used": false,
+  "passages": [
+    {
+      "n": 1,
+      "id": "tiktok-interview-prep:s10p1",
+      "kind": "source",
+      "path": "vault/raw/Tiktok Interview Prep.docx",
+      "location": "Tiktok Interview Prep.docx › Why do you want to work for Tiktok and why MSO? (¶95-97)",
+      "score": 10.53,
+      "matched_terms": [
+        "tiktok",
+        "monet",
+        "strategy",
+        "ops"
+      ],
+      "text": "I’m drawn to TikTok because it’s a trendsetter in a highly competitive industry and revolutionized how brands approach marketing — from the polished ads we used to see on TV to a more raw, unpolished, and authentic experience that really connects with Gen Z audiences who value connection over perfection. I think that shift in how brands communicate is incredibly powerful.\nI want to work in MSO because I love working on monetization, revenue and really increasing bottom line revenue for my products. This interest in monetization and revenue building stems from Otis and its business model. Almost every project that I worked on at Otis was sold at cost, 0% margin, and it was up to me to turn this ship around and hit my profit goals of 5-10%. I became obsesses with finding every lever to drive revenue, whether it was negotiationg with supliers to get better pricing on materials, working with mechanics to figure out a more effeicient installation process or upselling products and service to our customers. I loved using insights and turning operational efficiency into financial results.\nI’m especially excited about the Monetization Strategy & Ops team because it sits right at the intersection of creativity, data, and business impact. The team’s focus on understanding revenue trends, optimizing ad effectiveness, and launching new monetization models aligns perfectly with my background, which is combining execution skills from project management with an analytical, data-driven mindset"
+    },
+    {
+      "n": 2,
+      "id": "tiktok-interview-prep:s01p1",
+      "kind": "source",
+      "path": "vault/raw/Tiktok Interview Prep.docx",
+      "location": "Tiktok Interview Prep.docx › How does Tiktok monetize? (¶12-20)",
+      "score": 8.05,
+      "matched_terms": [
+        "pay",
+        "tiktok",
+        "monet"
+      ],
+      "text": "- Ads: In-feed (every 2 to 3 videos) & top view ads (as soon as you open the app).\n- Tiktok shop: Charges seller commission on every transaction & sellers have to pay to advertise their products. HIGHEST growth over the past two years.\n- Brand partnerships – Hashtag challenges, Brand takeover days, Brand Awareness campaign.\n- Gifts to Creators- When people give roses or galaxies to creators to show appreciation, tiktok gets a cut.\nSample Answer:\nTikTok has four main revenue streams, with advertising being the largest.\nFirst, advertising - primarily through in-feed ads that appear every 2-3 videos in the For You Page, and TopView ads that take over the screen when users first open the app. This is their core revenue driver.\nSecond, TikTok Shop, which has seen the highest growth over the past two years. They monetize this in two ways: taking a commission on every transaction, typically 2-8% depending on category, and charging sellers to advertise their products on the platform. This creates a dual revenue stream where TikTok profits both from the sale itself and from the ads driving traffic to those products.\nThird, brand partnerships - these are premium, high-value deals like branded hashtag challenges where brands pay $150K-500K+, brand takeover days for exclusive daily placement, and large-scale brand awareness campaigns. These command premium pricing compared to standard advertising."
+    },
+    {
+      "n": 3,
+      "id": "tiktok-interview-prep:s01p2",
+      "kind": "source",
+      "path": "vault/raw/Tiktok Interview Prep.docx",
+      "location": "Tiktok Interview Prep.docx › How does Tiktok monetize? (¶20-22)",
+      "score": 8.05,
+      "matched_terms": [
+        "pay",
+        "tiktok",
+        "monet"
+      ],
+      "text": "Third, brand partnerships - these are premium, high-value deals like branded hashtag challenges where brands pay $150K-500K+, brand takeover days for exclusive daily placement, and large-scale brand awareness campaigns. These command premium pricing compared to standard advertising.\nAnd fourth, virtual gifts - when users send gifts like roses or galaxies to creators during LIVE streams to show appreciation, TikTok takes a cut of those transactions before paying out creators.\nThe key insight is that TikTok Shop's growth shows they're successfully diversifying beyond pure advertising into commerce, which improves their revenue resilience and deepens user engagement on the platform"
+    },
+    {
+      "n": 4,
+      "id": "tiktok-interview-prep:s00p1",
+      "kind": "source",
+      "path": "vault/raw/Tiktok Interview Prep.docx",
+      "location": "Tiktok Interview Prep.docx › Introduction (¶1-10)",
+      "score": 7.1,
+      "matched_terms": [
+        "tiktok",
+        "monet",
+        "ops"
+      ],
+      "text": "• How does Tiktok Monetize? (Shop, Ads, Content Creator Marketplace, Commissions, brand deals)\n• Who are Tiktok’s competitors? (Meta, YT, Amazon)\n• What are their Strengths? (Cross-platform targeting, social, messaging elements)\n• What are Tiktok’s strengths? (Algorithm -> Organic, Natural, Ads feel authentic + Tiktok Shop -> Seamless experience + AI driven content and ad creation and management)\n• What are the types of Ad formats?\n• What metrics are associate with each type of Ad (Think Top of Funnel vs Bottom of Funnel -> Daily users, Engagement, Clickthrough rate)\n• How would you go about deciding the pricing for an Ad for a client? (CPM/CPC/CPV -> What are multipliers, what is the math behind calculating these metrics)\n• What would you investigate from an Ops standpoint if you missed Revenue or Cost targets at Tiktok?\n• Really explain how your current career trajectory NEEDS tiktok as the next step?\n• What kind of ad/marketing campaign would you recommend for this kind of client? (Branded hashtags, Filters, Ads, Influencer Marketing)"
+    },
+    {
+      "n": 5,
+      "id": "tiktok-interview-prep:s02p1",
+      "kind": "source",
+      "path": "vault/raw/Tiktok Interview Prep.docx",
+      "location": "Tiktok Interview Prep.docx › Who are Tiktok’s competitors and what are their strengths? (¶24-30)",
+      "score": 4.94,
+      "matched_terms": [
+        "tiktok",
+        "monet"
+      ],
+      "text": "Sample Answer:\nMeta's biggest strength is cross-platform targeting which means it can track users across Facebook, Instagram, WhatsApp, and Messenger,\nfrom a monetization perspective, they can give advertisers incredibly rich data and the ability to reach users across multiple touchpoints.\nThey also have deep user data from two decades of social networking, which enables sophisticated targeting that TikTok is still building.\nYouTube's strength is their unmatched scale - they have over 2 billion monthly users globally and offer both long-form and short-form content with Shorts, which means they can monetize both forms of video content.\nThey also benefit from Google's ad tech infrastructure, which is the most sophisticated in the industry with advanced analytics, attribution, and measurement tools that advertisers trust.\n- Amazon competes directly with TikTok Shop, and their strength is unbeatable logistics and delivery speed. Their fulfillment infrastructure is so advanced that you can order something at 1 AM and have it delivered by 8 AM the same morning. TikTok Shop simply can't match that level of operational excellence and customer trust in delivery reliability. Amazon also has decades of customer reviews, return policies, and Prime loyalty that TikTok is years away from replicating."
+    }
+  ],
+  "verified_quotes": [],
+  "rejected_quotes": [],
+  "model_skipped_answer": true,
+  "answer": "INSUFFICIENT EVIDENCE: none of the 5 retrieved passages contains a statement that answers this question.",
+  "citation_check": {
+    "ok": true,
+    "insufficient": true,
+    "cited": [],
+    "invalid": [],
+    "uncited_sentences": [],
+    "unsupported_numbers": [],
+    "unsupported_citations": [],
+    "summary": "insufficient-evidence response"
+  },
+  "stats": {
+    "retrieval_ms": 0.2,
+    "extract": {
+      "wall_s": 5.74,
+      "load_s": 0.0,
+      "prompt_tokens": 1570,
+      "prompt_s": 5.3,
+      "output_tokens": 7,
+      "output_s": 0.38,
+      "tokens_per_s": 18.5
+    },
+    "wall_s": 5.74
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "mode": "ask",
+  "env": {
+    "timestamp": "2026-09-28T15:29:46",
+    "execution": "local",
+    "internet": "offline",
+    "host": "Amays-MacBook-Air-2.local",
+    "platform": "Darwin 26.5.2 (arm64)",
+    "model": "gemma4-e2b-qat",
+    "model_identifier": "google/gemma-4-E2B-it-qat-q4_0-gguf (gemma-4-E2B_q4_0-it.gguf)",
+    "quantization": "Q4_0 (quantization-aware trained)",
+    "runtime": "ollama 0.34.4"
+  },
+  "question": "In my Otis supply chain delay story, how much did material lead times increase, and how did I keep projects on schedule?",
+  "chat_history_used": false,
+  "persona_used": false,
+  "passages": [
+    {
+      "n": 1,
+      "id": "amazon-interview:s04p1",
+      "kind": "source",
+      "path": "vault/raw/Amazon Interview.docx",
+      "location": "Amazon Interview.docx › Tell me about a time you used multiple resources to overcome a challenge/had to work un... (¶25-28)",
+      "score": 19.26,
+      "matched_terms": [
+        "supply",
+        "chain",
+        "delay",
+        "material",
+        "lead",
+        "time",
+        "keep",
+        "project",
+        "schedule"
+      ],
+      "text": "Last year, supply chain disruptions increased our material lead times from 10 to 16 weeks, putting multiple projects at risk of significant delays. I had to inform customers of this bad news, and understandably, they were not happy.\nI needed to keep projects on schedule despite the delays and maintain customer satisfaction. This was important to me because I had committed to these timelines, and I knew delays would damage both customer relationships and our reputation for reliable delivery.\nI took a two-pronged approach leveraging different resources. First, I worked with our factory to implement partial shipments - getting materials shipped as they became available rather than waiting for complete orders. This allowed our mechanics to start assembly immediately with available parts and install missing components later. Second, I coordinated with our field mechanics to put in significant overtime to make up for any remaining schedule gaps and ensure we hit our deadlines.\nBy strategically using both factory flexibility and mechanic capacity, I kept all projects on track and maintained customer satisfaction despite the supply chain crisis. Customers appreciated the proactive problem-solving, and we didn't lose any projects due to delays."
+    },
+    {
+      "n": 2,
+      "id": "tanium-interview-prep:s07p1",
+      "kind": "source",
+      "path": "vault/raw/Tanium Interview Prep.docx",
+      "location": "Tanium Interview Prep.docx › Tell me about a time you used multiple resources to overcome a challenge/had to work un... (¶46-49)",
+      "score": 19.15,
+      "matched_terms": [
+        "supply",
+        "chain",
+        "delay",
+        "material",
+        "lead",
+        "time",
+        "keep",
+        "project",
+        "schedule"
+      ],
+      "text": "Last year, supply chain disruptions increased our material lead times from 12 to 16 weeks, putting multiple projects at risk of significant delays. I had to inform customers of this bad news, and understandably, they were not happy.\nI knew I needed to keep projects on schedule despite delays in order to maintain customer satisfaction and our reputation for reliable delivery.\nI took a novel two-pronged approach leveraging different resources. First, I worked with our factory to implement partial shipments - getting materials shipped as they became available rather than waiting for complete orders. This allowed our mechanics to start assembly immediately with available parts and install missing components later. Second, I coordinated with our field mechanics to put in significant overtime to make up for any remaining schedule gaps and ensure we hit our deadlines.\nBy strategically using both factory flexibility and mechanic capacity, I kept all projects on track and maintained customer satisfaction despite the supply chain crisis. Customers appreciated the proactive problem-solving, and we didn't lose any projects due to delays."
+    },
+    {
+      "n": 3,
+      "id": "tiktok-interview-prep:s06p1",
+      "kind": "source",
+      "path": "vault/raw/Tiktok Interview Prep.docx",
+      "location": "Tiktok Interview Prep.docx › Tell me about a time you used multiple resources to overcome a challenge/had to work un... (¶64-67)",
+      "score": 19.14,
+      "matched_terms": [
+        "supply",
+        "chain",
+        "delay",
+        "material",
+        "lead",
+        "time",
+        "keep",
+        "project",
+        "schedule"
+      ],
+      "text": "Last year, supply chain disruptions increased our material lead times from 12 to 16 weeks, putting multiple projects at risk of significant delays. I had to inform customers of this bad news, and understandably, they were not happy.\nI needed to keep projects on schedule despite the delays and maintain customer satisfaction. This was important to me because I had committed to these timelines, and I knew delays would damage both customer relationships and our reputation for reliable delivery.\nI took a two-pronged approach leveraging different resources. First, I worked with our factory to implement partial shipments - getting materials shipped as they became available rather than waiting for complete orders. This allowed our mechanics to start assembly immediately with available parts and install missing components later. Second, I coordinated with our field mechanics to put in significant overtime to make up for any remaining schedule gaps and ensure we hit our deadlines.\nBy strategically using both factory flexibility and mechanic capacity, I kept all projects on track and maintained customer satisfaction despite the supply chain crisis. Customers appreciated the proactive problem-solving, and we didn't lose any projects due to delays."
+    },
+    {
+      "n": 4,
+      "id": "amazon-interview:s01p1",
+      "kind": "source",
+      "path": "vault/raw/Amazon Interview.docx",
+      "location": "Amazon Interview.docx › Why Amazon? (¶7-9)",
+      "score": 7.87,
+      "matched_terms": [
+        "otis",
+        "delay",
+        "keep",
+        "project",
+        "schedule"
+      ],
+      "text": "I would like to work for Amazon because it’s managed to build the most sophisticated delivery and logistics network in the world. Moreover, it’s also managed to defend that advantage for decades against competitors like Walmart, Target, and now Tiktok Shop. What really sets Amazon apart besides the technology is its operational excellence at a massive scale.\nAt Otis, I managed a $47M portfolio across 50+ construction projects where I learned that great operations come down to always putting your customer first and delivering on your commitments. When delays cascaded, it directly impacted families moving into buildings or businesses opening on schedule. That experience taught me the same thing I see at Amazon: keep the customer at the center and deliver on your promises.\nWhether it’s promising same-day delivery or the use of robotics in fulfillment centers, Amazon continually raises the bar for reliability and speed. I’d love to be part of the team that maintains that operational edge and helps drive the next generation of improvements."
+    },
+    {
+      "n": 5,
+      "id": "tiktok-interview-prep:s05p1",
+      "kind": "source",
+      "path": "vault/raw/Tiktok Interview Prep.docx",
+      "location": "Tiktok Interview Prep.docx › Tell me about a time you had to overcome challenges when working with a team (cross-fun... (¶55-62)",
+      "score": 6.26,
+      "matched_terms": [
+        "supply",
+        "delay",
+        "project",
+        "schedule"
+      ],
+      "text": "- On my largest project to date, Graton Casino Expansion, a $2.9M project, I was coordinating between our internal teams and external stakeholders including architects, general contractors, and global supply vendors.\n- The challenge here was that everyone had competing priorities. The customer wanted premium customizations, vendors were pushing back on the timeline stating that this was not feasible and my internal team was worried about scope creep.\n- My task was to align all of these different parties and deliver the project without any overruns or delays.\n- Established weekly coordination meetings\n- Purpose was to understand each team’s constrains and then coming up with compromises like identifying which customizations we could adopt without impacting deadlines greatly\n- Presented all possible options to the client with cost and time implications.\n- The result was that we delivered the $2.9M project with over $400k in customizations on schedule.\n- The structured communication prevented small misalignments from becoming major conflicts, and the client was satisfied with both the process and outcome."
+    }
+  ],
+  "verified_quotes": [
+    {
+      "passage": 1,
+      "quote": "Last year, supply chain disruptions increased our material lead times from 10 to 16 weeks, putting multiple projects at risk of significant delays."
+    },
+    {
+      "passage": 2,
+      "quote": "Last year, supply chain disruptions increased our material lead times from 12 to 16 weeks, putting multiple projects at risk of significant delays."
+    }
+  ],
+  "rejected_quotes": [],
+  "model_skipped_answer": false,
+  "answer": "The owner stated that supply chain disruptions increased material lead times from 10 to 16 weeks [1]. Another source states that supply chain disruptions increased material lead times from 12 to 16 weeks [2]. The sources disagree on the initial increase in lead times.",
+  "citation_check": {
+    "ok": false,
+    "insufficient": false,
+    "cited": [
+      1,
+      2
+    ],
+    "invalid": [],
+    "uncited_sentences": [
+      "The sources disagree on the initial increase in lead times."
+    ],
+    "unsupported_numbers": [],
+    "unsupported_citations": [],
+    "summary": "CHECK — 2 passage(s) cited: [1], [2]; 1 sentence(s) without a citation"
+  },
+  "stats": {
+    "retrieval_ms": 0.3,
+    "extract": {
+      "wall_s": 9.4,
+      "load_s": 0.0,
+      "prompt_tokens": 1487,
+      "prompt_s": 4.96,
+      "output_tokens": 93,
+      "output_s": 4.39,
+      "tokens_per_s": 21.2
+    },
+    "conflicts": [
+      "passage(s) [1] say 10 / 16; passage(s) [2] say 12 / 16"
+    ],
+    "answer": {
+      "wall_s": 4.68,
+      "load_s": 0.0,
+      "prompt_tokens": 512,
+      "prompt_s": 1.65,
+      "output_tokens": 58,
+      "output_s": 2.95,
+      "tokens_per_s": 19.6
+    },
+    "wall_s": 14.08
+  }
+}

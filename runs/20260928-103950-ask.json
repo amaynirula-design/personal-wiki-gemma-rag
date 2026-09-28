@@ -1,0 +1,106 @@
+{
+  "mode": "ask",
+  "env": {
+    "timestamp": "2026-09-28T10:39:50",
+    "execution": "local",
+    "internet": "online",
+    "host": "Amays-MacBook-Air-2.local",
+    "platform": "Darwin 26.5.2 (arm64)",
+    "model": "gemma4-e2b-qat",
+    "model_identifier": "google/gemma-4-E2B-it-qat-q4_0-gguf (gemma-4-E2B_q4_0-it.gguf)",
+    "quantization": "Q4_0 (quantization-aware trained)",
+    "runtime": "ollama 0.34.4"
+  },
+  "question": "How quickly can Tanium query all endpoints, and what makes that possible?",
+  "chat_history_used": false,
+  "persona_used": false,
+  "passages": [
+    {
+      "n": 1,
+      "id": "tanium-interview-prep:s04p1",
+      "kind": "source",
+      "path": "vault/raw/Tanium Interview Prep.docx",
+      "location": "Tanium Interview Prep.docx › What does Tanium do? (¶24-26)",
+      "score": 10.08,
+      "matched_terms": [
+        "tanium",
+        "query",
+        "endpoint"
+      ],
+      "text": "Tanium is an endpoint management and security platform that gives IT departments real-time visibility and control over all endpoints - laptops, servers, smartphones, and any other devices connected to the company's network.\nWhat sets Tanium apart from competitors are two key innovations: First is their ability to query all endpoints in under 15 seconds, thanks to the linear chain architecture, which dramatically reduces server load. (2) Its unified platform of modules that cover the full lifecycle: security, operations, patching, compliance, incident response, asset discovery, automation, and more. Tools like Tanium Guardian provide proactive vulnerability monitoring, while Tanium Automate lets teams execute playbooks and workflows that simplify everything from patching to onboarding new devices.\nInstead of stitching together multiple solutions for asset management, patching, EDR, compliance, and configuration, Tanium consolidates them into one platform. That’s why many enterprises think of Tanium as the backbone of their IT and security operations — real-time, accurate, and massively scalable."
+    },
+    {
+      "n": 2,
+      "id": "tanium-interview-prep:s03p1",
+      "kind": "source",
+      "path": "vault/raw/Tanium Interview Prep.docx",
+      "location": "Tanium Interview Prep.docx › Why Cybersecurity & Tanium? (¶20-22)",
+      "score": 4.91,
+      "matched_terms": [
+        "tanium",
+        "endpoint"
+      ],
+      "text": "My interest in cybersecurity actually started off with a canceled flight. Last year in July, I was supposed to fly Delta, but because of the CrowdStrike outage my flight was cancelled. I was annoyed in the moment, but also genuinely curious on how a single update could take down systems all around the world? That question led me down a rabbit hole because I wanted to understand the technical and operational failures that led to this catastrophe. And like anytime I’m genuinely curious about something, I ended up on Reddit reading threads from people way smarter — and way angrier — than I was.\nThat curiosity pushed me deeper into endpoint security. I started comparing different companies in the space and Tanium kept appearing in those comparisons. I’d driven past your Emeryville office countless times and seen the huge Tanium logo on the building, but this was the first time I truly understood the significance of what you were building.\nAfter speaking with [former Tanium intern] who interned here last year and learning more about Tanium’s mission, it felt like everything aligned — the type of problems you solve, the scale you operate at, and the way the company thinks about risk. That’s why Tanium stood out to me, and why I’m excited about the opportunity today."
+    },
+    {
+      "n": 3,
+      "id": "tanium-interview-prep:s00p2",
+      "kind": "source",
+      "path": "vault/raw/Tanium Interview Prep.docx",
+      "location": "Tanium Interview Prep.docx › Tell me about yourself and how you fit the role? (¶6-8)",
+      "score": 4.84,
+      "matched_terms": [
+        "tanium",
+        "make"
+      ],
+      "text": "Outside of work, I love exploring different cultures through food and travel, staying active through hiking, and I’m also an amateur golfer.\nWhat excites me about the product management role at Tanium is that it blends everything I did well at Otis — coordinating complex projects, managing high-stakes operations, and driving measurable outcomes — but in a domain where the stakes are even higher and the scale is far greater. Tanium’s AEM system and focus on solving deep operational problems make it a place where I can apply my strengths while growing into a more product-focused role\nI think I’m a strong fit for this role because my background combines technical understanding, cross-functional leadership, and experience managing complex systems — all of which translate directly into product work at Tanium."
+    },
+    {
+      "n": 4,
+      "id": "amazon-interview:s10p1",
+      "kind": "source",
+      "path": "vault/raw/Amazon Interview.docx",
+      "location": "Amazon Interview.docx › tell me a time when you saw a peer struggling and decided to step in and help. What was... (¶81-89)",
+      "score": 3.05,
+      "matched_terms": [
+        "quickly"
+      ],
+      "text": "At Otis, a peer on my team was assigned a highly complex, technically demanding construction project despite not having the technical background typically required for that type of work.\nThe assignment was given to her largely due to manpower constraints rather than fit, and it quickly became clear she was being set up to struggle.\nAs the project progressed, coordination issues increased and stakeholder expectations were becoming misaligned with what was realistically feasible for her to do.\n• Although I was not formally responsible for the project, I felt accountable for the broader team’s success and the customer outcome.\n• My goal became to help stabilize the project and support my peer without undermining her credibility\n•. I proactively reached out to her and offered support, positioning myself as a potential resource rather than stepping in as a “fixer.”\n• I helped her ramp up on the technical aspects of the project by walking through system constraints, installation sequencing, and common risk areas based on my prior experience.\n• During customer meetings, I acted as a bridge by framing technical limitations in clear language so stakeholders had realistic expectations.\n• due to me jumping into the project at the right time, my peer gained confidence, credibility with stakeholders, and was able to lead the project successfully rather than being overwhelmed by it."
+    },
+    {
+      "n": 5,
+      "id": "tanium-interview-prep:s02p1",
+      "kind": "source",
+      "path": "vault/raw/Tanium Interview Prep.docx",
+      "location": "Tanium Interview Prep.docx › What did you do at Otis? (¶14-18)",
+      "score": 2.91,
+      "matched_terms": [
+        "quickly"
+      ],
+      "text": "At Otis, I was a project manager managing a $47M portfolio of 50+ new construction elevator projects simultaneously. My role had three main focus areas:\nFirst, stakeholder coordination: I had to align multiple internal and external parties - contractors, architects, city officials, building owners - who all had different priorities and timelines. I had no direct authority over most of them, so I had to rely on leadership without formal power and bridge organizational silos to keep everyone aligned.\nSecond, risk management at scale: With 50+ projects running concurrently, issues emerged constantly. I had to monitor for early warning signs, flag problems before they escalated, and coordinate rapid responses to prevent them from cascading into larger project failures. This meant developing a sense of pattern recognition for common failure and building relationships so stakeholders would escalate issues early rather than trying to solve them independently.\nThird, technical problem-solving: I was responsible for handling any technical challenges - design modifications, code compliance issues, construction conflicts - which meant quickly understanding complex problems, coming up with a game plan, and then getting team buy off in order to execute this game plan.\nFinally, beyond the three main focus areas, I had full P&L responsibility for the portfolio and was accountable for hitting financial metrics across all projects."
+    }
+  ],
+  "model_skipped": false,
+  "answer": "Tanium can query all endpoints in under 15 seconds [1]. This speed is made possible by the linear chain architecture, which reduces server load [1].",
+  "citation_check": {
+    "ok": true,
+    "insufficient": false,
+    "cited": [
+      1
+    ],
+    "invalid": [],
+    "uncited_sentences": [],
+    "unsupported_numbers": [],
+    "summary": "PASS — 1 passage(s) cited: [1]"
+  },
+  "stats": {
+    "wall_s": 19.27,
+    "load_s": 11.05,
+    "prompt_tokens": 1656,
+    "prompt_s": 6.33,
+    "output_tokens": 34,
+    "output_s": 1.75,
+    "tokens_per_s": 19.4,
+    "retrieval_ms": 0.1
+  }
+}

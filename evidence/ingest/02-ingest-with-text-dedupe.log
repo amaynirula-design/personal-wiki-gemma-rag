@@ -1,0 +1,88 @@
+[ingest · model gemma4-e2b-qat · local via Ollama 0.34.4]
+
+[new] Amazon Interview.docx: 12 sections, 2367 words
+  + Tell me about yourself                                       -> Career Story (new)  [Introduction and career transition narrative]
+  + Why Amazon?                                                  -> Amazon Pathways (new)  [Why Amazon]
+  + Why Pathways?                                                -> Amazon Pathways  [Motivation for the Pathways program]
+  + Tell me about a time you had to overcome challenges when wor -> Graton Casino Expansion (new)  [Experience managing a cross-functional project with competing prioriti]
+  + Tell me about a time you used multiple resources to overcome -> Supply Chain Delays (new)  [Experience using multiple resources to overcome supply chain disruptio]
+  + Tell me about a time you adapted to a challenging situation/ -> Inherited Project Overload (new)  [Adaptation to challenging situation at Otis]
+  + Tell me about a time you had disagreement with a colleague/w -> Client Payment Negotiation (new)  [Handling client payment disagreement]
+  + Tell me about a time you dug into data/used data to inform/c -> Otis Cash Flow Data Analysis (new)  [Data driven decision making at Otis]
+  + Tell me about ways that you personally have tried to mature  -> Centralized Reference Folder (new)  [Improving engineering efforts and customer communication]
+  + Tell me a time you failed/ received negative feedback.       -> Design Decision Failure (new)  [Experience receiving critical feedback at Otis regarding a design deci]
+  + tell me a time when you saw a peer struggling and decided to -> Otis Peer Support (new)  [Behavioral question response regarding peer support at Otis]
+  + Questions                                                    -> Amazon Pathways  [Amazon interview questions]
+
+[new] Tanium Interview Prep.docx: 14 sections, 2697 words
+  ≈ Tell me about yourself and how you fit the role?             -> Career Story (same text as Amazon Interview.docx › Tell me about yourself, overlap 0.42)
+  + How do you fit the role?                                     -> Amazon Pathways  [How to fit the role at Amazon]
+  + What did you do at Otis?                                     -> Otis Project Management (new)  [Otis project management experience]
+  + Why Cybersecurity & Tanium?                                  -> Amazon Pathways  [Interest in cybersecurity and Tanium]
+  + What does Tanium do?                                         -> Tanium Endpoint Management (new)  [What Tanium does]
+  + QUESTIONS FOR [interviewer]                                  -> Tanium Interview Prep (new)  [Tanium Interview Prep]
+  ≈ Tell me about a time you had to overcome challenges when wor -> Graton Casino Expansion (same text as Amazon Interview.docx › Tell me about a time you had to overcome, overlap 0.89)
+  ≈ Tell me about a time you used multiple resources to overcome -> Supply Chain Delays (same text as Amazon Interview.docx › Tell me about a time you used multiple r, overlap 0.90)
+  ≈ Tell me about a time you adapted to a challenging situation/ -> Inherited Project Overload (same text as Amazon Interview.docx › Tell me about a time you adapted to a ch, overlap 0.57)
+  ≈ Tell me about a time you had disagreement with a colleague/w -> Client Payment Negotiation (same text as Amazon Interview.docx › Tell me about a time you had disagreemen, overlap 1.00)
+  ≈ Tell me about a time you dug into data/used data to inform/c -> Otis Cash Flow Data Analysis (same text as Amazon Interview.docx › Tell me about a time you dug into data/u, overlap 0.91)
+  + Tell me about how you have stayed current on industry develo -> Tanium Interview Prep  [How to stay current on industry developments]
+  ≈ Tell me about ways that you personally have tried to mature  -> Centralized Reference Folder (same text as Amazon Interview.docx › Tell me about ways that you personally h, overlap 0.97)
+  + Tell me a time you failed.                                   -> Rapid Mental Calculations Failure (new)  [Tell me a time you failed]
+
+[new] Tiktok Interview Prep.docx: 11 sections, 2436 words
+  + Introduction                                                 -> TikTok Monetization Strategy (new)  [TikTok monetization and strategy]
+  + How does Tiktok monetize?                                    -> TikTok Monetization Strategy  [TikTok monetization strategy]
+  + Who are Tiktok’s competitors and what are their strengths?   -> TikTok Monetization Strategy  [TikTok competitors and strengths]
+  + What are Tiktok’s strengths?                                 -> TikTok Monetization Strategy  [TikTok's strengths]
+  + What are the different types of ads and what metrics would y -> TikTok Monetization Strategy  [Different types of ads and metrics for TikTok monetization]
+  ≈ Tell me about a time you had to overcome challenges when wor -> Graton Casino Expansion (same text as Tanium Interview Prep.docx › Tell me about a time you had to overcome, overlap 0.99)
+  ≈ Tell me about a time you used multiple resources to overcome -> Supply Chain Delays (same text as Amazon Interview.docx › Tell me about a time you used multiple r, overlap 0.98)
+  ≈ Tell me about a time you adapted to a challenging situation/ -> Inherited Project Overload (same text as Amazon Interview.docx › Tell me about a time you adapted to a ch, overlap 0.94)
+  ≈ Tell me about a time you had disagreement with a colleague/w -> Client Payment Negotiation (same text as Amazon Interview.docx › Tell me about a time you had disagreemen, overlap 1.00)
+  ≈ Tell me about a time you dug into data/used data to inform/c -> Otis Cash Flow Data Analysis (same text as Tanium Interview Prep.docx › Tell me about a time you dug into data/u, overlap 0.90)
+  + Why do you want to work for Tiktok and why MSO?              -> TikTok Monetization Strategy  [Motivation for working at TikTok and MSO]
+
+Writing 15 note(s) with gemma4-e2b-qat:
+  ✎ Amazon Pathways (24s)
+  ✎ Career Story (24s)
+  ✎ Centralized Reference Folder (26s)
+  ✎ Client Payment Negotiation (30s)
+  ✎ Design Decision Failure (30s)
+  ✎ Graton Casino Expansion (31s)
+  ✎ Inherited Project Overload (30s)
+  ✎ Otis Cash Flow Data Analysis (33s)
+  ✎ Otis Peer Support (28s)
+  ✎ Otis Project Management (24s)
+  ✎ Rapid Mental Calculations Failure (20s)
+  ✎ Supply Chain Delays (30s)
+  ✎ Tanium Endpoint Management (24s)
+  ✎ Tanium Interview Prep (23s)
+  ✎ TikTok Monetization Strategy (38s)
+
+Ingest complete in 495.4s
+  sources processed: 3
+  notes created: 15
+  notes written: 15
+  files written: 15
+  passages: 46
+  wiki chunks: 34
+Saved: runs/20260925-223859-ingest.json
+      495.59 real         0.30 user         0.20 sys
+            52232192  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               27341  page reclaims
+                1837  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  84  messages sent
+                  44  messages received
+                   0  signals received
+                 830  voluntary context switches
+                2117  involuntary context switches
+          3404506247  instructions retired
+          1225976441  cycles elapsed
+            36783360  peak memory footprint

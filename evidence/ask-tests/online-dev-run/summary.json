@@ -1,0 +1,109 @@
+{
+  "env": {
+    "timestamp": "2026-09-28T10:39:31",
+    "execution": "local",
+    "internet": "online",
+    "host": "Amays-MacBook-Air-2.local",
+    "platform": "Darwin 26.5.2 (arm64)",
+    "model": "gemma4-e2b-qat",
+    "model_identifier": "google/gemma-4-E2B-it-qat-q4_0-gguf (gemma-4-E2B_q4_0-it.gguf)",
+    "quantization": "Q4_0 (quantization-aware trained)",
+    "runtime": "ollama 0.34.4"
+  },
+  "results": [
+    {
+      "id": 1,
+      "name": "Tanium endpoint query speed",
+      "question": "How quickly can Tanium query all endpoints, and what makes that possible?",
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "expected_sources_retrieved": [
+        "Tanium Interview Prep.docx"
+      ],
+      "expected_sources_missing": [],
+      "citation_check": {
+        "ok": true,
+        "insufficient": false,
+        "cited": [
+          1
+        ],
+        "invalid": [],
+        "uncited_sentences": [],
+        "unsupported_numbers": [],
+        "summary": "PASS \u2014 1 passage(s) cited: [1]"
+      },
+      "answer": "Tanium can query all endpoints in under 15 seconds [1]. This speed is made possible by the linear chain architecture, which reduces server load [1].",
+      "run": "runs/20260928-103950-ask.json"
+    },
+    {
+      "id": 2,
+      "name": "TikTok Shop take rate (paraphrased)",
+      "question": "What cut does TikTok take when someone buys something through TikTok Shop?",
+      "expected_behavior": "answer",
+      "actual_behavior": "insufficient_evidence",
+      "expected_sources_retrieved": [
+        "Tiktok Interview Prep.docx"
+      ],
+      "expected_sources_missing": [],
+      "citation_check": {
+        "ok": true,
+        "insufficient": true,
+        "cited": [],
+        "invalid": [],
+        "uncited_sentences": [],
+        "unsupported_numbers": [],
+        "summary": "insufficient-evidence response"
+      },
+      "answer": "INSUFFICIENT EVIDENCE: The provided passages state that TikTok takes a commission on every transaction through TikTok Shop, typically 2-8% depending on the category, but they do not specify the exact cut taken.",
+      "run": "runs/20260928-103959-ask.json"
+    },
+    {
+      "id": 3,
+      "name": "Supply chain lead times across three preps",
+      "question": "In my Otis supply chain delay story, how much did material lead times increase, and how did I keep projects on schedule?",
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "expected_sources_retrieved": [
+        "Amazon Interview.docx",
+        "Tanium Interview Prep.docx",
+        "Tiktok Interview Prep.docx"
+      ],
+      "expected_sources_missing": [],
+      "citation_check": {
+        "ok": true,
+        "insufficient": false,
+        "cited": [
+          1,
+          2,
+          3
+        ],
+        "invalid": [],
+        "uncited_sentences": [],
+        "unsupported_numbers": [],
+        "summary": "PASS \u2014 3 passage(s) cited: [1], [2], [3]"
+      },
+      "answer": "The material lead times increased from 12 to 16 weeks [1][2][3]. The owner kept projects on schedule by taking a two-pronged approach: first, working with the factory to implement partial shipments so mechanics could start assembly immediately with available parts [1][2][3]. Second, the owner coordinated with field mechanics to put in significant overtime to make up for remaining schedule gaps [1][2][3].",
+      "run": "runs/20260928-104010-ask.json"
+    },
+    {
+      "id": 4,
+      "name": "TikTok internship pay (unsupported)",
+      "question": "What is the salary or hourly pay for the TikTok Monetization Strategy & Ops internship?",
+      "expected_behavior": "insufficient_evidence",
+      "actual_behavior": "insufficient_evidence",
+      "expected_sources_retrieved": [],
+      "expected_sources_missing": [],
+      "citation_check": {
+        "ok": true,
+        "insufficient": true,
+        "cited": [],
+        "invalid": [],
+        "uncited_sentences": [],
+        "unsupported_numbers": [],
+        "summary": "insufficient-evidence response"
+      },
+      "answer": "INSUFFICIENT EVIDENCE: The provided passages do not contain information about the salary or hourly pay for the TikTok Monetization Strategy & Ops internship.",
+      "run": "runs/20260928-104018-ask.json"
+    }
+  ]
+}

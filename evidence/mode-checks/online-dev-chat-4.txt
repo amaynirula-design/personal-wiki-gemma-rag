@@ -1,0 +1,59 @@
+[chat mode · model gemma4-e2b-qat (Q4_0 (quantization-aware trained)) · local via Ollama 0.34.4]
+Scout — your interview-prep assistant. Type /help for commands, /exit to quit.
+
+you: what can we do?
+  ↳ notes lookup: no (rule: question about the assistant's capabilities)
+Scout: I can help you prep for your internship interviews. I can:
+
+*   Brainstorm and draft interview answers (e.g., "Tell me about yourself," STAR stories).
+*   Run a mock interview with me.
+*   Build and tighten prep plans, checklists, and questions for you.
+*   Look up information from your prep notes (Amazon Pathways, Tanium, TikTok Monetization Strategy & Ops).
+
+What are you working on right now?
+  (6.87s)
+you: what can you help me with?
+  ↳ notes lookup: no (rule: question about the assistant's capabilities)
+Scout: I can help you with several things:
+
+*   **Drafting Answers:** I can help you write responses for common questions like "Tell me about yourself" or structure your STAR method stories.
+*   **Mock Interviews:** We can run a mock interview where I ask you questions and give you feedback.
+*   **Prep Materials:** I can build study plans, checklists, and practice questions tailored to the roles you are interviewing for.
+*   **Note Lookup:** If you need specific details about your background, company research, or project stories, I can pull information from your prep documents.
+
+What specific interview or topic do you want to work on first?
+  (8.78s)
+you: Draft a short plan for preparing for my Tanium interview this week.
+  ↳ notes lookup: yes (model router) · query "Tanium interview preparation plan" · 4 passage(s)
+Scout: Here is a short plan for your Tanium interview prep this week:
+
+*   **Day 1: Company & Product Deep Dive.** Review what Tanium does (e.g., [[Tanium Endpoint Management]]) and prepare answers for "What does Tanium do?" [3].
+*   **Day 2: Story Mining.** Identify 5-7 key stories from your notes that fit Tanium themes, focusing on project management, technical problem-solving, or handling challenges (e.g., [[Otis Project Management]], [[Supply Chain Delays]], [[Client Payment Negotiation]]).
+*   **Day 3: Behavioral Practice.** Draft and refine answers using the STAR method for those stories. Focus on showing how you managed stakeholders and technical issues [2].
+*   **Day 4: Q&A Prep.** Prepare thoughtful questions to ask the interviewers about their current challenges or team structure.
+
+Start by telling me what specific role you are interviewing for at Tanium.
+  Sources: [2] Tanium Interview Prep.docx › What did you do at Otis? (¶14-18); [3] TikTok MSO (wiki) › Prepared answers
+  (17.84s)
+you: make that shorter
+  ↳ notes lookup: no (rule: follow-up edit of the previous reply (uses conversation)) · reusing 4 passage(s) from the previous turn
+Scout: Here is the shortened plan:
+
+*   **Day 1: Research.** Review Tanium's core function (e.g., [[Tanium Endpoint Management]]) and prepare answers on what the product does [3].
+*   **Day 2: Story Selection.** Pick 5-7 key stories from your notes that fit Tanium themes (e.g., managing complexity, overcoming challenges [1], stakeholder coordination [2]).
+*   **Day 3: Practice.** Draft and refine those stories using STAR. Focus on showing problem-solving and collaboration.
+*   **Day 4: Q&A.** Prepare insightful questions for the interviewers.
+
+What story or question feels the weakest right now?
+  Sources: [1] Tanium Product Management (wiki) › Prepared answers; [2] Tanium Interview Prep.docx › What did you do at Otis? (¶14-18); [3] TikTok MSO (wiki) › Prepared answers
+  (16.13s)
+you: Just so you know, the Graton Casino Expansion was a $5M project.
+  ↳ notes lookup: yes (model router) · query "Graton Casino Expansion project management" · 4 passage(s)
+  ↳ figures in your message not found in the notes: $5M
+Scout: I do not have a note stating that the Graton Casino Expansion was a $5M project. My notes mention it was a "$2.9M undertaking" [1].
+
+You can edit the source document and re-run `wiki ingest` if the notes are wrong.
+  Sources: [1] Graton Casino Expansion (wiki) › Summary
+  (10.56s)
+you: /exit
+Chat transcript saved: runs/20260928-105201-chat.json

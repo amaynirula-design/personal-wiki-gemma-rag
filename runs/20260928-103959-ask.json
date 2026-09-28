@@ -1,0 +1,111 @@
+{
+  "mode": "ask",
+  "env": {
+    "timestamp": "2026-09-28T10:39:59",
+    "execution": "local",
+    "internet": "online",
+    "host": "Amays-MacBook-Air-2.local",
+    "platform": "Darwin 26.5.2 (arm64)",
+    "model": "gemma4-e2b-qat",
+    "model_identifier": "google/gemma-4-E2B-it-qat-q4_0-gguf (gemma-4-E2B_q4_0-it.gguf)",
+    "quantization": "Q4_0 (quantization-aware trained)",
+    "runtime": "ollama 0.34.4"
+  },
+  "question": "What cut does TikTok take when someone buys something through TikTok Shop?",
+  "chat_history_used": false,
+  "persona_used": false,
+  "passages": [
+    {
+      "n": 1,
+      "id": "tiktok-interview-prep:s01p2",
+      "kind": "source",
+      "path": "vault/raw/Tiktok Interview Prep.docx",
+      "location": "Tiktok Interview Prep.docx › How does Tiktok monetize? (¶20-22)",
+      "score": 11.66,
+      "matched_terms": [
+        "cut",
+        "tiktok",
+        "take",
+        "shop"
+      ],
+      "text": "Third, brand partnerships - these are premium, high-value deals like branded hashtag challenges where brands pay $150K-500K+, brand takeover days for exclusive daily placement, and large-scale brand awareness campaigns. These command premium pricing compared to standard advertising.\nAnd fourth, virtual gifts - when users send gifts like roses or galaxies to creators during LIVE streams to show appreciation, TikTok takes a cut of those transactions before paying out creators.\nThe key insight is that TikTok Shop's growth shows they're successfully diversifying beyond pure advertising into commerce, which improves their revenue resilience and deepens user engagement on the platform"
+    },
+    {
+      "n": 2,
+      "id": "tiktok-interview-prep:s01p1",
+      "kind": "source",
+      "path": "vault/raw/Tiktok Interview Prep.docx",
+      "location": "Tiktok Interview Prep.docx › How does Tiktok monetize? (¶12-20)",
+      "score": 9.85,
+      "matched_terms": [
+        "cut",
+        "tiktok",
+        "take",
+        "shop"
+      ],
+      "text": "- Ads: In-feed (every 2 to 3 videos) & top view ads (as soon as you open the app).\n- Tiktok shop: Charges seller commission on every transaction & sellers have to pay to advertise their products. HIGHEST growth over the past two years.\n- Brand partnerships – Hashtag challenges, Brand takeover days, Brand Awareness campaign.\n- Gifts to Creators- When people give roses or galaxies to creators to show appreciation, tiktok gets a cut.\nSample Answer:\nTikTok has four main revenue streams, with advertising being the largest.\nFirst, advertising - primarily through in-feed ads that appear every 2-3 videos in the For You Page, and TopView ads that take over the screen when users first open the app. This is their core revenue driver.\nSecond, TikTok Shop, which has seen the highest growth over the past two years. They monetize this in two ways: taking a commission on every transaction, typically 2-8% depending on category, and charging sellers to advertise their products on the platform. This creates a dual revenue stream where TikTok profits both from the sale itself and from the ads driving traffic to those products.\nThird, brand partnerships - these are premium, high-value deals like branded hashtag challenges where brands pay $150K-500K+, brand takeover days for exclusive daily placement, and large-scale brand awareness campaigns. These command premium pricing compared to standard advertising."
+    },
+    {
+      "n": 3,
+      "id": "tiktok-interview-prep:s02p1",
+      "kind": "source",
+      "path": "vault/raw/Tiktok Interview Prep.docx",
+      "location": "Tiktok Interview Prep.docx › Who are Tiktok’s competitors and what are their strengths? (¶24-30)",
+      "score": 8.41,
+      "matched_terms": [
+        "tiktok",
+        "someth",
+        "shop"
+      ],
+      "text": "Sample Answer:\nMeta's biggest strength is cross-platform targeting which means it can track users across Facebook, Instagram, WhatsApp, and Messenger,\nfrom a monetization perspective, they can give advertisers incredibly rich data and the ability to reach users across multiple touchpoints.\nThey also have deep user data from two decades of social networking, which enables sophisticated targeting that TikTok is still building.\nYouTube's strength is their unmatched scale - they have over 2 billion monthly users globally and offer both long-form and short-form content with Shorts, which means they can monetize both forms of video content.\nThey also benefit from Google's ad tech infrastructure, which is the most sophisticated in the industry with advanced analytics, attribution, and measurement tools that advertisers trust.\n- Amazon competes directly with TikTok Shop, and their strength is unbeatable logistics and delivery speed. Their fulfillment infrastructure is so advanced that you can order something at 1 AM and have it delivered by 8 AM the same morning. TikTok Shop simply can't match that level of operational excellence and customer trust in delivery reliability. Amazon also has decades of customer reviews, return policies, and Prime loyalty that TikTok is years away from replicating."
+    },
+    {
+      "n": 4,
+      "id": "tiktok-interview-prep:s03p1",
+      "kind": "source",
+      "path": "vault/raw/Tiktok Interview Prep.docx",
+      "location": "Tiktok Interview Prep.docx › What are Tiktok’s strengths? (¶32-46)",
+      "score": 7.15,
+      "matched_terms": [
+        "tiktok",
+        "buys",
+        "shop"
+      ],
+      "text": "Algorithm Superiority:\n- Best in class recommendations\n- Keeps users engaged longer\n- Markes ads feel native to the app. Ads feel like just another reel\n- Introducting long format videos to compete with the likes of YT. Uploaded reels can now be up to 60 mins.\nUsers:\n- Gen Z dominant.\n- Highly engaged audience that drives a high engagement rate with plenty of comments, likes and sharing of reels.\nTiktok Shop Integration:\n- Seamless purchasing experience\n- Live Shopping and Flash Sales create urgency\n- Lower barrier for impulse buys.\nTikTok has three core competitive advantages that set them apart.\nFirst, algorithm superiority - they have best-in-class content recommendations that keep users engaged significantly longer than competitors. What's particularly powerful is that their algorithm makes ads feel native to the platform - ads blend seamlessly into the feed and feel like just another piece of content rather than an interruption. This is crucial for advertisers because users don't skip or tune out.\nSecond, their user base and engagement - TikTok is Gen Z dominant, and this demographic is incredibly active on the platform spending around 95 mins on the app every day, which is far higher than competitors. They don't just passively watch; they drive high engagement rates through comments, likes, and sharing content. This creates a viral flywheel that advertisers can tap into, where content spreads organically much faster than on other platforms."
+    },
+    {
+      "n": 5,
+      "id": "tanium-interview-prep:s03p1",
+      "kind": "source",
+      "path": "vault/raw/Tanium Interview Prep.docx",
+      "location": "Tanium Interview Prep.docx › Why Cybersecurity & Tanium? (¶20-22)",
+      "score": 5.73,
+      "matched_terms": [
+        "take",
+        "someth"
+      ],
+      "text": "My interest in cybersecurity actually started off with a canceled flight. Last year in July, I was supposed to fly Delta, but because of the CrowdStrike outage my flight was cancelled. I was annoyed in the moment, but also genuinely curious on how a single update could take down systems all around the world? That question led me down a rabbit hole because I wanted to understand the technical and operational failures that led to this catastrophe. And like anytime I’m genuinely curious about something, I ended up on Reddit reading threads from people way smarter — and way angrier — than I was.\nThat curiosity pushed me deeper into endpoint security. I started comparing different companies in the space and Tanium kept appearing in those comparisons. I’d driven past your Emeryville office countless times and seen the huge Tanium logo on the building, but this was the first time I truly understood the significance of what you were building.\nAfter speaking with [former Tanium intern] who interned here last year and learning more about Tanium’s mission, it felt like everything aligned — the type of problems you solve, the scale you operate at, and the way the company thinks about risk. That’s why Tanium stood out to me, and why I’m excited about the opportunity today."
+    }
+  ],
+  "model_skipped": false,
+  "answer": "INSUFFICIENT EVIDENCE: The provided passages state that TikTok takes a commission on every transaction through TikTok Shop, typically 2-8% depending on the category, but they do not specify the exact cut taken.",
+  "citation_check": {
+    "ok": true,
+    "insufficient": true,
+    "cited": [],
+    "invalid": [],
+    "uncited_sentences": [],
+    "unsupported_numbers": [],
+    "summary": "insufficient-evidence response"
+  },
+  "stats": {
+    "wall_s": 8.79,
+    "load_s": 0.02,
+    "prompt_tokens": 1719,
+    "prompt_s": 6.48,
+    "output_tokens": 44,
+    "output_s": 2.24,
+    "tokens_per_s": 19.7,
+    "retrieval_ms": 0.3
+  }
+}

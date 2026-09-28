@@ -1,0 +1,63 @@
+[chat mode · model gemma4-e2b-qat (Q4_0 (quantization-aware trained)) · local via Ollama 0.34.4]
+Scout — your interview-prep assistant. Type /help for commands, /exit to quit.
+
+you: what can we do?
+  ↳ notes lookup: no (rule: question about the assistant's capabilities)
+Scout: We can brainstorm and draft interview answers, run a mock interview, build prep plans and checklists, and look up your prep notes.
+
+What are you working on right now?
+  (3.97s)
+you: what can you help me with?
+  ↳ notes lookup: no (rule: question about the assistant's capabilities)
+Scout: I can help you with:
+
+*   Drafting interview answers (e.g., "Tell me about yourself," STAR stories) tailored to specific companies.
+*   Running mock interviews with me.
+*   Building prep plans and checklists.
+*   Reviewing and refining your prep materials.
+*   Looking up information from your notes (Amazon Pathways, Tanium, TikTok Monetization Strategy & Ops).
+
+What's the next step for you?
+  (5.73s)
+you: Draft a short plan for preparing for my Tanium interview this week.
+  ↳ notes lookup: yes (model router) · query "Tanium interview prep plan" · 4 passage(s)
+Scout: Here is a short preparation plan for your Tanium interview this week.
+
+**Focus Areas:**
+
+1.  **Otis Story Deep Dive:** Review your experience as a project manager at Otis. Be ready to discuss stakeholder coordination, risk management at scale, and technical problem-solving [1].
+2.  **Tanium Specifics:** Brush up on the core concepts related to Tanium, especially product management aspects.
+3.  **Behavioral Prep:** Prepare STAR stories, focusing on how you handled conflict or complex problem-solving, similar to the client payment negotiation example [2].
+
+**Action Items:**
+
+*   **Today:** Outline 3 strong STAR stories based on your Otis experience.
+*   **Tomorrow:** Create a list of 5 key Tanium concepts you want to master.
+*   **Day Before:** Practice your "Tell me about yourself" and your answers to "Why this company?"
+
+What do you want to tackle first?
+  Sources: [1] Tanium Interview Prep.docx › What did you do at Otis? (¶14-18); [2] Client Payment Negotiation (wiki) › Key points
+  (15.01s)
+you: make that shorter
+  ↳ notes lookup: no (rule: follow-up edit of the previous reply (uses conversation)) · reusing 4 passage(s) from the previous turn
+Scout: Here is the shortened plan:
+
+**Tanium Prep Plan:**
+
+1.  **Otis Story:** Focus on your project management experience: stakeholder coordination, risk management at scale, and technical problem-solving [1].
+2.  **Tanium Concepts:** Master core product management concepts.
+3.  **Behavioral Prep:** Prepare STAR stories focusing on conflict resolution and complex problem-solving, using the client payment negotiation example [2].
+
+**Next Step:** Outline 3 strong STAR stories from your Otis experience.
+  Sources: [1] Tanium Interview Prep.docx › What did you do at Otis? (¶14-18); [2] Client Payment Negotiation (wiki) › Key points
+  (11.59s)
+you: Just so you know, the Graton Casino Expansion was a $5M project.
+  ↳ notes lookup: yes (model router) · query "Otis Elevator project-management stories Graton Casino Expansion" · 4 passage(s)
+  ↳ figures in your message not found in the notes: $5M
+Scout: I don't have information in the notes stating that the Graton Casino Expansion was a $5M project. The notes mention it was a "$2.9M undertaking" [2].
+
+You can edit the source document and re-run `wiki ingest` if the notes are incorrect.
+  Sources: [2] Graton Casino Expansion (wiki) › Summary
+  (7.75s)
+you: /exit
+Chat transcript saved: runs/20260928-153042-chat.json

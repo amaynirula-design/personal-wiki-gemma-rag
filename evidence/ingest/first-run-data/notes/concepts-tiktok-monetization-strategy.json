@@ -1,0 +1,67 @@
+{
+ "title": "TikTok Monetization Strategy",
+ "summary": "TikTok monetizes through four main revenue streams: in-feed and top view ads, TikTok Shop commissions, brand partnerships, and virtual gifts to creators. The platform's strengths include algorithm superiority, a highly engaged Gen Z user base, and seamless TikTok Shop integration. Ad formats are categorized by funnel stage, with metrics varying from Impressions for awareness to ROAS for conversion.",
+ "key_points": [
+  {
+   "text": "TikTok has four main revenue streams: advertising, TikTok Shop, brand partnerships, and virtual gifts",
+   "sources": [
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Advertising primarily through in-feed ads (every 2 to 3 videos) and TopView ads (when users first open the app)",
+   "sources": [
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "TikTok Shop monetizes by taking a commission on every transaction, typically 2-8% depending on category, and charging sellers to advertise products",
+   "sources": [
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Brand partnerships include hashtag challenges where brands pay $150K-500K+, brand takeover days, and large-scale brand awareness campaigns",
+   "sources": [
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Algorithm superiority keeps users engaged longer and makes ads feel native to the app",
+   "sources": [
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "TikTok is Gen Z dominant, spending around 95 mins on the app every day, driving high engagement rates",
+   "sources": [
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Top of funnel metrics include Impressions, Reach, Frequency, and Brand Awareness Lift",
+   "sources": [
+    "tiktok-interview-prep"
+   ]
+  },
+  {
+   "text": "Middle of funnel metrics include Click-Through Rate, Time on Site, Email signups, and Add-to-Cart actions",
+   "sources": [
+    "tiktok-interview-prep"
+   ]
+  }
+ ],
+ "differences": [],
+ "related": [
+  {
+   "title": "Otis Project Management",
+   "why": "The owner's interest in monetization and revenue building stems from Otis and its business model."
+  },
+  {
+   "title": "Amazon Pathways",
+   "why": "The discussion on TikTok Shop integration relates to the owner's interest in operational excellence, which is a focus of the Pathways program."
+  }
+ ],
+ "model": "gemma4-e2b-qat",
+ "generated_at": "2026-09-25T22:23:04"
+}
